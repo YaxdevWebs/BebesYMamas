@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="es" prefix="og: https://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<style>
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:none}table{border-collapse:collapse}*{box-sizing:border-box}ins,mark{text-decoration:none}body{background-color: #fff; color: #000; font-size: 15px; font-family: Roboto,"Helvetica Neue",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Oxygen-Sans,sans-serif;}a {text-decoration: none; }a:focus, button{outline: none;}.btn{ text-decoration: none;}a:hover, a:active { color: #000;}h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #111; text-decoration: none; }h1,h2,h3,h4,h5,h6{font-weight: 700;color: #111111; }h1 { font-size: 28px; line-height:34px; margin: 10px 0 30px 0;}h2 { font-size: 24px; line-height:30px; margin: 10px 0 30px 0;  }h3 { font-size: 21px; line-height:28px; margin: 10px 0 25px 0;  }h4 { font-size: 18px; line-height:24px; margin: 10px 0 18px 0  }h5 { font-size: 16px; line-height:20px; margin: 10px 0 15px 0 }h6 { font-size: 14px; line-height:16px; margin: 0 0 10px 0 }hr{background: #ddd;border: 0;height: 1px;}.post p,article p{margin:0 0 31px 0}.post em,article em{font-style:italic}.post strong,article strong{font-weight:700}.post,article{font-size:16px;line-height:28px;color:#333}p strong{font-weight:700}p em{font-style:italic}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{max-width:100%;height:auto;vertical-align:top;border:0}#rhLoader{position:fixed;display:table;text-align:center;width:100%;height:100%;top:0;left:0;background-color:rgba(255,255,255,1);z-index:999999999}.preloader-cell{display:table-cell;vertical-align:middle;font-size:60px}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearbox{clear:both}.clearboxleft{clear:left}.clearboxright{clear:right}#main_header{width:100%;position:relative;z-index:1000}.header-top{border-bottom:1px solid #eee;min-height:30px;overflow:visible}.header-top .top-nav a{color:#111}.header-top .top-nav li{float:left;font-size:12px;line-height:14px;position:relative;z-index:99999999}.header-top .top-nav>ul>li{padding-left:13px;border-left:1px solid #666;margin:0 13px 0 0}.header-top .top-nav ul{list-style:none}.header-top .top-nav a:hover{text-decoration:underline}.header-top .top-nav li:first-child{margin-left:0;border-left:0;padding-left:0}.top-nav ul.sub-menu{width:160px}.top-nav ul.sub-menu>li>a{padding:10px;display:block}.top-nav ul.sub-menu>li{float:none;display:block;margin:0}.top-nav ul.sub-menu>li>a:hover{background-color:#f1f1f1;text-decoration:none}header .logo-section{padding:15px 0;overflow:visible}header .logo{max-width:450px;float:left;margin-right:15px;line-height:0}.logo .textlogo{font-size:26px;line-height:26px;letter-spacing:-.5px;}.logo .sloganlogo{font-size:14px;color:#888}header .header_first_style .mediad{width:468px;margin:12px 20px 0 0}header .header_fourth_style .mediad{width:728px;float:none;margin:15px auto 5px;text-align:center}.header_six_style .head_search{max-width:215px}.header-actions-logo{float:right}.header-actions-logo .celldisplay{padding:0 12px;vertical-align:middle}.heads_icon_label{font-size:12px;display:block;line-height:15px;color:#111}.header_seven_style .search{margin:0 30px;padding:0;flex-grow:1;width:100%;max-width:580px}.header_seven_style>.rh-flex-right-align{flex:0 0 auto}.header_one_row .main-nav{background:none transparent;border:none}.header_one_row nav.top_menu>ul>li{border:none}.rh_woocartmenu_cell{min-width:100px;position:relative}#main_header .rh_woocartmenu_cell .widget_shopping_cart{position:absolute;right:12px;width:330px;z-index:-1;box-shadow:1px 1px 4px 0 #ddd;background-color:#fff;padding:15px 20px;border-radius:5px;display:none;text-align:left;top:100%}#main_header .rh_woocartmenu_cell .widget_shopping_cart.loaded{display:block;animation:stuckMoveUpOpacity .6s;z-index:9999}header .mediad img{max-width:100%;height:auto}.top-search-onclick{float:right;position:relative}form.search-form{padding:0;border:none;position:relative;width:auto;display:flex;margin:0;max-width:100%}form.search-form input[type=text]{border:1px solid #e1e1e1;height:38px;background-color:#fff;padding:2px 45px 2px 12px;transition:all .4s ease;}form.search-form input[type=text]:focus{outline:0}.litesearchstyle form.search-form input[type=text]{height:34px;padding:2px 37px 2px 12px}form.search-form [type=submit]{border:none;cursor:pointer;padding:0 16px;line-height:38px;height:38px;vertical-align:middle;position:absolute;top:0;right:0;}.litesearchstyle form.search-form [type=submit]{background:none transparent;height:34px;color:#999;padding:0 12px;line-height:34px}form.search-form.product-search-form [type=submit]{position:static}form.search-form.product-search-form input[type=text]{padding-right:12px;padding-left:12px;border-right:none}.search-header-contents{opacity:0;visibility:hidden;position:absolute}.head_search .search-form,.head_search form.search-form input[type=text],.widget_search .search-form,.widget_search form.search-form input[type=text]{width:100%;clear:both}.product-search-form .nice-select{border-radius:0;height:38px;line-height:36px;border-width:1px 0 1px 1px}.sidebar .product-search-form .nice-select{display:none}header .search{width:300px;float:right;position:relative}.logo-section .search form.search-form input[type=text]{min-width:215px}.main-nav{background:#fcfcfc}.main-nav.white_style{border-top:1px solid #eee;border-bottom:1px solid #eee}.main-nav:after{content:'';display:table;clear:both}nav.top_menu{position:relative}nav.top_menu>ul{display:flex;display:-ms-flexbox}nav.top_menu ul li{display:inline-block;position:relative}nav.top_menu>ul>li.floatright{margin-left:auto}#slide-menu-mobile ul li.menu-item>a i,nav.top_menu ul li i{margin:0 5px 0 0}nav.top_menu ul li.rehub-custom-menu-item{float:right;border:none}nav.top_menu ul li.rehub-custom-menu-item a:hover{box-shadow:none}nav.top_menu ul.sub-menu li{display:block;float:none}nav.top_menu>ul>li>a{font-weight:700;font-size: 16px;line-height:19px;position:relative;color:#111;padding:8px 13px 11px 13px;display:inline-block}nav.top_menu ul span.subline{font-weight:400;font-size:12px;line-height:12px;display:block;text-transform:none;margin:5px 0 0 0;opacity:.8}nav.top_menu ul li.menu-item-has-children{position:relative}.top-nav ul.sub-menu,nav.top_menu ul.sub-menu{opacity:0;visibility:hidden;position:absolute;}nav.top_menu .noshadowdrop ul.sub-menu{box-shadow:none}nav.top_menu ul.sub-menu ul.sub-menu{top:0}nav.top_menu ul.sub-menu>li>a{text-transform:none;font-size:15px;line-height:16px;color:#111;display:block;padding:15px 18px;border-top:1px solid #eee;font-weight:400}nav.top_menu ul.sub-menu>li:first-child>a{border-top-color:transparent}#slide-menu-mobile{display:none}.rh-menu-label{z-index:1;position:absolute;top:-9px;right:15px;padding:2px 4px;color:#fff;font:9px/10px Arial;text-transform:uppercase;background:#c00}.rh-menu-label.rh-menu-label-green{background:green}.rh-menu-label.rh-menu-label-blue{background:#00f}.rh-menu-label:after{font-weight:900;content:"\f0da";font-family:rhicons;font-size:16px;position:absolute;bottom:-4px;left:0;color:#c00}.rh-menu-label.rh-menu-label-green:after{color:green}.rh-menu-label.rh-menu-label-blue:after{color:#00f}.header_top_wrap.dark_style{background-color:#000;width:100%;border-bottom:1px solid #3c3c3c;color:#ccc}.header_top_wrap.dark_style .header-top a.cart-contents,.header_top_wrap.dark_style .icon-search-onclick:before{color:#ccc}.header_top_wrap.dark_style .header-top{border:none}#main_header.dark_style .header-top{border-color:rgba(238,238,238,.22)}.header_top_wrap.dark_style .header-top .top-nav>ul>li>a{color:#b6b6b6}#main_header.dark_style{background-color:#141414}.main-nav.dark_style{max-height:70px;background:#353535}#main_header.dark_style #re_menu_near_logo li a,#main_header.dark_style .logo-section .heads_icon_label,#main_header.dark_style .logo-section .rh-header-icon,#main_header.dark_style .sloganlogo,#main_header.dark_style .textlogo,#main_header.dark_style .textlogo a,#main_header.dark_style a.header-link-add,.main-nav.dark_style .dl-menuwrapper .rh-header-icon,.main-nav.dark_style .user-ava-intop:after{color:#fff}.main-nav.dark_style nav.top_menu>ul>li>a{color:#fbfbfb}nav.top_menu>ul>li{border-right:1px solid rgba(0,0,0,.08)}nav.top_menu>ul>li:last-child{border-right:none;box-shadow:none}.main-nav.dark_style nav.top_menu>ul>li{border-right:1px solid rgba(255,255,255,.15)}.logo_insticky_enabled .top_menu{flex-grow:1}.top-social .user-dropdown-intop{float:right;margin:4px 5px 0 5px}.logged-in .login_icon_label,.main-nav .act-rehub-login-popup span,.responsive_nav_wrap,.responsive_nav_wrap .heads_icon_label,.rh_login_icon_n_btn.act-rehub-login-popup span, #logo_mobile_wrapper,a.logo_image_mobile img{display:none}#dl-menu a.logo_image_mobile img{position:absolute;top:0;left:50%;transform:translate(-50%);right:auto;bottom:0;margin:auto;display:block}.header_icons_menu #dl-menu a.logo_image_mobile img{left:55px;transform:none}.widget .title i{margin:0 6px 0 0}#re_menu_near_logo li a{color:#111}.rh-header-icon{font-size:24px;line-height:23px;color:#222}#main_header #dl-menu .rh-header-icon{margin:15px 9px}#main_header #dl-menu .rehub-main-btn-bg .rh-header-icon{margin:0}#main_header .rehub-main-btn-bg{padding:8px 14px}.rhsloganlogo{width:440px;color:#ccc;font-size:15px;line-height:20px;float:left;margin-right:25px}.top_menu .user-dropdown-intop{margin:15px 10px;float:right}.rh-boxed-container .rh-outer-wrap{box-shadow:0 0 20px 0 rgba(0,0,0,.1);margin:0 auto;width:1260px;background:#fff}.content,.rh-container{margin:0 auto;border:none;background:none transparent;width:1200px;box-shadow:none;position:relative;clear:both;padding:0}.centered-container .vc_col-sm-12>*>.wpb_wrapper,.vc_section>.vc_row,body .elementor-section.elementor-section-boxed>.elementor-container{max-width:1200px;margin:0 auto}.rh-content-wrap{padding-top:20px;padding-bottom:20px}.rh-mini-sidebar{width:260px;margin-bottom:30px}.rh-mini-sidebar-content-area{width:calc(100% - 290px)}.rh-300-sidebar{width:300px;margin-bottom:30px}.rh-300-content-area{width:calc(100% - 330px)}.rh-336-sidebar{width:336px;margin-bottom:30px}.rh-336-content-area{width:calc(100% - 366px)}.rh-360-sidebar {width: 360px; margin-bottom: 30px}.rh-360-content-area{width: calc(100% - 400px);}.widget.rh-cartbox{margin:0 0 25px 0}.rh-mini-sidebar .widget{margin-bottom:30px}.rh-cartbox .widget-inner-title{font-weight:700;font-size:16px;line-height:18px;text-align:center;margin:-20px -20px 20px -20px;padding:12px;color:#000;background:#f7f7f7}.main-side{width:840px;float:left;position:relative}body:not(.noinnerpadding) .rh-post-wrapper{background:#fff;border:1px solid #e3e3e3;padding:25px;box-shadow:0 2px 2px #ececec}.main-side.full_width:not(.single),.rh-container.no_shadow .main-side{padding:0;border:none;box-shadow:none;background:none transparent}.main-side.full_width{float:none;width:100%}.main-side{min-height:500px}.side-twocol,.sidebar{width:336px;float:right;overflow:hidden}.full_post_area.content,.full_post_area.rh-container{width:100%;overflow:hidden;padding:0}.full_post_area .rh-content-wrap{padding:0}.vc_row{margin-right:0;margin-left:0}.wpsm-one-half{width:48%}.wpsm-one-third{width:30.66%}.wpsm-two-third{width:65.33%}.wpsm-one-fourth{width:22%}.wpsm-three-fourth{width:74%}.wpsm-one-fifth{width:16.8%}.wpsm-two-fifth{width:37.6%}.wpsm-three-fifth{width:58.4%}.wpsm-four-fifth{width:79.2%}.wpsm-one-sixth{width:13.33%}.wpsm-five-sixth{width:82.67%}.wpsm-five-sixth,.wpsm-four-fifth,.wpsm-one-fifth,.wpsm-one-fourth,.wpsm-one-half,.wpsm-one-sixth,.wpsm-one-third,.wpsm-three-fifth,.wpsm-three-fourth,.wpsm-two-fifth,.wpsm-two-third{position:relative;margin-right:4%;margin-bottom:5px;float:left}.wpsm-column-last,.wpsm-one-fifth:last-of-type,.wpsm-one-fourth:last-of-type,.wpsm-one-half:last-of-type,.wpsm-one-sixth:last-of-type,.wpsm-one-third:last-of-type{margin-right:0;clear:right}.wpsm-column-last:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}@media (min-width:768px){.vc_row.vc_rehub_container .vc_column_container>.vc_column-inner{padding:0}}@media screen and (max-width:1279px) and (min-width:1141px){.rh-boxed-container .rh-outer-wrap{width:1120px}.content,.rh-container{width:1080px}.centered-container .vc_col-sm-12>*>.wpb_wrapper,.vc_section>.vc_row,body .elementor-section.elementor-section-boxed>.elementor-container{max-width:1080px}.main-side,.vc_row.vc_rehub_container>.vc_col-sm-8{width:755px}.side-twocol,.sidebar,.vc_row.vc_rehub_container>.vc_col-sm-4{width:300px}}@media (max-width:1140px){.rh-boxed-container .rh-outer-wrap{width:100%}header .logo{max-width:250px}.laptopblockdisplay{display:block;width:100%;float:none;margin:0 0 10px 0}}@media (max-width:1140px) and (min-width:1024px){.content,.rh-container{width:980px}.centered-container .vc_col-sm-12>*>.wpb_wrapper,.vc_section>.vc_row,body .elementor-section.elementor-section-boxed>.elementor-container{max-width:980px}.main-side,.vc_row.vc_rehub_container>.vc_col-sm-8{width:655px}.side-twocol,.sidebar,.vc_row.vc_rehub_container>.vc_col-sm-4{width:300px}}@media (max-width:1023px){.header-actions-logo,.header_seven_style .search,.rh_woocartmenu-amount{display:none}.rhsloganlogo{float:none;margin:0 auto 10px auto;width:95%;text-align:center}.side-twocol{float:none;width:100%;margin-bottom:10px;overflow:hidden}}@media (max-width:1023px) and (min-width:768px){.responsive_nav_wrap{display:block; width:100%; position:relative}.sidebar{border:none;clear:both;-webkit-column-count:2;-webkit-column-gap:20px;column-count:2;column-gap:20px}.sidebar .widget{margin:0 0 20px 0;width:350px;clear:none;-webkit-column-break-inside:avoid;-moz-column-break-inside:avoid;break-inside:avoid;-webkit-column-width:350px;transform:translateZ(0);column-width:350px}}@media (max-width:1023px){.calcposright{position:static !important;}.tabletcenterdisplay{text-align:center}.tabletblockdisplay{display:block !important;width:100% !important;float:none;margin:0 0 10px 0;clear:both}.hideontablet,.logo-section .mobileinmenu{display:none}.logo-section #mobile-menu-icons .mobileinmenu{display:inline-block}.sidebar{margin:30px auto 0 auto}.left-sidebar-archive .sidebar{margin:0 auto 30px auto}.tabletrelative{position:relative}.disable-bg-on-tablet,.vc_row.disable-bg-on-tablet{background:none transparent}.disablefloattablet.floatleft,.disablefloattablet.floatright{float:none;margin-right:0;margin-left:0;display:inline-block}}.rehub-register-popup.registration-complete #rehub_registration_form_modal{display:none}.top-social .act-rehub-login-popup{float:right;margin:7px}.top-social .act-rehub-login-popup i{margin-right:3px}.user-ava-intop{position:relative;line-height:22px;vertical-align:middle;cursor:pointer;display:inline-block}.user-ava-intop img{border-radius:50%;vertical-align:middle;width:28px}.user-dropdown-intop-menu{position:absolute;visibility:hidden;opacity:0}@media (max-width:1023px){.user-dropdown-intop-menu{right:0}}.col_item{position:relative}.col_wrap_two{margin:0 -2.5% 20px}.col_wrap_two .col_item{width:45%;margin:0 2.5% 30px;float:left}.col_wrap_three{margin:0 -1.5% 20px}.col_wrap_three .col_item{width:30.33%;margin:0 1.5% 25px;float:left}.col_wrap_three .col_item:nth-child(3n+1){clear:both}.col_wrap_two .col_item:nth-child(2n+1){clear:both}.col_wrap_fourth{margin:0 -1% 15px}.col_wrap_fifth,.col_wrap_six{margin:0 -1% 15px}.col_wrap_fourth .col_item{width:23%;margin:0 1% 25px;float:left}.col_wrap_fourth .col_item:nth-child(4n+1){clear:both}.col_wrap_fifth .col_item{width:18%;margin:0 1% 25px;float:left}.col_wrap_fifth .col_item:nth-child(5n+1){clear:both}.col_wrap_six .col_item{width:15.26%;margin:0 .7% 25px;float:left}.col_wrap_six .col_item:nth-child(6n+1){clear:both}.rh-flex-columns{display:flex;flex-wrap:wrap;justify-content:space-between;flex-direction:row}.rh-flex-eq-height{display:flex;flex-wrap:wrap;flex-direction:row}.rh-flex-eq-height .pagination,.rh-flex-eq-height .re_ajax_pagination,.rh-flex-eq-height .woocommerce-pagination{width:100%;flex-basis:100%}.rh-flex-eq-height .re_ajax_pagination{margin:-1px}.rh-flex-center-align{align-items:center;display:flex;flex-direction:row}.rh-flex-right-align{margin-left:auto}.flexbasisclear{flex-basis:100%}.rh-flex-justify-center{justify-content:center}.rh-flex-justify-start{justify-content:flex-start}.rh-flex-justify-end{justify-content:flex-end}.img-centered-flex>img{max-height:100%;border-radius:4px;object-fit:scale-down;flex:0 0 auto}.rh-flex-column{flex-direction:column}.rh-flex-nowrap{flex-wrap:nowrap}.rh-flex-grow1{flex-grow:1;flex-basis:0}.no_padding_wrap .col_wrap_fifth .col_item,.no_padding_wrap .col_wrap_fourth .col_item,.no_padding_wrap .col_wrap_six .col_item,.no_padding_wrap .col_wrap_three .col_item{margin:0}.no_padding_wrap .col_wrap_three .col_item{width:33.33%}.no_padding_wrap .col_wrap_fourth .col_item{width:25%}.no_padding_wrap .col_wrap_fifth .col_item{width:20%}.no_padding_wrap .col_wrap_six .col_item{width:16.66%}@media (max-width:1023px) and (min-width:768px){.col_wrap_fifth,.col_wrap_fourth,.col_wrap_six{margin:0 -1.5% 20px;overflow:hidden}.col_wrap_fifth .col_item,.col_wrap_fourth .col_item,.col_wrap_six .col_item{width:30.33%;margin:0 1.5% 15px;float:left}.no_padding_wrap .col_wrap_fifth .col_item,.no_padding_wrap .col_wrap_fourth .col_item,.no_padding_wrap .col_wrap_six .col_item{width:33%;margin:0}.col_wrap_fifth .col_item:nth-child(3n+1),.col_wrap_fourth .col_item:nth-child(3n+1),.col_wrap_six .col_item:nth-child(3n+1){clear:both}.col_wrap_fifth .col_item:nth-child(5n+1),.col_wrap_fourth .col_item:nth-child(4n+1),.col_wrap_six .col_item:nth-child(6n+1){clear:none}}.no_padding_wrap .offer_grid.col_item{border:1px solid #eee;border-top:none;border-left:none}.no_padding_wrap .eq_grid{border:1px solid #eee;border-right:none;border-bottom:none;padding:0}.wpsm-button.medium{padding:8px 16px;line-height:15px;font-size:15px}.wpsm-button{cursor:pointer;display:inline-block;white-space:nowrap;text-align:center;outline:0;background:#aaa;text-decoration:none;transition:all .4s ease 0s;border:1px solid #7e7e7e;color:#fff;font-weight:700;padding:4px 10px;line-height:.8em;text-decoration:none;white-space:normal;text-shadow:0 1px 0 rgba(0,0,0,.25);box-shadow:0 1px 2px rgba(0,0,0,.2);position:relative;font-size:15px;box-sizing:border-box;font-style:normal}.elementor-button.elementor-size-md{font-size:16px;padding:15px 30px;-webkit-border-radius:4px;border-radius:4px}.redcolor{color:#b00}.redbrightcolor{color:red}.greencolor{color:#009700}.orangecolor{color:#ff8a00}.pinkLcolor{color:#e38de6}#slide-menu-mobile ul .whitecolor>span.submenu-toggle,#slide-menu-mobile ul li.menu-item.whitecolor>a,.def_btn.whitecolor,.whitecolor,.whitecolor>a,.whitecolor>a:hover,.whitecolorinner,.whitecolorinner a,.whitecolorinner a:hover,a.whitecolor:hover,nav.top_menu>ul>li.whitecolor>a{color:#fff}.whiteonhover:hover,.whiteonhover:hover a{color:#fff}.greycolor{color:grey}#slide-menu-mobile ul .blackcolor>span.submenu-toggle,#slide-menu-mobile ul li.menu-item.blackcolor>a,.blackcolor,.blackcolor a,nav.top_menu>ul>li.blackcolor>a{color:#111}.lightgreycolor{color:#d3d3d3}.lightgreybg{background:#f4f2f3}.whitebg{background:#fff}.lightgreenbg{background-color:#eaf9e8}.lightredbg{background-color:#fff4f4}.redbg,.rh-cat-label-title.redbg{background:#b00}.greenbg,.rh-label-string.greenbg{background:#77b21d}.violetgradient_bg{background-color:#721999;background:linear-gradient(to bottom,#5000be 0,#9101fe 100%)}.lightbluebg{background-color:rgba(7,107,156,.1)}.darkhalfopacitybg{background-color:rgba(0,0,0,.58)}.darkbg{background-color:#333}.position-relative{position:relative}.position-static{position:static}.rhhidden{display:none}.flowhidden{overflow:hidden}.flowvisible{overflow:visible}.rhshow{display:inline-block}.tabledisplay{display:table;width:100%}.rowdisplay{display:table-row}.celldisplay{display:table-cell;vertical-align:middle}.vertmiddle{vertical-align:middle}.verttop{vertical-align:top}.blockstyle{display:block}.inlinestyle{display:inline-block}.text-center{text-align:center}.heightauto{height:auto}.text-right-align{text-align:right}.text-left-align{text-align:left}.fontbold,nav.top_menu ul.sub-menu>li.fontbold>a{font-weight:700}.fontnormal,.fontnormal h4{font-weight:400}.fontitalic{font-style:italic}.rh-nowrap{white-space:nowrap}.lineheight20{line-height:20px}.lineheight15{line-height:15px}.lineheight25{line-height: 25px}.upper-text-trans{text-transform:uppercase}body .rh_opacity_100{opacity:1}.rh_opacity_7{opacity:.7}.rh_opacity_5{opacity:.5}.rh_opacity_3{opacity:.3}.roundborder{border-radius:100px}.roundborder50p{border-radius:50%}.roundborder8{border-radius:8px}.roundborder20{border-radius:20px}.roundborder50{border-radius:50px}.border-top{border-top:1px solid #eee}.border-grey-bottom{border-bottom:1px solid rgba(206,206,206,0.3)}.border-grey-dashed{border: 1px dashed #ccc;}.border-grey{border:1px solid #dce0e0}.border-right{border-right: 1px solid rgba(206,206,206,0.3);}.border-lightgrey-double{border: 2px solid rgba(206,206,206,0.23);}.border-lightgrey{border: 1px solid rgba(206,206,206,0.23);}.margincenter{margin:0 auto}.list-type-disc{list-style:disc}.overflow-elipse{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.cursorpointer,.rehub_scroll{cursor:pointer}.cursordefault,.cursordefault>a{cursor:default}.floatleft{float:left}.floatright{float:right}body .font90{ font-size: 90%}body .font95{ font-size: 95%}body .font80{font-size: 80%}body .font85{font-size: 85%}body .font70{font-size: 70%}body .font60{font-size: 60%}body .font110{font-size: 110%}body .font115{font-size: 115%}body .font120{font-size: 120%}body .font130{font-size: 130%}body .font140{font-size: 140%}body .font150{font-size: 150%}body .font250{font-size: 250%}body .font200{font-size: 200%}body .font175{font-size: 175%}body .font105{font-size: 105%}.mr5{margin-right:5px}.mr10{margin-right:10px}.mr15{margin-right:15px}.mr20{margin-right:20px}.mr25{margin-right:25px}.mr30{margin-right:30px}.mr35{margin-right:35px}.ml5{margin-left:5px}.ml10{margin-left:10px}.ml15{margin-left:15px}.ml20{margin-left:20px}.ml25{margin-left:25px}.ml30{margin-left:30px}.mt10{margin-top:10px}.mt5{margin-top:5px}.mt15{margin-top:15px}.mt20{margin-top:20px}.mt25{margin-top:25px}.mt30{margin-top:30px}.mb0{margin-bottom:0}.mb5{margin-bottom:5px}.mb10{margin-bottom:10px}.mb15{margin-bottom:15px}.mb20{margin-bottom:20px}.mb25{margin-bottom:25px}.mb30{margin-bottom:30px}.mb35{margin-bottom:35px}.mt0{margin-top:0}.ml0{margin-left:0}.mr0{margin-right:0}.pt0{padding-top:0}.pr5{padding-right:5px}.pr10{padding-right:10px}.pr15{padding-right:15px}.pr20{padding-right:20px}.pr25{padding-right:25px}.pr30{padding-right:30px}.pl5{padding-left:5px}.pl10{padding-left:10px}.pl15{padding-left:15px}.pl20{padding-left:20px}.pl25{padding-left:25px}.pl30{padding-left:30px}.pt10{padding-top:10px}.pt5{padding-top:5px}.pt15{padding-top:15px}.pt20{padding-top:20px}.pt25{padding-top:25px}.pt30{padding-top:30px}.pb0{padding-bottom:0}.pb5{padding-bottom:5px}.pb10{padding-bottom:10px}.pb15{padding-bottom:15px}.pb20{padding-bottom:20px}.pb25{padding-bottom:25px}.pb30{padding-bottom:30px}.pt0{padding-top:0}.pl0{padding-left:0}.pr0{padding-right:0}.padd20{padding:20px}.padforbuttonsmall{padding:7px 10px !important; line-height:15px !important}.padforbuttonmini{padding: 3px 5px}.padforbuttonmiddle{padding:9px 16px}.padforbuttonbig{padding:12px 24px}body .bg_r_b{background-position:right bottom}body .bg_r_t{background-position:right top}body .bg_l_b{background-position:left bottom}body .bg_l_t{background-position:left top}body .bg_c_b{background-position:center bottom}body .bg_c_t{background-position:center top}.re-form-group.field_type_textbox input,.re-form-group.field_type_url input,.re-form-input,.wpcf7 input,.wpcf7 textarea{width:100%;padding:12px 10px;height:auto;font-size:15px;margin-bottom:5px;max-width:100%}.re-form-input-small{padding:6px 9px;width:100%}.re-form-input.error{border-color:#b00}.re-form-group>label{display:block;font-weight:700;font-size:14px;margin-bottom:7px}.re-form-group legend{font-weight:700;margin:0 0 5px}.re-form-group select{width:100%;cursor:pointer;margin:0;border:1px solid #ccc}.re-form-group .option-label{margin:0 5px 5px 0}input[type=email],input[type=number],input[type=password],input[type=tel],input[type=text],input[type=url],textarea{box-sizing:border-box;outline:0;padding:9px 10px;color:#444;background:none #fff;transition:border-color .4s ease;border:1px solid #ccc;line-height:18px;font-weight:400;font-size:15px;line-height:18px;-webkit-appearance:none}input[type=email]:focus,input[type=password]:focus,input[type=tel]:focus,input[type=text]:focus,textarea:focus{border-color:#444}.btn_more { font-weight:normal; font-size: 13px; line-height:15px; color: #111111; padding: 4px 8px; border: 1px solid #1e1e1e; display: inline-block; vertical-align: middle; text-decoration: none !important; text-transform: uppercase; }.def_btn,input[type=button],input[type=reset],input[type=submit]{display:inline-block;padding:6px 7px;color:#444;text-align:center;vertical-align:middle;cursor:pointer;background-color:#f6f6f6;border:none;box-shadow:0 1px 2px 0 rgba(60,64,67,.3),0 1px 2px rgba(0,0,0,.08);transition:all .4s ease 0s;outline:0;font-size:14px; line-height:16px; font-weight:700;text-decoration:none;-webkit-appearance:none}select{padding:8px 10px;border-radius:0}select:focus{outline:0}.def_btn_group .active a{background:#fff;font-weight:700}ul.def_btn_link_tabs li a{padding:3px 8px;border:1px dashed transparent}ul.def_btn_link_tabs li.active a{font-weight:700}ul.rh-big-tabs-ul{margin:0;padding:0}ul.rh-big-tabs-ul .rh-big-tabs-li{display:inline-block;list-style:none;margin:0;padding:0;vertical-align:top}ul.rh-big-tabs-ul .rh-big-tabs-li a{color:#999;margin:0;padding:10px 15px;position:relative;display:inline-block;text-transform:uppercase;letter-spacing:-.5px;font-size:15px}ul.rh-big-tabs-ul .rh-big-tabs-li.active a{color:#111;font-weight:700}.width-250{width: 250px}.width-100{width: 100px}.width-80{width: 80px}.width-150{width: 150px}.width-125{width: 125px}.width-200{width: 200px}.width-300{width: 300px}.width-100p, .full_width .wp-block-button__link{width: 100%}.width-100-calc{width: calc(100% - 100px);}.width-80-calc{width: calc(100% - 80px);}.height-150{height: 150px}.height-150 img{max-height: 150px !important;}.height-125{height: 125px}.height-125 img{max-height: 125px !important}.height-80{height: 80px}.height-80 img{max-height: 80px !important}.height-22{height: 22px; line-height:22px;}.width-22{width:22px; min-width:22px;}.img-width-auto img{width:auto;}.img-maxh-100 img{max-height:100px;}.height-100{height:100px}.img-maxh-350 img{max-height:350px;}.img-maxh-500 img{max-height:500px;}.scroll-on-mobile{overflow-x:auto;white-space:nowrap;overflow-y:hidden;-webkit-overflow-scrolling:touch;transform:translate3d(0,0,0);display:block}.rh-line{height:1px;background:rgba(206,206,206,0.3);clear:both}.rh-line-right{border-right:1px solid rgba(206,206,206,0.3)}.rh-line-left{border-left:1px solid rgba(206,206,206,0.3)}.wpsm-button.rehub_main_btn.small-btn{font-size:17px;padding:9px 16px;text-transform:none;margin:0}.abdposright{position:absolute;top:0;right:0;z-index:2}.abdposleft{position:absolute;top:0;left:0;z-index:2}.abdfullwidth{position:absolute;top:0;right:0;bottom:0;left:0}.abposbot{position:absolute;bottom:0;right:0;left:0}.rh-cartbox:hover{box-shadow:rgba(0,0,0,.12) 0 3px 4px;backface-visibility:hidden;-webkit-backface-visibility:hidden}.no-padding,.rh-cartbox.no-padding{padding:0}.rh-shadow1{box-shadow:0 1px 1px 0 rgba(0,0,0,.12)}.rh-shadow2{box-shadow:0 5px 20px 0 rgba(0,0,0,.03)}.rh-shadow3{box-shadow:0 15px 30px 0 rgba(119,123,146,.1)}.rh-shadow4{box-shadow:0 5px 23px rgba(188,207,219,.35);border-top:1px solid #f8f8f8}.rh-shadow4:hover{box-shadow:0 5px 10px rgba(188,207,219,.35)}.rh-shadow5{box-shadow:0 2px 4px rgba(0,0,0,.07)}.single_top_corner .wpsm-button{float:right;margin:0 0 15px 0;white-space:nowrap}.left_st_postproduct .post-meta span{margin-right:12px}.single_top_corner .brand_logo_small img{max-width:120px;max-height:65px}.post-meta{margin-bottom:12px;font-size:11px;line-height:12px;font-style:italic;color:#999}.admin_meta .admin img{vertical-align:middle;margin-right:5px;border-radius:50%}.post-meta span{display:inline-block;margin-right:8px}.post-meta a.admin,.post-meta a.cat,.post-meta span a,.post-meta-big a{color:#111;text-decoration:none}.post-meta-big img{border-radius:50%}.post-meta-big span.postview_meta{color:#c00}.postviewcomm{line-height:28px;font-size:15px}.breadcrumb{margin-bottom:20px;color:#999;font-size:12px;line-height:14px}.breadcrumb a {color: #999;text-decoration: none;}.alreadywish .wishaddwrap,.countdown_dashboard,.re-favorites-posts .thumbscount,.wishaddedwrap,.wishremovedwrap,.yith_woo_chart .thumbscount{display:none}.elementor-widget-wrap>.elementor-element.elementor-absolute{position:absolute}.elementor-widget-wrap{position:relative;width:100%;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-align-content:flex-start;-ms-flex-line-pack:start;align-content:flex-start}.elementor-widget:not(:last-child){margin-bottom:20px}.elementor-widget-heading .elementor-heading-title, .elementor-button {line-height: 1;}.elementor-button {display: inline-block;}.dealScore {float: left;margin-right: 10px;}.dealScore .label{float:left;height:32px;text-align:center;font-size:14px;background:#96ca4e;padding:0 13px;line-height:32px;color:#fff;font-weight:700;border-radius:4px 0 0 4px}.dealScore .thumbscount{margin:0;float:left;height:32px;width:auto;min-width:50px;text-align:center;font-size:18px;background:#daecc2;padding:0 5px;color:#333!important;line-height:32px;border-radius:0 4px 4px 0}.dl-menuwrapper button { border: none; width: 48px; height: 53px; overflow: hidden; position: relative; outline: none; background:transparent }.dl-menuwrapper button svg line{stroke:#111;stroke-width: 2;stroke-dasharray: 26;animation: svglineltr 1s linear;}.main-nav.dark_style .dl-menuwrapper button svg line{stroke:#fff}.prehidden{opacity:0;visibility:hidden}.flexslider.loading{background: #fff; position: relative; min-height: 100px}.flexslider .slides > li {display: none; backface-visibility: hidden;} .flexslider .slides img {width: 100%; display: block; height: 100%}.flexslider.loading .fa-pulse {position: absolute;top: 50%;left: 50%;margin: -13px 0 0 -13px;font-size: 26px;}@keyframes svglineltr {0%{stroke-dashoffset: 26;}100%{stroke-dashoffset: 0;}}.rh-sslide-panel{visibility:hidden}.side-twocol .columns { height: 220px; position: relative; overflow: hidden; }.side-twocol .columns .col-item{height: 100%}.side-twocol figure img, .side-twocol figure{height: 100%; width: 100% }.col-feat-grid{z-index:2; background-position: center center;background-size: cover; position: relative;}.col-feat-grid.item-1, .col-feat-50{ width: 50%; float: left; height: 450px}.col-feat-50 .col-feat-grid{ width: calc(50% - 5px); float: left; height: 220px}.item-small-news h3 {font-size: 16px;line-height: 22px;margin: 0 0 10px;font-weight: 400;}.re_filter_panel ul.re_filter_ul li span {cursor: pointer;padding: 12px 16px;display: inline-block;transition: all .3s ease;font-size: 15px;line-height: 16px;}.calcposright {position: absolute;top: 30px;right: calc((100% - 1200px)/2);z-index: 9;}.width-22 {width: 22px;min-width: 22px;}.height-22 {height: 22px;line-height: 22px;}.re_filter_panel ul.re_filter_ul li {display: inline-block;margin: 0;}.re_filter_panel .re_tax_dropdown {position: absolute;top: 0;right: 0;margin: 0;overflow: hidden;transition: all .5s ease;}.reveal_enabled:not(.expired_coupon) .btn_offer_block:not(.coupon_btn), .woocommerce .products .reveal_enabled .woo_loop_btn:not(.coupon_btn){display: none !important;}.re_filter_panel {position: relative;margin: 0 0 32px;}.re_filter_panel .re_tax_dropdown li.rh_drop_item {display: block;margin: 0;height: 0;}.re_filter_panel .re_tax_dropdown li.label {display: block;padding: 12px 20px;margin: 0;font-size: 15px;line-height: 16px;cursor: pointer;color: #111;}.elementor-section .elementor-container{display:flex}a.logo_image_insticky img, a.logo_image_mobile img{max-height: 50px; max-width: 160px; vertical-align: middle; height:auto; width:auto;}.re-ribbon-badge, .favour_in_image {position: absolute;}.small_post .wprc-container{position:absolute;}.small_post h2{font-size:20px}.rh-flex-align-stretch {align-content: stretch;align-items: stretch;}.rh-fit-cover img {object-fit: cover; width:100%; height:100%}.text_in_thumb h2 {font-size: 18px;line-height: 21px;margin: 15px 0 12px 0;}.col-feat-grid .feat-grid-overlay{position:absolute;bottom:0; white-space:normal}.rh-icon-notice {position: absolute;min-width: 18px;height: 18px;background: #f50000;text-align: center;padding: 0 2px;color: #fff;font: bold 12px/18px Arial;border-radius: 50%;}.title h1 {margin: 0 0 28px 0;}a.rh-cat-label-title, .rh-cat-label-title a, .rh-label-string{font-style: normal;background-color: #111;padding: 3px 6px;color: #fff;font-size: 11px; white-space: nowrap;display: inline-block;margin: 0 5px 5px 0;line-height: 12px;}.tabs-menu:not(.rh-tab-shortcode) li{text-align: center; font-weight: 700;font-size: 15px;line-height: 16px;    text-transform: uppercase;}.rh_big_btn_inline .priced_block .btn_offer_block{display: inline-block; float: none;font-size: 21px; line-height: 21px; padding: 13px 70px;text-transform: none;}.rh-float-panel{position:fixed; visibility:hidden}
+
+.priced_block .btn_offer_block, .wpsm-button.rehub_main_btn, .priced_block .button {font-weight: 700;font-size: 16px;line-height: 17px;padding: .65em 1.1em;text-transform: uppercase;position: relative;text-align: center;display: inline-block;}
+.wpsm_score_box .rehub_offer_coupon {font-size: 16px;width: 200px;margin-bottom: 10px;}
+.wpsm_score_box .priced_block .btn_offer_block, .wpsm_score_box .priced_block .single_add_to_cart_button {font-size: 20px;line-height: 20px;text-align: center;display: block;padding: 14px 20px;width: 100%;border-bottom: 4px solid rgba(0,0,0,.2) !important;margin-bottom: 12px;}
+
+
+.offer_grid figure img, figure.eq_figure img {height: 150px;}
+.grid_onsale {padding: 3px 7px;font: bold 12px/15px Arial;position: absolute;text-align: center;top: 3px;right: 3px;z-index: 1;margin: 0;background: #77b21d;color: #fff;}
+.carousel-style-3 .re_carousel{max-height:168px;opacity:0}.re_carousel.owl-loaded{opacity:1; max-height:1000px}
+
+@media (min-width: 768px){.desktablsdisplaynone{display: none !important;}}
+@media (min-width: 1024px){
+	.desktabldisplaynone{display: none !important;}
+	.floatactive .hideonfloattablet {display: none;}
+}
+@media (min-width: 1140px){
+	.desktopdisplaynone{display: none !important;}
+	.floatactive .hideonfloatdesktop {display: none;}
+}
+
+@media screen and (max-width: 1224px) and (min-width: 1024px) {.col-feat-grid.item-1, .col-feat-50{ height: 380px}.col-feat-50 .col-feat-grid{height: 185px}.side-twocol .columns {height: 200px}
+}
+@media screen and (max-width:1024px){
+	body .disabletabletpadding {padding: 0 !important;}
+}
+@media screen and (max-width: 1023px) {.col-feat-grid.item-1, .col-feat-50 { float: none; width: 100%; margin-bottom: 10px; overflow: hidden;  }.col-feat-50{margin: 0}.side-twocol .columns{  width: 48.5%; float: left;}.side-twocol .col-1 {margin: 0 3% 0 0;}.side-twocol .columns a.comment{ display:none}.side-twocol .columns{height: auto;}.tabletsblockdisplay{display: block !important;width: 100% !important;float: none !important; margin: 0 0 10px 0; clear: both !important}
+	.responsive_nav_wrap{display:block}.centered-container .vc_col-sm-12>*>.wpb_wrapper,.content,.main-side,.rh-300-content-area,.rh-300-sidebar,.rh-336-content-area,.rh-336-sidebar,.rh-360-sidebar,.rh-360-content-area,.rh-mini-sidebar,.rh-mini-sidebar-content-area,.sidebar,.vc_row.vc_rehub_container>.vc_col-sm-4,.vc_row.vc_rehub_container>.vc_col-sm-8,.vc_row.vc_rehub_container>.vc_col-sm-8.floatright,.vc_section>.vc_row,body .elementor-section.elementor-section-boxed>.elementor-container{width:100%;float:none;display:block}.rh-container, .full_post_area.content, .full_post_area.rh-container{width:100%;padding-left:15px;padding-right:15px}
+}
+@media(max-width:767px){nav.top_menu, .header_top_wrap, .float-panel-woo-title, #float-panel-woo-area del, .rh-float-panel .float-panel-woo-info {display: none;}.main-nav .rh-container{padding:0}.carousel-style-3 .controls.prev{left:10px}.carousel-style-3 .controls.next{right:10px}body .mobilepadding{padding:0 15px}.hideonmobile{display:none}.showonmobile{display:inline-block}body .disablemobilepadding{padding:0}body .disablemobilemargin{margin:0}body .disablemobileborder{border:none}body .disablemobilealign{text-align:inherit}.disable-bg-on-mobile,.vc_row.disable-bg-on-mobile,.vc_row.disablebgmobile{background:none transparent}.mobilecenterdisplay{text-align:center}.mobilerelative{position:relative}.vc_row .vc_col-sm-4 .sidebar{padding:0}.mobileblockdisplay,.mobileblockdisplay .celldisplay,.mobileblockdisplay .rowdisplay,.tabledisplay.mobileblockdisplay{display:block;width:100%;float:none}.disablefloatmobile.floatleft,.disablefloatmobile.floatright{float:none;margin-right:0;margin-left:0;clear:both}body .mobfont110{font-size:110%}body .mobfont100{font-size:100%}body .mobfont90{font-size:90%}body .mobfont80{font-size:80%}body .mobfont70{font-size:70%}body .moblineheight15{line-height:15px}body .moblineheight20{line-height:20px}body .mobfontnormal{font-size:inherit}.mobmb10{margin-bottom:10px}.newscom_btn_block, .newscom_detail, .featured_newscom_left {display: block;padding-left: 0;padding-right: 0;}.mobflexbasisclear{flex-basis:100%;width:100%}.col_wrap_fifth,.col_wrap_fourth,.col_wrap_six,.col_wrap_three,.col_wrap_two{margin:0 0 20px 0}.col_wrap_fifth .col_item,.col_wrap_fourth .col_item,.col_wrap_six .col_item,.col_wrap_three .col_item{width:47%;margin:0 1.5% 15px 1.5%}.no_padding_wrap .col_wrap_fifth .col_item,.no_padding_wrap .col_wrap_fourth .col_item,.no_padding_wrap .col_wrap_six .col_item,.no_padding_wrap .col_wrap_three .col_item{width:50%;margin:0}.col_wrap_fifth .col_item:nth-child(5n+1),.col_wrap_three .col_item:nth-child(3n+1){clear:none}.col_wrap_fifth .col_item:nth-child(2n+1),.col_wrap_fourth .col_item:nth-child(2n+1),.col_wrap_six .col_item:nth-child(2n+1),.col_wrap_three .col_item:nth-child(2n+1){clear:both}.featured_newscom_left, .newscom_detail {padding: 0;margin: 0 auto 30px auto;}.col-feat-50 .col-feat-grid{ height: 200px}.col-feat-50 {height: auto;} .col-feat-grid.item-1 .text_in_thumb h2{font-size: 21px;line-height: 24px}.re_filter_panel ul.re_filter_ul li span {display: none;}.re_filter_panel ul.re_filter_ul li, .re_filter_panel ul.re_filter_ul li span.active, .re_filter_panel ul.re_filter_ul li span.showfiltermobile{display:block;}.re_filter_panel.tax_enabled_drop {margin: 0 0 65px;}.re_filter_panel .re_tax_dropdown {top: 100%;width: 100%;}
+}
+@media (max-width:600px){.wpsm-five-sixth,.wpsm-four-fifth,.wpsm-one-fifth,.wpsm-one-fourth,.wpsm-one-half,.wpsm-one-sixth,.wpsm-one-third,.wpsm-three-fifth,.wpsm-three-fourth,.wpsm-two-fifth,.wpsm-two-third{width:100%;float:none;margin-right:0;margin-bottom:20px}.wpsm-one-half-mobile{width:48%;margin-right:4%}.wpsm-one-third-mobile{width:30.66%;margin-right:4%}
+}
+@media(max-width:479px){body .scroll-on-mobile{display:block}.scroll-on-mobile .col-feat-grid,.scroll-on-mobile .col-item,.scroll-on-mobile .columns{width:80%;display:inline-block;margin:0;float:none;white-space:normal}
+}
+@media (max-width:479px){.main-side{border:none;box-shadow:none;padding:0}body:not(.dark_body):not(.page-template-template-systempages){background:#fff}body:not(.dark_body) .rh-post-wrapper{background:0 0;padding:0;border:none;box-shadow:none}.showonsmobile{display:block}.hideonsmobile{display:none}.mobilesblockdisplay{display:block;width:100%;float:none;margin-left:0;margin-right:0}.col_wrap_fifth .col_item, .col_wrap_fourth .col_item, .col_wrap_six .col_item, .col_wrap_three .col_item{width:100%;margin:0 0 14px 0}.col_item.two_column_mobile{width:48%;margin:0 1% 25px 1%}.no_padding_wrap.col_item.two_column_mobile{width:50%;margin:0}.owl-item .col_item.two_column_mobile{width:100%;margin:0 auto 12px auto}.col-feat-grid.item-1{height: 260px}.carousel-style-3 .re_carousel{max-height:285px;}	
+	.offer_grid figure img, figure.eq_figure img{height:120px;}.img-mobs-maxh-250 img{max-height:250px;}.img-mobs-maxh-250{height:250px;}
+}
+</style>
+
+<title>Top of blocks with Side contents - Bebes y Mamas</title>
+<meta name="description" content="You can add rh_side_contents shortcode as sticky widget. Check documentation about auto contents shortcodes">
+<meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+<link rel="canonical" href="https://bebesymamas.es/toplisting/side-contents/">
+<meta property="og:locale" content="es_ES">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Top of blocks with Side contents - Bebes y Mamas">
+<meta property="og:description" content="You can add rh_side_contents shortcode as sticky widget. Check documentation about auto contents shortcodes">
+<meta property="og:url" content="https://bebesymamas.es/toplisting/side-contents/">
+<meta property="og:site_name" content="Bebes y Mamas">
+<meta property="article:section" content="Top listings">
+<meta property="og:image" content="https://bebesymamas.es/wp-content/uploads/2020/10/fullim3png.png">
+<meta property="og:image:secure_url" content="https://bebesymamas.es/wp-content/uploads/2020/10/fullim3png.png">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="600">
+<meta property="og:image:alt" content="Top of blocks with Side contents">
+<meta property="og:image:type" content="image/png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Top of blocks with Side contents - Bebes y Mamas">
+<meta name="twitter:description" content="You can add rh_side_contents shortcode as sticky widget. Check documentation about auto contents shortcodes">
+<meta name="twitter:image" content="https://bebesymamas.es/wp-content/uploads/2020/10/fullim3png.png">
+<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":["Organization","Person"],"@id":"https://bebesymamas.es/#person","name":"Bebes y Mamas","url":"https://bebesymamas.es"},{"@type":"WebSite","@id":"https://bebesymamas.es/#website","url":"https://bebesymamas.es","name":"Bebes y Mamas","publisher":{"@id":"https://bebesymamas.es/#person"},"inLanguage":"es"},{"@type":"ImageObject","@id":"https://bebesymamas.es/toplisting/side-contents/#primaryImage","url":"https://bebesymamas.es/wp-content/uploads/2020/10/fullim3png.png","width":"800","height":"600"},{"@type":"WebPage","@id":"https://bebesymamas.es/toplisting/side-contents/#webpage","url":"https://bebesymamas.es/toplisting/side-contents/","name":"Top of blocks with Side contents - Bebes y Mamas","datePublished":"2020-09-16T06:19:54+02:00","dateModified":"2020-09-16T06:19:54+02:00","isPartOf":{"@id":"https://bebesymamas.es/#website"},"primaryImageOfPage":{"@id":"https://bebesymamas.es/toplisting/side-contents/#primaryImage"},"inLanguage":"es"},{"@type":"BlogPosting","headline":"Top of blocks with Side contents - Bebes y Mamas","datePublished":"2020-09-16T06:19:54+02:00","dateModified":"2020-09-16T06:19:54+02:00","author":{"@type":"Person","name":"5bctt"},"publisher":{"@id":"https://bebesymamas.es/#person"},"description":"You can add rh_side_contents shortcode as sticky widget. Check documentation about auto contents shortcodes","@id":"https://bebesymamas.es/toplisting/side-contents/#richSnippet","isPartOf":{"@id":"https://bebesymamas.es/toplisting/side-contents/#webpage"},"image":{"@id":"https://bebesymamas.es/toplisting/side-contents/#primaryImage"},"inLanguage":"es","mainEntityOfPage":{"@id":"https://bebesymamas.es/toplisting/side-contents/#webpage"}}]}</script>
+
+
+
+<link rel="alternate" type="application/rss+xml" title="Bebes y Mamas &raquo; Feed" href="https://bebesymamas.es/feed/">
+<link rel="stylesheet" id="rhstyle-css" href="https://bebesymamas.es/wp-content/themes/rehub-blankchild/style.css?ver=15.0" type="text/css" media="all">
+<link rel="stylesheet" id="rhslidingpanel-css" href="https://bebesymamas.es/wp-content/themes/rehub-theme/css/slidingpanel.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="rhcompare-css" href="https://bebesymamas.es/wp-content/themes/rehub-theme/css/dynamiccomparison.css?ver=1.3" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="https://bebesymamas.es/wp-includes/css/dist/block-library/style.min.css?ver=5.7" type="text/css" media="all">
+<link rel="stylesheet" id="rate-my-post-css" href="https://bebesymamas.es/wp-content/plugins/rate-my-post/public/css/rate-my-post.css?ver=3.3.2" type="text/css" media="all">
+<link rel="stylesheet" id="toc-screen-css" href="https://bebesymamas.es/wp-content/plugins/table-of-contents-plus/screen.min.css?ver=2002" type="text/css" media="all">
+<link rel="stylesheet" id="parent-style-css" href="https://bebesymamas.es/wp-content/themes/rehub-theme/style.css?ver=5.7" type="text/css" media="all">
+<link rel="stylesheet" id="rehubicons-css" href="https://bebesymamas.es/wp-content/themes/rehub-theme/iconstyle.css?ver=15.0" type="text/css" media="all">
+<link rel="stylesheet" id="rhsingle-css" href="https://bebesymamas.es/wp-content/themes/rehub-theme/css/single.css?ver=1.1" type="text/css" media="all">
+<script type="text/javascript" src="https://bebesymamas.es/wp-includes/js/jquery/jquery.min.js?ver=3.5.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://bebesymamas.es/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="rehub-postview-js-extra">
+/* <![CDATA[ */
+var postviewvar = {"rhpost_ajax_url":"https:\/\/bebesymamas.es\/wp-content\/plugins\/rehub-framework\/includes\/rehub_ajax.php","post_id":"727"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://bebesymamas.es/wp-content/plugins/rehub-framework/assets/js/postviews.js?ver=5.7" id="rehub-postview-js"></script>
+<link rel="alternate" type="application/json" href="https://bebesymamas.es/wp-json/wp/v2/posts/727">
+
+
+<link rel="alternate" type="application/json+oembed" href="https://bebesymamas.es/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbebesymamas.es%2Ftoplisting%2Fside-contents%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://bebesymamas.es/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbebesymamas.es%2Ftoplisting%2Fside-contents%2F&amp;format=xml">
+<link rel="dns-prefetch" href="https://cdn.statically.io/">
+<link rel="preconnect" href="https://cdn.statically.io/" crossorigin>
+        <link rel="preload" href="https://bebesymamas.es/wp-content/themes/rehub-theme/fonts/rhicons.woff2?3oibrk" as="font" type="font/woff2" crossorigin="crossorigin"><style type="text/css"> .logo_section_wrap{box-shadow:0 15px 30px 0 rgba(119,123,146,0.1)}.footer-bottom{background-color:#f7f8ff !important}.footer-bottom .footer_widget{border:none !important} .widget .title:after{border-bottom:2px solid #ea0020;}.rehub-main-color-border,nav.top_menu > ul > li.vertical-menu.border-main-color .sub-menu,.rh-main-bg-hover:hover,.wp-block-quote,ul.def_btn_link_tabs li.active a,.wp-block-pullquote{border-color:#ea0020;}.wpsm_promobox.rehub_promobox{border-left-color:#ea0020!important;}.color_link{color:#ea0020 !important;}.search-header-contents{border-top-color:#ea0020;}.featured_slider:hover .score,.top_chart_controls .controls:hover,article.post .wpsm_toplist_heading:before{border-color:#ea0020;}.btn_more:hover,.tw-pagination .current{border:1px solid #ea0020;color:#fff}.rehub_woo_review .rehub_woo_tabs_menu li.current{border-top:3px solid #ea0020;}.gallery-pics .gp-overlay{box-shadow:0 0 0 4px #ea0020 inset;}.post .rehub_woo_tabs_menu li.current,.woocommerce div.product .woocommerce-tabs ul.tabs li.active{border-top:2px solid #ea0020;}.rething_item a.cat{border-bottom-color:#ea0020}nav.top_menu ul li ul.sub-menu{border-bottom:2px solid #ea0020;}.widget.deal_daywoo,.elementor-widget-wpsm_woofeatured .deal_daywoo{border:3px solid #ea0020;padding:20px;background:#fff;}.deal_daywoo .wpsm-bar-bar{background-color:#ea0020 !important} #buddypress div.item-list-tabs ul li.selected a span,#buddypress div.item-list-tabs ul li.current a span,#buddypress div.item-list-tabs ul li a span,.user-profile-div .user-menu-tab > li.active > a,.user-profile-div .user-menu-tab > li.active > a:focus,.user-profile-div .user-menu-tab > li.active > a:hover,.news_in_thumb:hover a.rh-label-string,.news_out_thumb:hover a.rh-label-string,.col-feat-grid:hover a.rh-label-string,.carousel-style-deal .re_carousel .controls,.re_carousel .controls:hover,.openedprevnext .postNavigation a,.postNavigation a:hover,.top_chart_pagination a.selected,.flex-control-paging li a.flex-active,.flex-control-paging li a:hover,.btn_more:hover,body .tabs-menu li:hover,body .tabs-menu li.current,.featured_slider:hover .score,#bbp_user_edit_submit,.bbp-topic-pagination a,.bbp-topic-pagination a,.custom-checkbox label.checked:after,.slider_post .caption,ul.postpagination li.active a,ul.postpagination li:hover a,ul.postpagination li a:focus,.top_theme h5 strong,.re_carousel .text:after,#topcontrol:hover,.main_slider .flex-overlay:hover a.read-more,.rehub_chimp #mc_embed_signup input#mc-embedded-subscribe,#rank_1.rank_count,#toplistmenu > ul li:before,.rehub_chimp:before,.wpsm-members > strong:first-child,.r_catbox_btn,.wpcf7 .wpcf7-submit,.wpsm_pretty_hover li:hover,.wpsm_pretty_hover li.current,.rehub-main-color-bg,.togglegreedybtn:after,.rh-bg-hover-color:hover a.rh-label-string,.rh-main-bg-hover:hover,.rh_wrapper_video_playlist .rh_video_currently_playing,.rh_wrapper_video_playlist .rh_video_currently_playing.rh_click_video:hover,.rtmedia-list-item .rtmedia-album-media-count,.tw-pagination .current,.dokan-dashboard .dokan-dash-sidebar ul.dokan-dashboard-menu li.active,.dokan-dashboard .dokan-dash-sidebar ul.dokan-dashboard-menu li:hover,.dokan-dashboard .dokan-dash-sidebar ul.dokan-dashboard-menu li.dokan-common-links a:hover,#ywqa-submit-question,.woocommerce .widget_price_filter .ui-slider .ui-slider-range,.rh-hov-bor-line > a:after,nav.top_menu > ul:not(.off-canvas) > li > a:after,.rh-border-line:after,.wpsm-table.wpsm-table-main-color table tr th,.rehub_chimp_flat #mc_embed_signup input#mc-embedded-subscribe,.rh-hov-bg-main-slide:before,.rh-hov-bg-main-slidecol .col_item:before{background:#ea0020;}@media (max-width:767px){.postNavigation a{background:#ea0020;}}.rh-main-bg-hover:hover,.rh-main-bg-hover:hover .whitehovered,.user-profile-div .user-menu-tab > li.active > a{color:#fff !important} a,.carousel-style-deal .deal-item .priced_block .price_count ins,nav.top_menu ul li.menu-item-has-children ul li.menu-item-has-children > a:before,.top_chart_controls .controls:hover,.flexslider .fa-pulse,.footer-bottom .widget .f_menu li a:hover,.comment_form h3 a,.bbp-body li.bbp-forum-info > a:hover,.bbp-body li.bbp-topic-title > a:hover,#subscription-toggle a:before,#favorite-toggle a:before,.aff_offer_links .aff_name a,.rh-deal-price,.commentlist .comment-content small a,.related_articles .title_cat_related a,article em.emph,.campare_table table.one td strong.red,.sidebar .tabs-item .detail p a,.footer-bottom .widget .title span,footer p a,.welcome-frase strong,article.post .wpsm_toplist_heading:before,.post a.color_link,.categoriesbox:hover h3 a:after,.bbp-body li.bbp-forum-info > a,.bbp-body li.bbp-topic-title > a,.widget .title i,.woocommerce-MyAccount-navigation ul li.is-active a,.category-vendormenu li.current a,.deal_daywoo .title,.rehub-main-color,.wpsm_pretty_colored ul li.current a,.wpsm_pretty_colored ul li.current,.rh-heading-hover-color:hover h2 a,.rh-heading-hover-color:hover h3 a,.rh-heading-hover-color:hover h4 a,.rh-heading-hover-color:hover h5 a,.rh-heading-hover-color:hover h3,.rh-heading-hover-color:hover h2,.rh-heading-hover-color:hover h4,.rh-heading-hover-color:hover h5,.rh-heading-hover-color:hover .rh-heading-hover-item a,.rh-heading-icon:before,.widget_layered_nav ul li.chosen a:before,.wp-block-quote.is-style-large p,ul.page-numbers li span.current,ul.page-numbers li a:hover,ul.page-numbers li.active a,.page-link > span:not(.page-link-title),blockquote:not(.wp-block-quote) p,span.re_filtersort_btn:hover,span.active.re_filtersort_btn,.deal_daywoo .price,div.sortingloading:after{color:#ea0020;} .page-link > span:not(.page-link-title),.widget.widget_affegg_widget .title,.widget.top_offers .title,.widget.cegg_widget_products .title,header .header_first_style .search form.search-form [type="submit"],header .header_eight_style .search form.search-form [type="submit"],.filter_home_pick span.active,.filter_home_pick span:hover,.filter_product_pick span.active,.filter_product_pick span:hover,.rh_tab_links a.active,.rh_tab_links a:hover,.wcv-navigation ul.menu li.active,.wcv-navigation ul.menu li:hover a,form.search-form [type="submit"],.rehub-sec-color-bg,input#ywqa-submit-question,input#ywqa-send-answer,.woocommerce button.button.alt,.tabsajax span.active.re_filtersort_btn,.wpsm-table.wpsm-table-sec-color table tr th,.rh-slider-arrow,.rh-hov-bg-sec-slide:before,.rh-hov-bg-sec-slidecol .col_item:before{background:#999999 !important;color:#fff !important;outline:0}.widget.widget_affegg_widget .title:after,.widget.top_offers .title:after,.widget.cegg_widget_products .title:after{border-top-color:#999999 !important;}.page-link > span:not(.page-link-title){border:1px solid #999999;}.page-link > span:not(.page-link-title),.header_first_style .search form.search-form [type="submit"] i{color:#fff !important;}.rh_tab_links a.active,.rh_tab_links a:hover,.rehub-sec-color-border,nav.top_menu > ul > li.vertical-menu.border-sec-color > .sub-menu,.rh-slider-thumbs-item--active{border-color:#999999}.rh_wrapper_video_playlist .rh_video_currently_playing,.rh_wrapper_video_playlist .rh_video_currently_playing.rh_click_video:hover{background-color:#999999;box-shadow:1200px 0 0 #999999 inset;}.rehub-sec-color{color:#999999} form.search-form input[type="text"]{border-radius:4px}.news .priced_block .price_count,.blog_string .priced_block .price_count,.main_slider .price_count{margin-right:5px}.right_aff .priced_block .btn_offer_block,.right_aff .priced_block .price_count{border-radius:0 !important}form.search-form.product-search-form input[type="text"]{border-radius:4px 0 0 4px;}form.search-form [type="submit"]{border-radius:0 4px 4px 0;}.rtl form.search-form.product-search-form input[type="text"]{border-radius:0 4px 4px 0;}.rtl form.search-form [type="submit"]{border-radius:4px 0 0 4px;}.price_count,.rehub_offer_coupon,#buddypress .dir-search input[type=text],.gmw-form-wrapper input[type=text],.gmw-form-wrapper select,#buddypress a.button,.btn_more,#main_header .wpsm-button,#rh-header-cover-image .wpsm-button,#wcvendor_image_bg .wpsm-button,input[type="text"],textarea,input[type="tel"],input[type="password"],input[type="email"],input[type="url"],input[type="number"],.def_btn,input[type="submit"],input[type="button"],input[type="reset"],.rh_offer_list .offer_thumb .deal_img_wrap,.grid_onsale,.rehub-main-smooth,.re_filter_instore span.re_filtersort_btn:hover,.re_filter_instore span.active.re_filtersort_btn,#buddypress .standard-form input[type=text],#buddypress .standard-form textarea,.blacklabelprice{border-radius:4px}.news-community,.woocommerce .products.grid_woo .product,.rehub_chimp #mc_embed_signup input.email,#mc_embed_signup input#mc-embedded-subscribe,.rh_offer_list,.woo-tax-logo,#buddypress div.item-list-tabs ul li a,#buddypress form#whats-new-form,#buddypress div#invite-list,#buddypress #send-reply div.message-box,.rehub-sec-smooth,.rate-bar-bar,.rate-bar,#wcfm-main-contentainer #wcfm-content,.wcfm_welcomebox_header{border-radius:5px} .woocommerce .woo-button-area .masked_coupon,.woocommerce a.woo_loop_btn,.woocommerce .button.checkout,.woocommerce input.button.alt,.woocommerce a.add_to_cart_button:not(.flat-woo-btn),.woocommerce-page a.add_to_cart_button:not(.flat-woo-btn),.woocommerce .single_add_to_cart_button,.woocommerce div.product form.cart .button,.woocommerce .checkout-button.button,.priced_block .btn_offer_block,.priced_block .button,.rh-deal-compact-btn,input.mdf_button,#buddypress input[type="submit"],#buddypress input[type="button"],#buddypress input[type="reset"],#buddypress button.submit,.wpsm-button.rehub_main_btn,.wcv-grid a.button,input.gmw-submit,#ws-plugin--s2member-profile-submit,#rtmedia_create_new_album,input[type="submit"].dokan-btn-theme,a.dokan-btn-theme,.dokan-btn-theme,#wcfm_membership_container a.wcfm_submit_button,.woocommerce button.button,.rehub-main-btn-bg{background:none #296bef !important;color:#ffffff !important;fill:#ffffff !important;border:none !important;text-decoration:none !important;outline:0;box-shadow:-1px 6px 19px rgba(41,107,239,0.2) !important;border-radius:4px !important;}.rehub-main-btn-bg > a{color:#ffffff !important;}.woocommerce a.woo_loop_btn:hover,.woocommerce .button.checkout:hover,.woocommerce input.button.alt:hover,.woocommerce a.add_to_cart_button:not(.flat-woo-btn):hover,.woocommerce-page a.add_to_cart_button:not(.flat-woo-btn):hover,.woocommerce a.single_add_to_cart_button:hover,.woocommerce-page a.single_add_to_cart_button:hover,.woocommerce div.product form.cart .button:hover,.woocommerce-page div.product form.cart .button:hover,.woocommerce .checkout-button.button:hover,.priced_block .btn_offer_block:hover,.wpsm-button.rehub_main_btn:hover,#buddypress input[type="submit"]:hover,#buddypress input[type="button"]:hover,#buddypress input[type="reset"]:hover,#buddypress button.submit:hover,.small_post .btn:hover,.ap-pro-form-field-wrapper input[type="submit"]:hover,.wcv-grid a.button:hover,#ws-plugin--s2member-profile-submit:hover,.rething_button .btn_more:hover,#wcfm_membership_container a.wcfm_submit_button:hover,.woocommerce button.button:hover,.rehub-main-btn-bg:hover,.rehub-main-btn-bg:hover > a{background:none #296bef !important;color:#ffffff !important;box-shadow:-1px 6px 13px rgba(41,107,239,0.4) !important;border-color:transparent;}.rehub_offer_coupon:hover{border:1px dashed #296bef;}.rehub_offer_coupon:hover i.far,.rehub_offer_coupon:hover i.fal,.rehub_offer_coupon:hover i.fas{color:#296bef}.re_thing_btn .rehub_offer_coupon.not_masked_coupon:hover{color:#296bef !important}.woocommerce a.woo_loop_btn:active,.woocommerce .button.checkout:active,.woocommerce .button.alt:active,.woocommerce a.add_to_cart_button:not(.flat-woo-btn):active,.woocommerce-page a.add_to_cart_button:not(.flat-woo-btn):active,.woocommerce a.single_add_to_cart_button:active,.woocommerce-page a.single_add_to_cart_button:active,.woocommerce div.product form.cart .button:active,.woocommerce-page div.product form.cart .button:active,.woocommerce .checkout-button.button:active,.wpsm-button.rehub_main_btn:active,#buddypress input[type="submit"]:active,#buddypress input[type="button"]:active,#buddypress input[type="reset"]:active,#buddypress button.submit:active,.ap-pro-form-field-wrapper input[type="submit"]:active,.wcv-grid a.button:active,#ws-plugin--s2member-profile-submit:active,input[type="submit"].dokan-btn-theme:active,a.dokan-btn-theme:active,.dokan-btn-theme:active,.woocommerce button.button:active,.rehub-main-btn-bg:active{background:none #296bef !important;box-shadow:0 1px 0 #999 !important;top:2px;color:#ffffff !important;}.rehub_btn_color{background-color:#296bef;border:1px solid #296bef;color:#ffffff;text-shadow:none}.rehub_btn_color:hover{color:#ffffff;background-color:#296bef;border:1px solid #296bef;}.rething_button .btn_more{border:1px solid #296bef;color:#296bef;}.rething_button .priced_block.block_btnblock .price_count{color:#296bef;font-weight:normal;}.widget_merchant_list .buttons_col{background-color:#296bef !important;}.widget_merchant_list .buttons_col a{color:#ffffff !important;}.rehub-svg-btn-fill svg{fill:#296bef;}.rehub-svg-btn-stroke svg{stroke:#296bef;}@media (max-width:767px){#float-panel-woo-area{border-top:1px solid #296bef}}.re-line-badge.badge_1,.re-ribbon-badge.badge_1 span{background:#ff0000;}.re-line-badge.re-line-table-badge.badge_1:before{border-top-color:#ff0000}.re-line-badge.re-line-table-badge.badge_1:after{border-bottom-color:#ff0000}.re-line-badge.badge_2,.re-ribbon-badge.badge_2 span{background:#00ceff;}.re-line-badge.re-line-table-badge.badge_2:before{border-top-color:#00ceff}.re-line-badge.re-line-table-badge.badge_2:after{border-bottom-color:#00ceff}.re-line-badge.badge_3,.re-ribbon-badge.badge_3 span{background:#ffa500;}.re-line-badge.re-line-table-badge.badge_3:before{border-top-color:#ffa500}.re-line-badge.re-line-table-badge.badge_3:after{border-bottom-color:#ffa500}</style><style>body{font-family:-apple-system,system-ui,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Fira Sans','Droid Sans','Helvetica Neue',sans-serif}code{font-family:Menlo,Consolas,Monaco,Liberation Mono,Lucida Console,monospace}</style></head>
+<body class="post-template-default single single-post postid-727 single-format-standard elementor-default elementor-kit-12">
+	               
+
+<div class="rh-outer-wrap">
+    <div id="top_ankor"></div>
+    
+            <header id="main_header" class="white_style">
+            <div class="header_wrap">
+                                                                
+<div class="header_five_style logo_section_wrap header_one_row">
+    <div class="rh-container tabletblockdisplay mb0 disabletabletpadding">
+        <div class="logo-section rh-flex-center-align tabletblockdisplay disabletabletpadding mb0">
+            <div class="logo hideontablet">
+                                    <a href="https://bebesymamas.es" class="logo_image"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Bebes y Mamas" height="" width="" data-loading="lazy" data-src="https://cdn.statically.io/img/reviewit.wpsoul.net/wp-content/uploads/2020/10/reviewlogo.png?quality=80&amp;f=auto"></a>
+                       
+            </div> 
+            
+            <div class="main-nav mob-logo-enabled rh-flex-grow1 rh-flex-center-align rh-flex-justify-center  white_style">      
+                <nav class="top_menu"><ul id="menu-main-menu" class="menu"><li id="menu-item-775" class="rh-subitem-menus menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="#">Special layouts</a>
+<ul class="sub-menu">
+	<li id="menu-item-1130" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="#">Post Layouts</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1132" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="https://bebesymamas.es/technologies/10-biggest-technology-companies/">Gutencon Review with Autocontents</a></li>
+		<li id="menu-item-1301" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="https://bebesymamas.es/cameras/review-accilantis/">Video Block Post layout</a></li>
+		<li id="menu-item-1133" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="https://bebesymamas.es/cameras/top-offer-block/">Big offer block in top</a></li>
+		<li id="menu-item-1134" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="https://bebesymamas.es/cameras/review-with-blocks/">Review with blocks post layout</a></li>
+		<li id="menu-item-1135" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="https://bebesymamas.es/cameras/simple-post-layout/">Corner Button Post Layout</a></li>
+		<li id="menu-item-1142" class="menu-item menu-item-type-post_type menu-item-object-blog"><a href="https://bebesymamas.es/blog/optimized-for-reading-layout/">Optimized for reading Layout</a></li>
+		<li id="menu-item-1141" class="menu-item menu-item-type-post_type menu-item-object-blog"><a href="https://bebesymamas.es/blog/simple-blog-post/">Simple Blog post or guide</a></li>
+		<li id="menu-item-1140" class="menu-item menu-item-type-post_type menu-item-object-blog"><a href="https://bebesymamas.es/blog/full-width-image-post-layout/">Full width image Post layout</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1131" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="#">Top Listing layouts</a>
+	<ul class="sub-menu">
+		<li id="menu-item-1137" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://bebesymamas.es/offer-listing-page/">Offer Listing page</a></li>
+		<li id="menu-item-1138" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="https://bebesymamas.es/toplisting/top-block-and-sticky-side/">Side sticky table of contents</a></li>
+		<li id="menu-item-1139" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="https://bebesymamas.es/toplisting/top-blocks/">Top list shortcode</a></li>
+		<li id="menu-item-1145" class="menu-item menu-item-type-custom menu-item-object-custom"><a target="_blank" href="https://recart.wpsoul.com/top-review-list/">Wocommerce listing page</a></li>
+		<li id="menu-item-1146" class="menu-item menu-item-type-custom menu-item-object-custom"><a target="_blank" href="http://recompare.wpsoul.net/versus-page/">Versus page</a></li>
+		<li id="menu-item-1186" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="https://bebesymamas.es/cameras/">Category description</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-1129" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://bebesymamas.es/tutorials/">Tutorials</a></li>
+</ul></nav>                <div class="responsive_nav_wrap rh_mobile_menu">
+                    <div id="dl-menu" class="dl-menuwrapper rh-flex-center-align">
+                        <button id="dl-trigger" class="dl-trigger" aria-label="Menu">
+                            <svg viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <line stroke-linecap="round" id="rhlinemenu_1" y2="7" x2="29" y1="7" x1="3"></line>
+                                    <line stroke-linecap="round" id="rhlinemenu_2" y2="16" x2="18" y1="16" x1="3"></line>
+                                    <line stroke-linecap="round" id="rhlinemenu_3" y2="25" x2="26" y1="25" x1="3"></line>
+                                </g>
+                            </svg>
+                        </button>
+                        <div id="mobile-menu-icons" class="rh-flex-center-align rh-flex-right-align">
+                            <button class="icon-search-onclick" aria-label="Search"><i class="rhicon rhi-search"></i></button>
+                            <div id="slide-menu-mobile"></div>
+                        </div>
+                    </div>
+                                    </div>
+                <div class="search-header-contents"><form role="search" method="get" class="search-form" action="https://bebesymamas.es/">
+  	<input type="text" name="s" placeholder="BUSCAR..." data-posttype="post">
+  	<input type="hidden" name="post_type" value="post">  	<button type="submit" class="btnsearch" aria-label="BUSCAR..."><i class="rhicon rhi-search"></i></button>
+</form>
+</div>
+            </div>  
+             
+                    
+            <div class="header-actions-logo">
+                <div class="rh-flex-center-align">
+                                                             
+                                            <div class="celldisplay rh-search-icon rh-header-icon text-center">
+                            <span class="icon-search-onclick cursorpointer" aria-label="Search"></span>
+                        </div>
+                      
+                                                                    <div class="celldisplay text-center">
+                            <a href="https://bebesymamas.es/wishlist/" class="rh-header-icon mobileinmenu rh-wishlistmenu-link">
+                                                                <span class="rhicon rhi-hearttip position-relative">
+                                    <span class="rh-icon-notice rhhidden rehub-main-color-bg"></span>                                </span>
+                            </a>                           
+                        </div>
+                                                                               
+                                         
+                </div> 
+            </div>                        
+                                                                    
+        </div>
+    </div>
+</div>
+  
+
+            </div>  
+        </header>
+            
+
+    
+<div class="rh_post_layout_default rh_post_layout_outside mb20" id="rh_woo_layout_inimage">
+<style scoped>
+    #rh_woo_layout_inimage{background: rgba(128,53,190,0.05)}
+</style>
+<div class="rh-container"> 
+    <div class="pt20 clearfix pb10">
+        
+            <div class="title_single_area mb0 rh-flex-eq-height rh-flex-justify-btw flowhidden">
+                <div class="rh-336-content-area">
+                <div class="breadcrumb font90 rh_opacity_7"><a href="https://bebesymamas.es/">Inicio</a> &raquo; <span><a href="https://bebesymamas.es/toplisting/">Top listings</a></span> &raquo; <span class="current">Top of blocks with Side contents</span></div> 
+                    <div class="mb15 clearfix"></div>
+                    <div class="lineheight20 rh-flex-center-align mb10"><div class="rh-cat-list-title"><a class="rh-cat-label-title rh-cat-7" href="https://bebesymamas.es/toplisting/" title="Ver todos las publicaciones en Top listings">Top listings</a></div></div>                         
+                    <h1>Top of blocks with Side contents</h1>
+                    <div class="mb20 font120 rh_opacity_5">You can add rh_side_contents shortcode as sticky widget. Check documentation about auto contents shortcodes</div> 
+                    <div class="meta post-meta mb20 flowhidden">
+                        					<span class="postview_meta">19343 </span>
+			
+	 
+                    </div> 
+                                         
+                                                                    
+                </div>
+                                                    <div class="post-head-image-part position-relative rh-336-sidebar mb0 rh-flex-center-align rh-flex-justify-center mobmb15">
+                        <img width="467" height="350" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="" alt="" max_height="200px" emptyimage="https://bebesymamas.es/wp-content/themes/rehub-theme/images/default/noimage_450_350.png" no_thumb="https://bebesymamas.es/wp-content/themes/rehub-theme/images/default/noimage_450_350.png" sizes="(max-width: 800px) 100vw, 800px" data-loading="lazy" data-src="https://cdn.statically.io/img/dev.bebesymamas.es/wp-content/uploads/2020/10/fullim3png.png?quality=80&amp;f=auto" data-srcset="https://cdn.statically.io/img/dev.bebesymamas.es/wp-content/uploads/2020/10/fullim3png.png?w=400&amp;quality=80&amp;f=auto 400w,
+https://cdn.statically.io/img/dev.bebesymamas.es/wp-content/uploads/2020/10/fullim3png.png?w=800&amp;quality=80&amp;f=auto 800w,
+">                    </div>
+                            </div>            
+    </div>
+</div>
+
+</div>
+<div class="rh-container"> 
+    <div class="rh-content-wrap clearfix">   
+        
+        <div class="main-side single clearfix">
+            <div class="rh-post-wrapper mb35">            
+                                                        <article class="post-inner post post-727 type-post status-publish format-standard has-post-thumbnail hentry category-toplisting" id="post-727">                                      
+                                                  
+
+                        
+<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+
+
+
+<span id="more-727"></span>
+
+
+
+<p>Et pharetra pharetra massa massa. Luctus venenatis lectus magna fringilla urna porttitor. Sed nisi lacus sed viverra tellus in hac habitasse platea. Dui accumsan sit amet nulla. Mus mauris vitae ultricies leo integer malesuada nunc vel. Aliquam ut porttitor leo a diam sollicitudin tempor. Urna et pharetra pharetra massa massa ultricies. Massa eget egestas purus viverra accumsan in. Id donec ultrices tincidunt arcu non sodales neque sodales. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. Leo in vitae turpis massa. Egestas pretium aenean pharetra magna ac placerat. Sed nisi lacus sed viverra.</p>
+
+
+
+<h2>Best service of this year</h2>
+
+
+
+    
+     
+ <div class="bigofferblock margincenter mb30 pt20 pl20 pr20" style="">
+<div class="col_wrap_two mb0">
+    <div class="offerbox_big_wrap flowhidden">
+        <div class="image position-relative text-center col_item mobileblockdisplay img-maxh-350 img-width-auto">
+            <a class="re_track_btn" href="https://www.ebay.com" target="_blank" rel="nofollow sponsored noopener">
+                <img class="nolazyftheme" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="500" alt="First Deal offer of something" data-loading="lazy" data-src="https://cdn.statically.io/img/reviewit.wpsoul.net/wp-content/uploads/2020/10/imagen4.jpg?quality=80&amp;f=auto">                                    <span class="sale_a_proc">
+                        -10%                    </span>
+                                                   
+            </a>                             
+        </div>
+        <div class="product-summary col_item mobileblockdisplay">         
+            <h3 class="product_title entry-title font150">
+                <a class="re_track_btn" href="https://www.ebay.com" target="_blank" rel="nofollow sponsored noopener">
+                    First Deal offer of something 
+                </a>
+            </h3>
+                            <div class="cegg-rating mb15 flowhidden font130">
+                    <span class="orangecolor">&#9733;</span><span class="orangecolor">&#9733;</span><span class="orangecolor">&#9733;</span><span class="orangecolor">&#9733;</span><span class="orangecolor">&#9733;</span>                </div>   
+                        
+
+                            <div class="deal-box-price font200 fontbold mb10 redbrightcolor redcolor">
+                    $982.99                                        <span class="retail-old font70 lightgreycolor retail-old">
+                      <strike>$999.99</strike>
+                    </span>
+                                                          
+                </div>                
+            
+                            <div class="rev_disclaimer font70 greencolor lineheight15 mb20">Buy Now and get 10% discount</div>
+                        
+                                              
+            <div class="buttons_col mb25 rh_big_btn_inline">
+                <div class="priced_block clearfix">
+                    <div>
+                                                    <a class="re_track_btn btn_offer_block" href="https://www.ebay.com" target="_blank" rel="nofollow sponsored noopener">
+                                                                    Buy this item                                                            </a> 
+                                                                      
+                    </div>
+                    <div class="rehub_offer_coupon mt15 not_masked_coupon" data-clipboard-text="AWESOME COUPON"><i class="rhicon rhi-scissors fa-rotate-180"></i><span class="coupon_text">AWESOME COUPON</span></div><div class="time_offer">125 d&iacute;as restantes</div>                    
+                </div>                
+            </div>   
+              
+                            <div class="bigofferdesc">You can use here external links, images, coupons, etc</div>                                                   
+                          
+        </div>           
+    </div> 
+</div>
+</div>  
+<div class="clearfix"></div> 
+
+<div class="rate_bar_wrap"><div class="wpsm-one-half"><div class="wpsm_pros"><div class="title_pros">Positive</div><ul><li>Lorem ipsum dolor sit amet</li><li>Nunc a libero at sapien</li><li>Nam tempus, est ac fringilla bibendum, mi dolor faucibus purus.</li></ul></div></div><div class="wpsm-one-half"><div class="wpsm_cons"><div class="title_cons">Negatives</div><ul><li>Sed malesuada pharetra erat, eu viverra eros rutrum sit amet.</li><li>Aliquam commodo auctor facilisis</li></ul></div></div></div>
+
+
+<p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
+
+
+
+<h3>Speeds</h3>
+
+
+
+<p>It&rsquo;s also&nbsp;<strong>super fast</strong> service you can get. Our most recent super awesomespeed tests recorded 185Mbps download speeds for of 95Mbps without a servic in running stage &ndash; that&rsquo;s a more 22% loss in speed. In that fact, if you want to give to a server in another country then Subject is the&nbsp;<strong>fastest&nbsp;</strong>service you can get. Want proo or feedbacks? Check the speeds we recorded while testing this subject:</p>
+
+
+
+<figure class="wp-block-table is-style-regular"><table><thead><tr><th><strong>SPEC</strong></th><th></th></tr></thead><tbody><tr><td>Maximum Speed</td><td>Ascent: 16.4&prime; fps / 5 m/s Descent: 9.8&prime; / 3 m</td></tr><tr><td>Hover Accuracy</td><td>Vertical: &plusmn;3.9&Prime; / 10 cm Horizontal: &plusmn;3.3&prime; / 1 m</td></tr><tr><td>Maximum Altitude</td><td>Above Sea Level: 19,685&prime; / 6000 m</td></tr><tr><td>Flight Time</td><td>23 minutes (depending on conditions)</td></tr><tr><td>GPS Mode</td><td>GPS / GLONASS</td></tr></tbody></table></figure>
+
+
+<div class="wpsm_box blue_type nonefloat_box mb30" style="text-align:left; width:auto"><i></i><span class="label-info">02/11/2020 Update</span><div>
+			Praesent adipiscing. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. 
+			</div></div>
+
+
+<p>Et pharetra pharetra massa massa. Luctus venenatis lectus magna fringilla urna porttitor. Sed nisi lacus sed viverra tellus in hac habitasse platea. Dui accumsan sit amet nulla. Mus mauris vitae ultricies leo integer malesuada nunc vel. Aliquam ut porttitor leo a diam sollicitudin tempor. Urna et pharetra pharetra massa massa ultricies. Massa eget egestas purus viverra accumsan in. Id donec ultrices tincidunt arcu non sodales neque sodales. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. Leo in vitae turpis massa. Egestas pretium aenean pharetra magna ac placerat. Sed nisi lacus sed viverra.</p>
+
+
+
+<h3>Price and Supports</h3>
+
+
+
+<p>Perhaps the biggest selling point, though, is that Subject offers all this for a price&nbsp;<strong>is cheaper than early</strong>&nbsp;on a three-year contract &ndash; that&rsquo;s&nbsp;<strong>almost half the price</strong>&nbsp;of the best subject&rsquo;s cheapest deal. There&rsquo;s no doubt, live chat is available 24/7 and gives you help you should you need for any question, and you can get a refund within 30 days if you&rsquo;re not satisfied.</p>
+
+
+<div class="wpsm_checklist wpsm_pretty_list"><ul><li>Urna et pharetra pharetra massa Egestas pretium aenean pharetra magna ac placerat</li><li>Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. Leo in vitae turpis massa. Egestas pretium aenean pharetra magna ac placerat</li><li>Id donec ultrices tincidunt arcu non sodales neque sodales. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. Leo in vitae turpis massa.</li></ul></div>
+
+
+<p>Aliquam ut porttitor leo a diam sollicitudin tempor. Urna et pharetra pharetra massa massa ultricies. Massa eget egestas purus viverra accumsan in. Id donec ultrices tincidunt arcu non sodales neque sodales. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. Leo in vitae turpis massa. Egestas pretium aenean pharetra magna ac placerat. Aliquam ut porttitor leo a diam sollicitudin tempor. Urna et pharetra pharetra massa massa ultricies. Massa eget egestas purus viverra accumsan in. Id donec ultrices tincidunt arcu non sodales neque sodales. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. Leo in vitae turpis massa. Egestas pretium aenean pharetra magna ac placerat.</p>
+
+
+
+<h2>Best computer of year</h2>
+
+
+
+    
+     
+ <div class="bigofferblock margincenter mb30 pt20 pl20 pr20" style="">
+<div class="col_wrap_two mb0">
+    <div class="offerbox_big_wrap flowhidden">
+        <div class="image position-relative text-center col_item mobileblockdisplay img-maxh-350 img-width-auto">
+            <a class="re_track_btn" href="https://www.amazon.com" target="_blank" rel="nofollow sponsored noopener">
+                <img class="nolazyftheme" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="500" alt="Megacomputer with quantum" data-loading="lazy" data-src="https://cdn.statically.io/img/reviewit.wpsoul.net/wp-content/uploads/2020/10/imagen2.jpg?quality=80&amp;f=auto">                                    <span class="sale_a_proc">
+                        -10%                    </span>
+                                                   
+            </a>                             
+        </div>
+        <div class="product-summary col_item mobileblockdisplay">         
+            <h3 class="product_title entry-title font150">
+                <a class="re_track_btn" href="https://www.amazon.com" target="_blank" rel="nofollow sponsored noopener">
+                    Megacomputer with quantum 
+                </a>
+            </h3>
+                            <div class="cegg-rating mb15 flowhidden font130">
+                    <span class="orangecolor">&#9733;</span><span class="orangecolor">&#9733;</span><span class="orangecolor">&#9733;</span><span class="orangecolor">&#9733;</span><span class="orangecolor">&#9733;</span>                </div>   
+                        
+
+                            <div class="deal-box-price font200 fontbold mb10 redbrightcolor redcolor">
+                    $92.99                                        <span class="retail-old font70 lightgreycolor retail-old">
+                      <strike>$99.99</strike>
+                    </span>
+                                                          
+                </div>                
+            
+                            <div class="rev_disclaimer font70 greencolor lineheight15 mb20">Buy Now and get 10% discount</div>
+                        
+                                              
+            <div class="buttons_col mb25 rh_big_btn_inline">
+                <div class="priced_block clearfix">
+                    <div>
+                                                    <a class="re_track_btn btn_offer_block" href="https://www.amazon.com" target="_blank" rel="nofollow sponsored noopener">
+                                                                    Buy this item                                                            </a> 
+                                                                      
+                    </div>
+                    <div class="rehub_offer_coupon mt15 not_masked_coupon" data-clipboard-text="AWESOME COUPON"><i class="rhicon rhi-scissors fa-rotate-180"></i><span class="coupon_text">AWESOME COUPON</span></div><div class="time_offer">125 d&iacute;as restantes</div>                    
+                </div>                
+            </div>   
+              
+                            <div class="bigofferdesc">This is custom description for Post offer block</div>                                                   
+                          
+        </div>           
+    </div> 
+</div>
+</div>  
+<div class="clearfix"></div> 
+
+
+<p>Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+
+
+<div class="wpsm_box error_type nonefloat_box mb30" style="text-align:left; width:auto"><i></i><div>
+			Praesent adipiscing. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. 
+			</div></div>
+
+
+<p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
+
+
+
+<figure class="wp-block-table is-style-regular"><table><thead><tr><th><strong>SPEC</strong></th><th></th></tr></thead><tbody><tr><td>Maximum Speed</td><td>Ascent: 16.4&prime; fps / 5 m/s Descent: 9.8&prime; / 3 m</td></tr><tr><td>Hover Accuracy</td><td>Vertical: &plusmn;3.9&Prime; / 10 cm Horizontal: &plusmn;3.3&prime; / 1 m</td></tr><tr><td>Maximum Altitude</td><td>Above Sea Level: 19,685&prime; / 6000 m</td></tr><tr><td>Flight Time</td><td>23 minutes (depending on conditions)</td></tr><tr><td>GPS Mode</td><td>GPS / GLONASS</td></tr></tbody></table></figure>
+
+
+<div class="wpsm_box blue_type nonefloat_box mb30" style="text-align:left; width:auto"><i></i><span class="label-info">02/11/2020 Update</span><div>
+			Praesent adipiscing. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. 
+			</div></div>
+
+<div class="wpsm_checklist wpsm_pretty_list"><ul><li>Urna et pharetra pharetra massa Egestas pretium aenean pharetra magna ac placerat</li><li>Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. Leo in vitae turpis massa. Egestas pretium aenean pharetra magna ac placerat</li><li>Id donec ultrices tincidunt arcu non sodales neque sodales. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. Leo in vitae turpis massa.</li></ul></div>
+
+
+<p>Aliquam ut porttitor leo a diam sollicitudin tempor. Urna et pharetra pharetra massa massa ultricies. Massa eget egestas purus viverra accumsan in. Id donec ultrices tincidunt arcu non sodales neque sodales. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. Leo in vitae turpis massa. Egestas pretium aenean pharetra magna ac placerat. Aliquam ut porttitor leo a diam sollicitudin tempor. Urna et pharetra pharetra massa massa ultricies. Massa eget egestas purus viverra accumsan in. Id donec ultrices tincidunt arcu non sodales neque sodales. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare. Leo in vitae turpis massa. Egestas pretium aenean pharetra magna ac placerat.</p>
+
+
+
+<h2>Best bank of year</h2>
+
+
+
+    
+     
+ <div class="bigofferblock margincenter mb30 pt20 pl20 pr20" style="">
+<div class="col_wrap_two mb0">
+    <div class="offerbox_big_wrap flowhidden">
+        <div class="image position-relative text-center col_item mobileblockdisplay img-maxh-350 img-width-auto">
+            <a class="re_track_btn" href="https://www.amazon.com" target="_blank" rel="nofollow sponsored noopener">
+                <img class="nolazyftheme" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="500" alt="Something another cool " data-loading="lazy" data-src="https://cdn.statically.io/img/reviewit.wpsoul.net/wp-content/uploads/2020/10/imagen3.jpg?quality=80&amp;f=auto">                                    <span class="sale_a_proc">
+                        -10%                    </span>
+                                                   
+            </a>                             
+        </div>
+        <div class="product-summary col_item mobileblockdisplay">         
+            <h3 class="product_title entry-title font150">
+                <a class="re_track_btn" href="https://www.amazon.com" target="_blank" rel="nofollow sponsored noopener">
+                    Something another cool  
+                </a>
+            </h3>
+                            <div class="cegg-rating mb15 flowhidden font130">
+                    <span class="orangecolor">&#9733;</span><span class="orangecolor">&#9733;</span><span class="orangecolor">&#9733;</span><span class="orangecolor">&#9733;</span><span class="orangecolor">&#9733;</span>                </div>   
+                        
+
+            
+                            <div class="rev_disclaimer font70 greencolor lineheight15 mb20">Buy Now and get 10% discount</div>
+                        
+                                              
+            <div class="buttons_col mb25 rh_big_btn_inline">
+                <div class="priced_block clearfix">
+                    <div>
+                                                    <a class="re_track_btn btn_offer_block" href="https://www.amazon.com" target="_blank" rel="nofollow sponsored noopener">
+                                                                    See at Amazon.com                                                            </a> 
+                                                                      
+                    </div>
+                    <div class="rehub_offer_coupon mt15 not_masked_coupon" data-clipboard-text="AWESOME COUPON"><i class="rhicon rhi-scissors fa-rotate-180"></i><span class="coupon_text">AWESOME COUPON</span></div><div class="time_offer">125 d&iacute;as restantes</div>                    
+                </div>                
+            </div>   
+              
+                          
+        </div>           
+    </div> 
+</div>
+</div>  
+<div class="clearfix"></div> 
+
+
+<p>Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. </p>
+
+
+
+<blockquote class="wp-block-quote is-style-large"><p>Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada.</p></blockquote>
+
+
+
+<p>Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. </p>
+
+
+
+<p>Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. </p>
+
+
+
+<h2>Best watch of year</h2>
+
+
+
+    
+ 
+ <div class="bigofferblock margincenter mb30 pt20 pl20 pr20" style="">
+<div class="col_wrap_two mb0">
+    <div class="offerbox_big_wrap flowhidden">
+        <div class="image position-relative text-center col_item mobileblockdisplay img-maxh-350 img-width-auto">
+            <a class="re_track_btn" href="https://www.amazon.com" target="_blank" rel="nofollow sponsored noopener">
+                <img class="nolazyftheme" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="500" alt="Something another cool " data-loading="lazy" data-src="https://cdn.statically.io/img/reviewit.wpsoul.net/wp-content/uploads/2020/10/imagen1.jpg?quality=80&amp;f=auto">                                    <span class="sale_a_proc">
+                        -10%                    </span>
+                                                   
+            </a>                             
+        </div>
+        <div class="product-summary col_item mobileblockdisplay">         
+            <h3 class="product_title entry-title font150">
+                <a class="re_track_btn" href="https://www.amazon.com" target="_blank" rel="nofollow sponsored noopener">
+                    Something another cool  
+                </a>
+            </h3>
+                            <div class="cegg-rating mb15 flowhidden font130">
+                    <span class="orangecolor">&#9733;</span><span class="orangecolor">&#9733;</span><span class="orangecolor">&#9733;</span><span class="orangecolor">&#9733;</span><span class="orangecolor">&#9733;</span>                </div>   
+                        
+
+            
+                            <div class="rev_disclaimer font70 greencolor lineheight15 mb20">Buy Now and get 10% discount</div>
+                        
+                                              
+            <div class="buttons_col mb25 rh_big_btn_inline">
+                <div class="priced_block clearfix">
+                    <div>
+                                                    <a class="re_track_btn btn_offer_block" href="https://www.amazon.com" target="_blank" rel="nofollow sponsored noopener">
+                                                                    See at Amazon.com                                                            </a> 
+                                                                      
+                    </div>
+                    <div class="rehub_offer_coupon mt15 not_masked_coupon" data-clipboard-text="AWESOME COUPON"><i class="rhicon rhi-scissors fa-rotate-180"></i><span class="coupon_text">AWESOME COUPON</span></div>                    
+                </div>                
+            </div>   
+              
+                          
+        </div>           
+    </div> 
+</div>
+</div>  
+<div class="clearfix"></div> 
+
+
+<p>It&rsquo;s also&nbsp;<strong>super fast</strong>. Our most recent speed tests recorded 85Mbps download speeds for a connection of 95Mbps without a VPN running &ndash; that&rsquo;s a mere 11% loss in speed. In fact, if you want to connect to a server in another country then Subject is the&nbsp;<strong>fastest&nbsp;</strong>VPN you can get. Want proof? Take a look at the speeds we recorded while testing it:</p>
+
+
+
+<figure class="wp-block-table is-style-regular"><table><thead><tr><th><strong>SPEC</strong></th><th></th></tr></thead><tbody><tr><td>Maximum Speed</td><td>Ascent: 16.4&prime; fps / 5 m/s Descent: 9.8&prime; / 3 m</td></tr><tr><td>Hover Accuracy</td><td>Vertical: &plusmn;3.9&Prime; / 10 cm Horizontal: &plusmn;3.3&prime; / 1 m</td></tr><tr><td>Maximum Altitude</td><td>Above Sea Level: 19,685&prime; / 6000 m</td></tr><tr><td>Flight Time</td><td>23 minutes (depending on conditions)</td></tr><tr><td>GPS Mode</td><td>GPS / GLONASS</td></tr></tbody></table></figure>
+
+
+<div class="wpsm_box blue_type nonefloat_box mb30" style="text-align:left; width:auto"><i></i><span class="label-info">02/11/2020 Update</span><div>
+			Praesent adipiscing. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. 
+			</div></div>
+                    </article>
+                    <div class="clearfix"></div>
+                    
+
+
+                 
+
+
+               
+
+                      
+                                            </div>
+        </div>  
+          
+        
+        <aside class="sidebar">            
+    
+ 			<div id="rehub_sticky_on_scroll-1" class="widget stickyscroll_widget pb0"><div class="border-lightgrey-double pb15 pl5 pr15 pt15 rehub-main-color-border whitebg"><ul class="autocontents" id="kcmenu">
+	<li class="top"><a href="#best-service-of-this-year">Best service of this year</a></li>
+	<li style="margin-left:15px;" class="sub sub_1"><a href="#first-deal-offer-of-something">
+                
+                    First Deal offer of something 
+                
+            </a></li>
+	<li style="margin-left:15px;" class="sub sub_1"><a href="#speeds">Speeds</a></li>
+	<li style="margin-left:15px;" class="sub sub_1"><a href="#price-and-supports">Price and Supports</a></li>
+	<li class="top"><a href="#best-computer-of-year">Best computer of year</a></li>
+	<li style="margin-left:15px;" class="sub sub_1"><a href="#megacomputer-with-quantum">
+                
+                    Megacomputer with quantum 
+                
+            </a></li>
+	<li class="top"><a href="#best-bank-of-year">Best bank of year</a></li>
+	<li style="margin-left:15px;" class="sub sub_1"><a href="#something-another-cool">
+                
+                    Something another cool  
+                
+            </a></li>
+	<li class="top"><a href="#best-watch-of-year">Best watch of year</a></li>
+	<li style="margin-left:15px;" class="sub sub_1"><a href="#something-another-cool-2">
+                
+                    Something another cool  
+                
+            </a></li>
+</ul>
+</div></div>	        
+</aside>        
+    </div>
+</div>
+      
+
+
+				
+	 				<div class="footer-bottom white_style">
+							<style scoped>
+              .footer-bottom.white_style{border-top: 1px solid #eee;}
+              .footer-bottom.white_style .footer_widget {color: #111;}
+              .footer-bottom.white_style .footer_widget .title, .footer-bottom.white_style .footer_widget h2, .footer-bottom.white_style .footer_widget a, .footer-bottom .footer_widget.white_style ul li a{color: #000;}
+
+            </style>						<div class="rh-container clearfix">
+									<div class="rh-flex-eq-height col_wrap_three mb0">
+						<div class="footer_widget mobileblockdisplay pt25 col_item mb0">
+															<div id="text-1" class="widget widget_text"><div class="title">About Rehub</div>			<div class="textwidget"><p>This demo site is only for demonstration purposes. All images are copyrighted to their respective owners. All content cited is derived from their respective sources. <a href="https://reviewit.wpsoul.net/credits/">Credits</a></p>
+<p><a href="https://www.youtube.com/watch?v=14qe-ePG0Bk" target="_blank" rel="noopener">How to Make Custom Footer Area Via Page Builder</a></p>
+<p><i class="rhicon rhi-envelope rehub-main-color mr5"></i> <a href="https://bebesymamas.es/cdn-cgi/l/email-protection#1c68796f685c68796f68327f7371"><span class="__cf_email__" data-cfemail="97e3f2e4e3d7e3f2e4e3b9f4f8fa">[email&nbsp;protected]</span></a><br>
+<i class="rhicon rhi-mobile-android rehub-main-color mr5"></i> <a href="tell:3800003030">3800003030</a></p>
+</div>
+		</div>							 
+						</div>
+						<div class="footer_widget mobileblockdisplay disablemobilepadding pt25 col_item mb0">
+															<div id="text-2" class="widget widget_text">			<div class="textwidget"><div class="wpsm-one-half wpsm-column-first">
+<div class="widget_recent_entries">
+<div class="title">For customers</div>
+<ul>
+<li><a href="#">First link</a></li>
+<li><a href="#">Second Link</a></li>
+<li><a href="#">Third link</a></li>
+<li><a href="#">Fourth link</a></li>
+</ul>
+</div>
+<p></p></div><div class="wpsm-one-half wpsm-column-last">
+<div class="widget_recent_entries">
+<div class="title">For vendors</div>
+<ul>
+<li><a href="#">First link</a></li>
+<li><a href="#">Second Link</a></li>
+<li><a href="#">Third link</a></li>
+<li><a href="#">Fourth link</a></li>
+</ul>
+</div>
+<p></p></div><div class="clearfix"></div>
+</div>
+		</div>							 
+						</div>
+						<div class="footer_widget mobileblockdisplay pt25 col_item last mb0">
+															<div id="text-3" class="widget last widget_text"><div class="title">Sign Up for Weekly Newsletter</div>			<div class="textwidget"><p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</p>
+
+				<div class="centered_form  rehub_chimp_flat">
+				
+				
+				<div id="mc_embed_signup">
+				<form action="//fleek.us10.list-manage.com/subscribe/post?u=4b4bbda55bb6deb367e6f52d9&amp;amp;id=7b32851a5b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<div id="mc_embed_signup_scroll">
+					<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email address" required>
+					<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4b4bbda55bb6deb367e6f52d9_6b32851a5b" tabindex="-1" value=""></div>
+					<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+					</div>
+				</form>
+				</div>
+				
+				
+				</div>
+</div>
+		</div><div id="rehub_social_link-1" class="widget last social_link">	
+			<div class="social_icon big_i">
+		
+
+			
+
+		
+		
+		
+			
+
+		
+					
+		
+		
+		
+		
+		
+			
+							
+																				
+	</div>
+
+	
+	</div>							 
+						</div>
+					</div>
+									
+			</div>	
+		</div>
+				
+</div>
+<span class="rehub_scroll" id="topcontrol" data-scrollto="#top_ankor"><i class="rhicon rhi-chevron-up"></i></span>
+    <div id="logo_mobile_wrapper"><a href="https://bebesymamas.es" class="logo_image_mobile"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Bebes y Mamas" width="160" height="50" data-loading="lazy" data-src="https://cdn.statically.io/img/reviewit.wpsoul.net/wp-content/uploads/2020/11/revsmall.png?quality=80&amp;f=auto"></a></div>   
+
+     
+
+    <div id="rhmobpnlcustom" class="rhhidden"><div id="rhmobtoppnl" style="" class="pr15 pl15 pb15 pt15"><div class="text-center"><a href="https://bebesymamas.es"><img id="mobpanelimg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Logo" width="150" height="45" data-loading="lazy" data-src="https://cdn.statically.io/img/reviewit.wpsoul.net/wp-content/uploads/2020/10/reviewlogo.png?quality=80&amp;f=auto"></a></div></div></div>    
+              
+
+			<div id="re-compare-bar" class="from-right rh-sslide-panel">
+			<div id="re-compare-bar-wrap" class="rh-sslide-panel-wrap">
+				<div id="re-compare-bar-heading" class="rh-sslide-panel-heading">
+					<h5 class="rehub-main-color pt15 pb15 pr15 pl20 mt0 mb0 font120">Comparar art&iacute;culos<i class="blackcolor closecomparepanel rh-sslide-close-btn cursorpointer floatright font130 rhi-times-circle rhicon" aria-hidden="true"></i></h5>
+				</div>
+				<div id="re-compare-bar-tabs" class="rh-sslide-panel-tabs abdfullwidth mt30 pb30 pt30 width-100p">
+											<ul class="rhhidden"><li class="re-compare-tab-11 no-multicats" data-page="11" data-url="https://bebesymamas.es/comparison/">Total (<span>0</span>)</li></ul>
+						<div><div class="rh-sslide-panel-inner mt10 re-compare-wrap pr20 pl20 re-compare-wrap-11"></div></div>
+										<span class="re-compare-destin wpsm-button rehub_main_btn" data-compareurl="">Comparar<i class="rhi-arrow-circle-right rhicon" aria-hidden="true"></i></span>
+				</div>
+			</div>
+		</div>
+						
+	<link rel="stylesheet" id="rhcolumnmenu-css" href="https://bebesymamas.es/wp-content/themes/rehub-theme/css/columnmenu.css?ver=1.0" type="text/css" media="all">
+<link rel="stylesheet" id="rhprettylist-css" href="https://bebesymamas.es/wp-content/themes/rehub-theme/css/shortcodes/prettylist.css?ver=1.1" type="text/css" media="all">
+<link rel="stylesheet" id="rhtoc-css" href="https://bebesymamas.es/wp-content/themes/rehub-theme/css/shortcodes/toc.css?ver=1.1" type="text/css" media="all">
+<link rel="stylesheet" id="rhmailchimp-css" href="https://bebesymamas.es/wp-content/themes/rehub-theme/css/shortcodes/mailchimp.css?ver=1.1" type="text/css" media="all">
+<script data-cfasync="false" src="https://bebesymamas.es/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="https://bebesymamas.es/wp-content/themes/rehub-theme/js/tablechart.js?ver=1.7" id="rehubtablechart-js"></script>
+<script type="text/javascript" id="rehubcompare-js-extra">
+/* <![CDATA[ */
+var comparechart = {"item_error_add":"Por favor, agregue elementos a este grupo de comparaci\u00f3n o elija un grupo no vac\u00edo","item_error_comp":"Por favor, a\u00f1adir m\u00e1s elementos para comparar","comparenonce":"c05b6cfc5a"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://bebesymamas.es/wp-content/themes/rehub-theme/js/comparechart.js?ver=1.8" id="rehubcompare-js"></script>
+<script type="text/javascript" id="flying-pages-js-before">
+window.FPConfig= {
+	delay: 0,
+	ignoreKeywords: ["\/wp-admin","\/wp-login.php","\/cart","\/checkout","add-to-cart","logout","#","?",".png",".jpeg",".jpg",".gif",".svg",".webp"],
+	maxRPS: 3,
+    hoverDelay: 50
+};
+window.FPConfig= {
+	delay: 0,
+	ignoreKeywords: ["\/wp-admin","\/wp-login.php","\/cart","\/checkout","add-to-cart","logout","#","?",".png",".jpeg",".jpg",".gif",".svg",".webp"],
+	maxRPS: 3,
+    hoverDelay: 50
+};
+</script>
+<script type="text/javascript" src="https://bebesymamas.es/wp-content/plugins/flying-pages/flying-pages.min.js?ver=2.4.2" id="flying-pages-js" defer></script>
+<script type="text/javascript" id="rate-my-post-js-extra">
+/* <![CDATA[ */
+var rmp_frontend = {"admin_ajax":"https:\/\/bebesymamas.es\/wp-admin\/admin-ajax.php","postID":"727","noVotes":"Hasta ahora, \u00a1no hay votos!. S\u00e9 el primero en puntuar este contenido.","cookie":"\u00a1Ya has votado! \u00a1No se contar\u00e1 este voto!","afterVote":"\u00a1Gracias por puntuar este contenido!","notShowRating":"1","social":"1","feedback":"1","cookieDisable":"1","emptyFeedback":"\u00a1Por favor, escribe tu sugerencia en el campo de texto anterior!","hoverTexts":"1","preventAccidental":"1","grecaptcha":"1","siteKey":"","votingPriv":"1","loggedIn":"","positiveThreshold":"2","ajaxLoad":"1","nonce":"917dce6de2"};
+var rmp_frontend = {"admin_ajax":"https:\/\/bebesymamas.es\/wp-admin\/admin-ajax.php","postID":"727","noVotes":"Hasta ahora, \u00a1no hay votos!. S\u00e9 el primero en puntuar este contenido.","cookie":"\u00a1Ya has votado! \u00a1No se contar\u00e1 este voto!","afterVote":"\u00a1Gracias por puntuar este contenido!","notShowRating":"1","social":"1","feedback":"1","cookieDisable":"1","emptyFeedback":"\u00a1Por favor, escribe tu sugerencia en el campo de texto anterior!","hoverTexts":"1","preventAccidental":"1","grecaptcha":"1","siteKey":"","votingPriv":"1","loggedIn":"","positiveThreshold":"2","ajaxLoad":"1","nonce":"917dce6de2"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://bebesymamas.es/wp-content/plugins/rate-my-post/public/js/rate-my-post.js?ver=3.3.2" id="rate-my-post-js"></script>
+<script type="text/javascript" id="toc-front-js-extra">
+/* <![CDATA[ */
+var tocplus = {"visibility_show":"show","visibility_hide":"hide","width":"Auto"};
+var tocplus = {"visibility_show":"show","visibility_hide":"hide","width":"Auto"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://bebesymamas.es/wp-content/plugins/table-of-contents-plus/front.min.js?ver=2002" id="toc-front-js"></script>
+<script type="text/javascript" src="https://bebesymamas.es/wp-content/themes/rehub-theme/js/inview.js?ver=1.1" id="rhinview-js"></script>
+<script type="text/javascript" src="https://bebesymamas.es/wp-content/themes/rehub-theme/js/pgwmodal.js?ver=2.0" id="rhpgwmodal-js"></script>
+<script type="text/javascript" src="https://bebesymamas.es/wp-content/themes/rehub-theme/js/unveil.js?ver=5.2.1" id="rhunveil-js"></script>
+<script type="text/javascript" src="https://bebesymamas.es/wp-content/themes/rehub-theme/js/hoverintent.js?ver=1.9" id="rhhoverintent-js"></script>
+<script type="text/javascript" src="https://bebesymamas.es/wp-content/themes/rehub-theme/js/countdown.js?ver=1.1" id="rhcountdown-js"></script>
+<script type="text/javascript" id="rehub-js-extra">
+/* <![CDATA[ */
+var rhscriptvars = {"back":"atr\u00e1s","ajax_url":"\/wp-admin\/admin-ajax.php","fin":"Eso es todo","noresults":"No results found","your_rating":"Tu valoraci\u00f3n:","nonce":"6827e934b5","hotnonce":"80f06a7cc8","wishnonce":"bfca08eec6","searchnonce":"dcc5772b34","filternonce":"0a994e0076","rating_tabs_id":"41cffc287e","max_temp":"10","min_temp":"-10","helpnotnonce":"679399bba1"};
+var rhscriptvars = {"back":"atr\u00e1s","ajax_url":"\/wp-admin\/admin-ajax.php","fin":"Eso es todo","noresults":"No results found","your_rating":"Tu valoraci\u00f3n:","nonce":"6827e934b5","hotnonce":"80f06a7cc8","wishnonce":"bfca08eec6","searchnonce":"dcc5772b34","filternonce":"0a994e0076","rating_tabs_id":"41cffc287e","max_temp":"10","min_temp":"-10","helpnotnonce":"679399bba1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://bebesymamas.es/wp-content/themes/rehub-theme/js/custom.js?ver=15.0" id="rehub-js"></script>
+<script type="text/javascript" id="rehub-js-after">
+(function(b,c){var $=b.jQuery||b.Cowboy||(b.Cowboy={}),a;$.rhthrottle=a=function(e,f,j,i){var h,d=0;if(typeof f!=="boolean"){i=j;j=f;f=c}function g(){var o=this,m=+new Date()-d,n=arguments;function l(){d=+new Date();j.apply(o,n)}function k(){h=c}if(i&&!h){l()}h&&clearTimeout(h);if(i===c&&m>e){l()}else{if(f!==true){h=setTimeout(i?k:l,i===c?e-m:e)}}}if($.guid){g.guid=j.guid=j.guid||$.guid++}return g};})(this);
+        (function($){ $.fn.wpsmContents=function(){var id,h,m=$(this),w=m.closest('.widget'),s=$('.post h2, .post h3'); 
+        if(s.length == 0){w.remove();}else{ $.each(s,function(){ h=$(this); $.each(m.find('a'), function(){ if(h.text()==$(this).text()){ id=$(this).attr('href').replace('#',''); h.attr('id', id);}});}); if(id == undefined){w.remove();}} return;}})(jQuery); jQuery('.autocontents').wpsmContents(); 
+            var topMenu = jQuery('.autocontents');  
+            var menuItems = topMenu.find('a');
+            var lastId = '';
+
+            var scrollItems = menuItems.map(function(){
+                var elem = jQuery(this).attr('href');
+                var item = jQuery(elem);
+              if (item.length) { return item; }
+            });
+            jQuery(window).on('scroll', jQuery.rhthrottle( 250, function(){
+                var fromTop = jQuery(this).scrollTop()+55;
+                var cur = scrollItems.map(function(){
+                    if (jQuery(this).offset().top < fromTop)
+                    return this;
+                });
+                cur = cur[cur.length-1];
+                var id = cur && cur.length ? cur[0].id : '';
+
+                if (lastId !== id) {
+                    lastId = id;
+                    var currentmenuItem = menuItems.filter('[href="#'+id+'"]');
+                    var currentmenuIteml = currentmenuItem.offset();
+                    menuItems.removeClass('fontbold').parent().removeClass('current');
+                    currentmenuItem.addClass('fontbold').parent().addClass('current');
+                }                   
+            }));
+</script>
+<script type="text/javascript" src="https://bebesymamas.es/wp-content/themes/rehub-theme/js/clipboard.min.js?ver=2.0.9" id="zeroclipboard-js"></script>
+<script type="text/javascript" src="https://bebesymamas.es/wp-content/themes/rehub-theme/js/custom_scroll.js?ver=1.2" id="custom_scroll-js"></script>
+<script>window.GA_ID='G-D2T9V5GSZV'</script><script src="https://bebesymamas.es/wp-content/plugins/flying-analytics/js/gtagv4.js" defer></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-D2T9V5GSZV');</script><script type="text/javascript" id="flying-images">"use strict";window.FIConfig={lazyMethod:"nativejavascript",lazyMargin:500};var flyingImages=function(){var a=document.querySelectorAll("[data-loading=\"lazy\"]");if(window.FIConfig.lazyMethod.includes("native")&&"loading"in HTMLImageElement.prototype)a.forEach(function(a){a.removeAttribute("data-loading"),a.setAttribute("loading","lazy"),a.dataset.srcset&&(a.srcset=a.dataset.srcset),a.src=a.dataset.src});else if(window.IntersectionObserver){var b=new IntersectionObserver(function(a){a.forEach(function(a){a.isIntersecting&&(b.unobserve(a.target),a.target.dataset.srcset&&(a.target.srcset=a.target.dataset.srcset),a.target.src=a.target.dataset.src,a.target.classList.add("lazyloaded"),a.target.removeAttribute("data-loading"))})},{rootMargin:window.FIConfig.lazyMargin+"px"});a.forEach(function(a){b.observe(a)})}else for(var c=0;c<a.length;c++)a[c].dataset.srcset&&(a[c].srcset=a[c].dataset.srcset),a[c].src=a[c].dataset.src};flyingImages();function throttle(a,b){var c=!1;return function(){c||(a.apply(null,arguments),c=!0,setTimeout(function(){c=!1},b))}}var dynamicContentObserver=new MutationObserver(throttle(flyingImages,125));dynamicContentObserver.observe(document.body,{attributes:!0,childList:!0,subtree:!0}),function(){var a=document.querySelectorAll("[data-loading=\"lazy-background\"]");if(window.IntersectionObserver){var d=new IntersectionObserver(function(a){a.forEach(function(a){if(a.isIntersecting){d.unobserve(a.target);var b=a.target.getAttribute("style"),c=b.replace("background:none;","");a.target.setAttribute("style",c),a.target.removeAttribute("data-loading")}})},{rootMargin:window.FIConfig.lazyMargin+"px"});a.forEach(function(a){d.observe(a)})}else for(var e=0;e<a.length;e++){var b=a[e].target.getAttribute("style"),c=b.replace("background:none;","");a[e].target.setAttribute("style",c),a[e].target.removeAttribute("data-loading")}}();</script>
+    </body>
+</html>
