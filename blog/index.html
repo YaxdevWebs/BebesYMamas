@@ -1,516 +1,453 @@
 <!DOCTYPE html>
 <html lang="es" prefix="og: https://ogp.me/ns#">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	
+	
 
-
-
-<style>
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:none}table{border-collapse:collapse}*{box-sizing:border-box}ins,mark{text-decoration:none}body{background-color: #fff; color: #000; font-size: 15px; font-family: Roboto,"Helvetica Neue",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Oxygen-Sans,sans-serif;}a {text-decoration: none; }a:focus, button{outline: none;}.btn{ text-decoration: none;}a:hover, a:active { color: #000;}h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #111; text-decoration: none; }h1,h2,h3,h4,h5,h6{font-weight: 700;color: #111111; }h1 { font-size: 28px; line-height:34px; margin: 10px 0 30px 0;}h2 { font-size: 24px; line-height:30px; margin: 10px 0 30px 0;  }h3 { font-size: 21px; line-height:28px; margin: 10px 0 25px 0;  }h4 { font-size: 18px; line-height:24px; margin: 10px 0 18px 0  }h5 { font-size: 16px; line-height:20px; margin: 10px 0 15px 0 }h6 { font-size: 14px; line-height:16px; margin: 0 0 10px 0 }hr{background: #ddd;border: 0;height: 1px;}.post p,article p{margin:0 0 31px 0}.post em,article em{font-style:italic}.post strong,article strong{font-weight:700}.post,article{font-size:16px;line-height:28px;color:#333}p strong{font-weight:700}p em{font-style:italic}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{max-width:100%;height:auto;vertical-align:top;border:0}#rhLoader{position:fixed;display:table;text-align:center;width:100%;height:100%;top:0;left:0;background-color:rgba(255,255,255,1);z-index:999999999}.preloader-cell{display:table-cell;vertical-align:middle;font-size:60px}.clearfix:after,.clearfix:before{content:"";display:table}.clearfix:after{clear:both}.clearbox{clear:both}.clearboxleft{clear:left}.clearboxright{clear:right}#main_header{width:100%;position:relative;z-index:1000}.header-top{border-bottom:1px solid #eee;min-height:30px;overflow:visible}.header-top .top-nav a{color:#111}.header-top .top-nav li{float:left;font-size:12px;line-height:14px;position:relative;z-index:99999999}.header-top .top-nav>ul>li{padding-left:13px;border-left:1px solid #666;margin:0 13px 0 0}.header-top .top-nav ul{list-style:none}.header-top .top-nav a:hover{text-decoration:underline}.header-top .top-nav li:first-child{margin-left:0;border-left:0;padding-left:0}.top-nav ul.sub-menu{width:160px}.top-nav ul.sub-menu>li>a{padding:10px;display:block}.top-nav ul.sub-menu>li{float:none;display:block;margin:0}.top-nav ul.sub-menu>li>a:hover{background-color:#f1f1f1;text-decoration:none}header .logo-section{padding:15px 0;overflow:visible}header .logo{max-width:450px;float:left;margin-right:15px;line-height:0}.logo .textlogo{font-size:26px;line-height:26px;letter-spacing:-.5px;}.logo .sloganlogo{font-size:14px;color:#888}header .header_first_style .mediad{width:468px;margin:12px 20px 0 0}header .header_fourth_style .mediad{width:728px;float:none;margin:15px auto 5px;text-align:center}.header_six_style .head_search{max-width:215px}.header-actions-logo{float:right}.header-actions-logo .celldisplay{padding:0 12px;vertical-align:middle}.heads_icon_label{font-size:12px;display:block;line-height:15px;color:#111}.header_seven_style .search{margin:0 30px;padding:0;flex-grow:1;width:100%;max-width:580px}.header_seven_style>.rh-flex-right-align{flex:0 0 auto}.header_one_row .main-nav{background:none transparent;border:none}.header_one_row nav.top_menu>ul>li{border:none}.rh_woocartmenu_cell{min-width:100px;position:relative}#main_header .rh_woocartmenu_cell .widget_shopping_cart{position:absolute;right:12px;width:330px;z-index:-1;box-shadow:1px 1px 4px 0 #ddd;background-color:#fff;padding:15px 20px;border-radius:5px;display:none;text-align:left;top:100%}#main_header .rh_woocartmenu_cell .widget_shopping_cart.loaded{display:block;animation:stuckMoveUpOpacity .6s;z-index:9999}header .mediad img{max-width:100%;height:auto}.top-search-onclick{float:right;position:relative}form.search-form{padding:0;border:none;position:relative;width:auto;display:flex;margin:0;max-width:100%}form.search-form input[type=text]{border:1px solid #e1e1e1;height:38px;background-color:#fff;padding:2px 45px 2px 12px;transition:all .4s ease;}form.search-form input[type=text]:focus{outline:0}.litesearchstyle form.search-form input[type=text]{height:34px;padding:2px 37px 2px 12px}form.search-form [type=submit]{border:none;cursor:pointer;padding:0 16px;line-height:38px;height:38px;vertical-align:middle;position:absolute;top:0;right:0;}.litesearchstyle form.search-form [type=submit]{background:none transparent;height:34px;color:#999;padding:0 12px;line-height:34px}form.search-form.product-search-form [type=submit]{position:static}form.search-form.product-search-form input[type=text]{padding-right:12px;padding-left:12px;border-right:none}.search-header-contents{opacity:0;visibility:hidden;position:absolute}.head_search .search-form,.head_search form.search-form input[type=text],.widget_search .search-form,.widget_search form.search-form input[type=text]{width:100%;clear:both}.product-search-form .nice-select{border-radius:0;height:38px;line-height:36px;border-width:1px 0 1px 1px}.sidebar .product-search-form .nice-select{display:none}header .search{width:300px;float:right;position:relative}.logo-section .search form.search-form input[type=text]{min-width:215px}.main-nav{background:#fcfcfc}.main-nav.white_style{border-top:1px solid #eee;border-bottom:1px solid #eee}.main-nav:after{content:'';display:table;clear:both}nav.top_menu{position:relative}nav.top_menu>ul{display:flex;display:-ms-flexbox}nav.top_menu ul li{display:inline-block;position:relative}nav.top_menu>ul>li.floatright{margin-left:auto}#slide-menu-mobile ul li.menu-item>a i,nav.top_menu ul li i{margin:0 5px 0 0}nav.top_menu ul li.rehub-custom-menu-item{float:right;border:none}nav.top_menu ul li.rehub-custom-menu-item a:hover{box-shadow:none}nav.top_menu ul.sub-menu li{display:block;float:none}nav.top_menu>ul>li>a{font-weight:700;font-size: 16px;line-height:19px;position:relative;color:#111;padding:8px 13px 11px 13px;display:inline-block}nav.top_menu ul span.subline{font-weight:400;font-size:12px;line-height:12px;display:block;text-transform:none;margin:5px 0 0 0;opacity:.8}nav.top_menu ul li.menu-item-has-children{position:relative}.top-nav ul.sub-menu,nav.top_menu ul.sub-menu{opacity:0;visibility:hidden;position:absolute;}nav.top_menu .noshadowdrop ul.sub-menu{box-shadow:none}nav.top_menu ul.sub-menu ul.sub-menu{top:0}nav.top_menu ul.sub-menu>li>a{text-transform:none;font-size:15px;line-height:16px;color:#111;display:block;padding:15px 18px;border-top:1px solid #eee;font-weight:400}nav.top_menu ul.sub-menu>li:first-child>a{border-top-color:transparent}#slide-menu-mobile{display:none}.rh-menu-label{z-index:1;position:absolute;top:-9px;right:15px;padding:2px 4px;color:#fff;font:9px/10px Arial;text-transform:uppercase;background:#c00}.rh-menu-label.rh-menu-label-green{background:green}.rh-menu-label.rh-menu-label-blue{background:#00f}.rh-menu-label:after{font-weight:900;content:"\f0da";font-family:rhicons;font-size:16px;position:absolute;bottom:-4px;left:0;color:#c00}.rh-menu-label.rh-menu-label-green:after{color:green}.rh-menu-label.rh-menu-label-blue:after{color:#00f}.header_top_wrap.dark_style{background-color:#000;width:100%;border-bottom:1px solid #3c3c3c;color:#ccc}.header_top_wrap.dark_style .header-top a.cart-contents,.header_top_wrap.dark_style .icon-search-onclick:before{color:#ccc}.header_top_wrap.dark_style .header-top{border:none}#main_header.dark_style .header-top{border-color:rgba(238,238,238,.22)}.header_top_wrap.dark_style .header-top .top-nav>ul>li>a{color:#b6b6b6}#main_header.dark_style{background-color:#141414}.main-nav.dark_style{max-height:70px;background:#353535}#main_header.dark_style #re_menu_near_logo li a,#main_header.dark_style .logo-section .heads_icon_label,#main_header.dark_style .logo-section .rh-header-icon,#main_header.dark_style .sloganlogo,#main_header.dark_style .textlogo,#main_header.dark_style .textlogo a,#main_header.dark_style a.header-link-add,.main-nav.dark_style .dl-menuwrapper .rh-header-icon,.main-nav.dark_style .user-ava-intop:after{color:#fff}.main-nav.dark_style nav.top_menu>ul>li>a{color:#fbfbfb}nav.top_menu>ul>li{border-right:1px solid rgba(0,0,0,.08)}nav.top_menu>ul>li:last-child{border-right:none;box-shadow:none}.main-nav.dark_style nav.top_menu>ul>li{border-right:1px solid rgba(255,255,255,.15)}.logo_insticky_enabled .top_menu{flex-grow:1}.top-social .user-dropdown-intop{float:right;margin:4px 5px 0 5px}.logged-in .login_icon_label,.main-nav .act-rehub-login-popup span,.responsive_nav_wrap,.responsive_nav_wrap .heads_icon_label,.rh_login_icon_n_btn.act-rehub-login-popup span, #logo_mobile_wrapper,a.logo_image_mobile img{display:none}#dl-menu a.logo_image_mobile img{position:absolute;top:0;left:50%;transform:translate(-50%);right:auto;bottom:0;margin:auto;display:block}.header_icons_menu #dl-menu a.logo_image_mobile img{left:55px;transform:none}.widget .title i{margin:0 6px 0 0}#re_menu_near_logo li a{color:#111}.rh-header-icon{font-size:24px;line-height:23px;color:#222}#main_header #dl-menu .rh-header-icon{margin:15px 9px}#main_header #dl-menu .rehub-main-btn-bg .rh-header-icon{margin:0}#main_header .rehub-main-btn-bg{padding:8px 14px}.rhsloganlogo{width:440px;color:#ccc;font-size:15px;line-height:20px;float:left;margin-right:25px}.top_menu .user-dropdown-intop{margin:15px 10px;float:right}.rh-boxed-container .rh-outer-wrap{box-shadow:0 0 20px 0 rgba(0,0,0,.1);margin:0 auto;width:1260px;background:#fff}.content,.rh-container{margin:0 auto;border:none;background:none transparent;width:1200px;box-shadow:none;position:relative;clear:both;padding:0}.centered-container .vc_col-sm-12>*>.wpb_wrapper,.vc_section>.vc_row,body .elementor-section.elementor-section-boxed>.elementor-container{max-width:1200px;margin:0 auto}.rh-content-wrap{padding-top:20px;padding-bottom:20px}.rh-mini-sidebar{width:260px;margin-bottom:30px}.rh-mini-sidebar-content-area{width:calc(100% - 290px)}.rh-300-sidebar{width:300px;margin-bottom:30px}.rh-300-content-area{width:calc(100% - 330px)}.rh-336-sidebar{width:336px;margin-bottom:30px}.rh-336-content-area{width:calc(100% - 366px)}.rh-360-sidebar {width: 360px; margin-bottom: 30px}.rh-360-content-area{width: calc(100% - 400px);}.widget.rh-cartbox{margin:0 0 25px 0}.rh-mini-sidebar .widget{margin-bottom:30px}.rh-cartbox .widget-inner-title{font-weight:700;font-size:16px;line-height:18px;text-align:center;margin:-20px -20px 20px -20px;padding:12px;color:#000;background:#f7f7f7}.main-side{width:840px;float:left;position:relative}body:not(.noinnerpadding) .rh-post-wrapper{background:#fff;border:1px solid #e3e3e3;padding:25px;box-shadow:0 2px 2px #ececec}.main-side.full_width:not(.single),.rh-container.no_shadow .main-side{padding:0;border:none;box-shadow:none;background:none transparent}.main-side.full_width{float:none;width:100%}.main-side{min-height:500px}.side-twocol,.sidebar{width:336px;float:right;overflow:hidden}.full_post_area.content,.full_post_area.rh-container{width:100%;overflow:hidden;padding:0}.full_post_area .rh-content-wrap{padding:0}.vc_row{margin-right:0;margin-left:0}.wpsm-one-half{width:48%}.wpsm-one-third{width:30.66%}.wpsm-two-third{width:65.33%}.wpsm-one-fourth{width:22%}.wpsm-three-fourth{width:74%}.wpsm-one-fifth{width:16.8%}.wpsm-two-fifth{width:37.6%}.wpsm-three-fifth{width:58.4%}.wpsm-four-fifth{width:79.2%}.wpsm-one-sixth{width:13.33%}.wpsm-five-sixth{width:82.67%}.wpsm-five-sixth,.wpsm-four-fifth,.wpsm-one-fifth,.wpsm-one-fourth,.wpsm-one-half,.wpsm-one-sixth,.wpsm-one-third,.wpsm-three-fifth,.wpsm-three-fourth,.wpsm-two-fifth,.wpsm-two-third{position:relative;margin-right:4%;margin-bottom:5px;float:left}.wpsm-column-last,.wpsm-one-fifth:last-of-type,.wpsm-one-fourth:last-of-type,.wpsm-one-half:last-of-type,.wpsm-one-sixth:last-of-type,.wpsm-one-third:last-of-type{margin-right:0;clear:right}.wpsm-column-last:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}@media (min-width:768px){.vc_row.vc_rehub_container .vc_column_container>.vc_column-inner{padding:0}}@media screen and (max-width:1279px) and (min-width:1141px){.rh-boxed-container .rh-outer-wrap{width:1120px}.content,.rh-container{width:1080px}.centered-container .vc_col-sm-12>*>.wpb_wrapper,.vc_section>.vc_row,body .elementor-section.elementor-section-boxed>.elementor-container{max-width:1080px}.main-side,.vc_row.vc_rehub_container>.vc_col-sm-8{width:755px}.side-twocol,.sidebar,.vc_row.vc_rehub_container>.vc_col-sm-4{width:300px}}@media (max-width:1140px){.rh-boxed-container .rh-outer-wrap{width:100%}header .logo{max-width:250px}.laptopblockdisplay{display:block;width:100%;float:none;margin:0 0 10px 0}}@media (max-width:1140px) and (min-width:1024px){.content,.rh-container{width:980px}.centered-container .vc_col-sm-12>*>.wpb_wrapper,.vc_section>.vc_row,body .elementor-section.elementor-section-boxed>.elementor-container{max-width:980px}.main-side,.vc_row.vc_rehub_container>.vc_col-sm-8{width:655px}.side-twocol,.sidebar,.vc_row.vc_rehub_container>.vc_col-sm-4{width:300px}}@media (max-width:1023px){.header-actions-logo,.header_seven_style .search,.rh_woocartmenu-amount{display:none}.rhsloganlogo{float:none;margin:0 auto 10px auto;width:95%;text-align:center}.side-twocol{float:none;width:100%;margin-bottom:10px;overflow:hidden}}@media (max-width:1023px) and (min-width:768px){.responsive_nav_wrap{display:block; width:100%; position:relative}.sidebar{border:none;clear:both;-webkit-column-count:2;-webkit-column-gap:20px;column-count:2;column-gap:20px}.sidebar .widget{margin:0 0 20px 0;width:350px;clear:none;-webkit-column-break-inside:avoid;-moz-column-break-inside:avoid;break-inside:avoid;-webkit-column-width:350px;transform:translateZ(0);column-width:350px}}@media (max-width:1023px){.calcposright{position:static !important;}.tabletcenterdisplay{text-align:center}.tabletblockdisplay{display:block !important;width:100% !important;float:none;margin:0 0 10px 0;clear:both}.hideontablet,.logo-section .mobileinmenu{display:none}.logo-section #mobile-menu-icons .mobileinmenu{display:inline-block}.sidebar{margin:30px auto 0 auto}.left-sidebar-archive .sidebar{margin:0 auto 30px auto}.tabletrelative{position:relative}.disable-bg-on-tablet,.vc_row.disable-bg-on-tablet{background:none transparent}.disablefloattablet.floatleft,.disablefloattablet.floatright{float:none;margin-right:0;margin-left:0;display:inline-block}}.rehub-register-popup.registration-complete #rehub_registration_form_modal{display:none}.top-social .act-rehub-login-popup{float:right;margin:7px}.top-social .act-rehub-login-popup i{margin-right:3px}.user-ava-intop{position:relative;line-height:22px;vertical-align:middle;cursor:pointer;display:inline-block}.user-ava-intop img{border-radius:50%;vertical-align:middle;width:28px}.user-dropdown-intop-menu{position:absolute;visibility:hidden;opacity:0}@media (max-width:1023px){.user-dropdown-intop-menu{right:0}}.col_item{position:relative}.col_wrap_two{margin:0 -2.5% 20px}.col_wrap_two .col_item{width:45%;margin:0 2.5% 30px;float:left}.col_wrap_three{margin:0 -1.5% 20px}.col_wrap_three .col_item{width:30.33%;margin:0 1.5% 25px;float:left}.col_wrap_three .col_item:nth-child(3n+1){clear:both}.col_wrap_two .col_item:nth-child(2n+1){clear:both}.col_wrap_fourth{margin:0 -1% 15px}.col_wrap_fifth,.col_wrap_six{margin:0 -1% 15px}.col_wrap_fourth .col_item{width:23%;margin:0 1% 25px;float:left}.col_wrap_fourth .col_item:nth-child(4n+1){clear:both}.col_wrap_fifth .col_item{width:18%;margin:0 1% 25px;float:left}.col_wrap_fifth .col_item:nth-child(5n+1){clear:both}.col_wrap_six .col_item{width:15.26%;margin:0 .7% 25px;float:left}.col_wrap_six .col_item:nth-child(6n+1){clear:both}.rh-flex-columns{display:flex;flex-wrap:wrap;justify-content:space-between;flex-direction:row}.rh-flex-eq-height{display:flex;flex-wrap:wrap;flex-direction:row}.rh-flex-eq-height .pagination,.rh-flex-eq-height .re_ajax_pagination,.rh-flex-eq-height .woocommerce-pagination{width:100%;flex-basis:100%}.rh-flex-eq-height .re_ajax_pagination{margin:-1px}.rh-flex-center-align{align-items:center;display:flex;flex-direction:row}.rh-flex-right-align{margin-left:auto}.flexbasisclear{flex-basis:100%}.rh-flex-justify-center{justify-content:center}.rh-flex-justify-start{justify-content:flex-start}.rh-flex-justify-end{justify-content:flex-end}.img-centered-flex>img{max-height:100%;border-radius:4px;object-fit:scale-down;flex:0 0 auto}.rh-flex-column{flex-direction:column}.rh-flex-nowrap{flex-wrap:nowrap}.rh-flex-grow1{flex-grow:1;flex-basis:0}.no_padding_wrap .col_wrap_fifth .col_item,.no_padding_wrap .col_wrap_fourth .col_item,.no_padding_wrap .col_wrap_six .col_item,.no_padding_wrap .col_wrap_three .col_item{margin:0}.no_padding_wrap .col_wrap_three .col_item{width:33.33%}.no_padding_wrap .col_wrap_fourth .col_item{width:25%}.no_padding_wrap .col_wrap_fifth .col_item{width:20%}.no_padding_wrap .col_wrap_six .col_item{width:16.66%}@media (max-width:1023px) and (min-width:768px){.col_wrap_fifth,.col_wrap_fourth,.col_wrap_six{margin:0 -1.5% 20px;overflow:hidden}.col_wrap_fifth .col_item,.col_wrap_fourth .col_item,.col_wrap_six .col_item{width:30.33%;margin:0 1.5% 15px;float:left}.no_padding_wrap .col_wrap_fifth .col_item,.no_padding_wrap .col_wrap_fourth .col_item,.no_padding_wrap .col_wrap_six .col_item{width:33%;margin:0}.col_wrap_fifth .col_item:nth-child(3n+1),.col_wrap_fourth .col_item:nth-child(3n+1),.col_wrap_six .col_item:nth-child(3n+1){clear:both}.col_wrap_fifth .col_item:nth-child(5n+1),.col_wrap_fourth .col_item:nth-child(4n+1),.col_wrap_six .col_item:nth-child(6n+1){clear:none}}.no_padding_wrap .offer_grid.col_item{border:1px solid #eee;border-top:none;border-left:none}.no_padding_wrap .eq_grid{border:1px solid #eee;border-right:none;border-bottom:none;padding:0}.wpsm-button.medium{padding:8px 16px;line-height:15px;font-size:15px}.wpsm-button{cursor:pointer;display:inline-block;white-space:nowrap;text-align:center;outline:0;background:#aaa;text-decoration:none;transition:all .4s ease 0s;border:1px solid #7e7e7e;color:#fff;font-weight:700;padding:4px 10px;line-height:.8em;text-decoration:none;white-space:normal;text-shadow:0 1px 0 rgba(0,0,0,.25);box-shadow:0 1px 2px rgba(0,0,0,.2);position:relative;font-size:15px;box-sizing:border-box;font-style:normal}.elementor-button.elementor-size-md{font-size:16px;padding:15px 30px;-webkit-border-radius:4px;border-radius:4px}.redcolor{color:#b00}.redbrightcolor{color:red}.greencolor{color:#009700}.orangecolor{color:#ff8a00}.pinkLcolor{color:#e38de6}#slide-menu-mobile ul .whitecolor>span.submenu-toggle,#slide-menu-mobile ul li.menu-item.whitecolor>a,.def_btn.whitecolor,.whitecolor,.whitecolor>a,.whitecolor>a:hover,.whitecolorinner,.whitecolorinner a,.whitecolorinner a:hover,a.whitecolor:hover,nav.top_menu>ul>li.whitecolor>a{color:#fff}.whiteonhover:hover,.whiteonhover:hover a{color:#fff}.greycolor{color:grey}#slide-menu-mobile ul .blackcolor>span.submenu-toggle,#slide-menu-mobile ul li.menu-item.blackcolor>a,.blackcolor,.blackcolor a,nav.top_menu>ul>li.blackcolor>a{color:#111}.lightgreycolor{color:#d3d3d3}.lightgreybg{background:#f4f2f3}.whitebg{background:#fff}.lightgreenbg{background-color:#eaf9e8}.lightredbg{background-color:#fff4f4}.redbg,.rh-cat-label-title.redbg{background:#b00}.greenbg,.rh-label-string.greenbg{background:#77b21d}.violetgradient_bg{background-color:#721999;background:linear-gradient(to bottom,#5000be 0,#9101fe 100%)}.lightbluebg{background-color:rgba(7,107,156,.1)}.darkhalfopacitybg{background-color:rgba(0,0,0,.58)}.darkbg{background-color:#333}.position-relative{position:relative}.position-static{position:static}.rhhidden{display:none}.flowhidden{overflow:hidden}.flowvisible{overflow:visible}.rhshow{display:inline-block}.tabledisplay{display:table;width:100%}.rowdisplay{display:table-row}.celldisplay{display:table-cell;vertical-align:middle}.vertmiddle{vertical-align:middle}.verttop{vertical-align:top}.blockstyle{display:block}.inlinestyle{display:inline-block}.text-center{text-align:center}.heightauto{height:auto}.text-right-align{text-align:right}.text-left-align{text-align:left}.fontbold,nav.top_menu ul.sub-menu>li.fontbold>a{font-weight:700}.fontnormal,.fontnormal h4{font-weight:400}.fontitalic{font-style:italic}.rh-nowrap{white-space:nowrap}.lineheight20{line-height:20px}.lineheight15{line-height:15px}.lineheight25{line-height: 25px}.upper-text-trans{text-transform:uppercase}body .rh_opacity_100{opacity:1}.rh_opacity_7{opacity:.7}.rh_opacity_5{opacity:.5}.rh_opacity_3{opacity:.3}.roundborder{border-radius:100px}.roundborder50p{border-radius:50%}.roundborder8{border-radius:8px}.roundborder20{border-radius:20px}.roundborder50{border-radius:50px}.border-top{border-top:1px solid #eee}.border-grey-bottom{border-bottom:1px solid rgba(206,206,206,0.3)}.border-grey-dashed{border: 1px dashed #ccc;}.border-grey{border:1px solid #dce0e0}.border-right{border-right: 1px solid rgba(206,206,206,0.3);}.border-lightgrey-double{border: 2px solid rgba(206,206,206,0.23);}.border-lightgrey{border: 1px solid rgba(206,206,206,0.23);}.margincenter{margin:0 auto}.list-type-disc{list-style:disc}.overflow-elipse{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.cursorpointer,.rehub_scroll{cursor:pointer}.cursordefault,.cursordefault>a{cursor:default}.floatleft{float:left}.floatright{float:right}body .font90{ font-size: 90%}body .font95{ font-size: 95%}body .font80{font-size: 80%}body .font85{font-size: 85%}body .font70{font-size: 70%}body .font60{font-size: 60%}body .font110{font-size: 110%}body .font115{font-size: 115%}body .font120{font-size: 120%}body .font130{font-size: 130%}body .font140{font-size: 140%}body .font150{font-size: 150%}body .font250{font-size: 250%}body .font200{font-size: 200%}body .font175{font-size: 175%}body .font105{font-size: 105%}.mr5{margin-right:5px}.mr10{margin-right:10px}.mr15{margin-right:15px}.mr20{margin-right:20px}.mr25{margin-right:25px}.mr30{margin-right:30px}.mr35{margin-right:35px}.ml5{margin-left:5px}.ml10{margin-left:10px}.ml15{margin-left:15px}.ml20{margin-left:20px}.ml25{margin-left:25px}.ml30{margin-left:30px}.mt10{margin-top:10px}.mt5{margin-top:5px}.mt15{margin-top:15px}.mt20{margin-top:20px}.mt25{margin-top:25px}.mt30{margin-top:30px}.mb0{margin-bottom:0}.mb5{margin-bottom:5px}.mb10{margin-bottom:10px}.mb15{margin-bottom:15px}.mb20{margin-bottom:20px}.mb25{margin-bottom:25px}.mb30{margin-bottom:30px}.mb35{margin-bottom:35px}.mt0{margin-top:0}.ml0{margin-left:0}.mr0{margin-right:0}.pt0{padding-top:0}.pr5{padding-right:5px}.pr10{padding-right:10px}.pr15{padding-right:15px}.pr20{padding-right:20px}.pr25{padding-right:25px}.pr30{padding-right:30px}.pl5{padding-left:5px}.pl10{padding-left:10px}.pl15{padding-left:15px}.pl20{padding-left:20px}.pl25{padding-left:25px}.pl30{padding-left:30px}.pt10{padding-top:10px}.pt5{padding-top:5px}.pt15{padding-top:15px}.pt20{padding-top:20px}.pt25{padding-top:25px}.pt30{padding-top:30px}.pb0{padding-bottom:0}.pb5{padding-bottom:5px}.pb10{padding-bottom:10px}.pb15{padding-bottom:15px}.pb20{padding-bottom:20px}.pb25{padding-bottom:25px}.pb30{padding-bottom:30px}.pt0{padding-top:0}.pl0{padding-left:0}.pr0{padding-right:0}.padd20{padding:20px}.padforbuttonsmall{padding:7px 10px !important; line-height:15px !important}.padforbuttonmini{padding: 3px 5px}.padforbuttonmiddle{padding:9px 16px}.padforbuttonbig{padding:12px 24px}body .bg_r_b{background-position:right bottom}body .bg_r_t{background-position:right top}body .bg_l_b{background-position:left bottom}body .bg_l_t{background-position:left top}body .bg_c_b{background-position:center bottom}body .bg_c_t{background-position:center top}.re-form-group.field_type_textbox input,.re-form-group.field_type_url input,.re-form-input,.wpcf7 input,.wpcf7 textarea{width:100%;padding:12px 10px;height:auto;font-size:15px;margin-bottom:5px;max-width:100%}.re-form-input-small{padding:6px 9px;width:100%}.re-form-input.error{border-color:#b00}.re-form-group>label{display:block;font-weight:700;font-size:14px;margin-bottom:7px}.re-form-group legend{font-weight:700;margin:0 0 5px}.re-form-group select{width:100%;cursor:pointer;margin:0;border:1px solid #ccc}.re-form-group .option-label{margin:0 5px 5px 0}input[type=email],input[type=number],input[type=password],input[type=tel],input[type=text],input[type=url],textarea{box-sizing:border-box;outline:0;padding:9px 10px;color:#444;background:none #fff;transition:border-color .4s ease;border:1px solid #ccc;line-height:18px;font-weight:400;font-size:15px;line-height:18px;-webkit-appearance:none}input[type=email]:focus,input[type=password]:focus,input[type=tel]:focus,input[type=text]:focus,textarea:focus{border-color:#444}.btn_more { font-weight:normal; font-size: 13px; line-height:15px; color: #111111; padding: 4px 8px; border: 1px solid #1e1e1e; display: inline-block; vertical-align: middle; text-decoration: none !important; text-transform: uppercase; }.def_btn,input[type=button],input[type=reset],input[type=submit]{display:inline-block;padding:6px 7px;color:#444;text-align:center;vertical-align:middle;cursor:pointer;background-color:#f6f6f6;border:none;box-shadow:0 1px 2px 0 rgba(60,64,67,.3),0 1px 2px rgba(0,0,0,.08);transition:all .4s ease 0s;outline:0;font-size:14px; line-height:16px; font-weight:700;text-decoration:none;-webkit-appearance:none}select{padding:8px 10px;border-radius:0}select:focus{outline:0}.def_btn_group .active a{background:#fff;font-weight:700}ul.def_btn_link_tabs li a{padding:3px 8px;border:1px dashed transparent}ul.def_btn_link_tabs li.active a{font-weight:700}ul.rh-big-tabs-ul{margin:0;padding:0}ul.rh-big-tabs-ul .rh-big-tabs-li{display:inline-block;list-style:none;margin:0;padding:0;vertical-align:top}ul.rh-big-tabs-ul .rh-big-tabs-li a{color:#999;margin:0;padding:10px 15px;position:relative;display:inline-block;text-transform:uppercase;letter-spacing:-.5px;font-size:15px}ul.rh-big-tabs-ul .rh-big-tabs-li.active a{color:#111;font-weight:700}.width-250{width: 250px}.width-100{width: 100px}.width-80{width: 80px}.width-150{width: 150px}.width-125{width: 125px}.width-200{width: 200px}.width-300{width: 300px}.width-100p, .full_width .wp-block-button__link{width: 100%}.width-100-calc{width: calc(100% - 100px);}.width-80-calc{width: calc(100% - 80px);}.height-150{height: 150px}.height-150 img{max-height: 150px !important;}.height-125{height: 125px}.height-125 img{max-height: 125px !important}.height-80{height: 80px}.height-80 img{max-height: 80px !important}.height-22{height: 22px; line-height:22px;}.width-22{width:22px; min-width:22px;}.img-width-auto img{width:auto;}.img-maxh-100 img{max-height:100px;}.height-100{height:100px}.img-maxh-350 img{max-height:350px;}.img-maxh-500 img{max-height:500px;}.scroll-on-mobile{overflow-x:auto;white-space:nowrap;overflow-y:hidden;-webkit-overflow-scrolling:touch;transform:translate3d(0,0,0);display:block}.rh-line{height:1px;background:rgba(206,206,206,0.3);clear:both}.rh-line-right{border-right:1px solid rgba(206,206,206,0.3)}.rh-line-left{border-left:1px solid rgba(206,206,206,0.3)}.wpsm-button.rehub_main_btn.small-btn{font-size:17px;padding:9px 16px;text-transform:none;margin:0}.abdposright{position:absolute;top:0;right:0;z-index:2}.abdposleft{position:absolute;top:0;left:0;z-index:2}.abdfullwidth{position:absolute;top:0;right:0;bottom:0;left:0}.abposbot{position:absolute;bottom:0;right:0;left:0}.rh-cartbox:hover{box-shadow:rgba(0,0,0,.12) 0 3px 4px;backface-visibility:hidden;-webkit-backface-visibility:hidden}.no-padding,.rh-cartbox.no-padding{padding:0}.rh-shadow1{box-shadow:0 1px 1px 0 rgba(0,0,0,.12)}.rh-shadow2{box-shadow:0 5px 20px 0 rgba(0,0,0,.03)}.rh-shadow3{box-shadow:0 15px 30px 0 rgba(119,123,146,.1)}.rh-shadow4{box-shadow:0 5px 23px rgba(188,207,219,.35);border-top:1px solid #f8f8f8}.rh-shadow4:hover{box-shadow:0 5px 10px rgba(188,207,219,.35)}.rh-shadow5{box-shadow:0 2px 4px rgba(0,0,0,.07)}.single_top_corner .wpsm-button{float:right;margin:0 0 15px 0;white-space:nowrap}.left_st_postproduct .post-meta span{margin-right:12px}.single_top_corner .brand_logo_small img{max-width:120px;max-height:65px}.post-meta{margin-bottom:12px;font-size:11px;line-height:12px;font-style:italic;color:#999}.admin_meta .admin img{vertical-align:middle;margin-right:5px;border-radius:50%}.post-meta span{display:inline-block;margin-right:8px}.post-meta a.admin,.post-meta a.cat,.post-meta span a,.post-meta-big a{color:#111;text-decoration:none}.post-meta-big img{border-radius:50%}.post-meta-big span.postview_meta{color:#c00}.postviewcomm{line-height:28px;font-size:15px}.breadcrumb{margin-bottom:20px;color:#999;font-size:12px;line-height:14px}.breadcrumb a {color: #999;text-decoration: none;}.alreadywish .wishaddwrap,.countdown_dashboard,.re-favorites-posts .thumbscount,.wishaddedwrap,.wishremovedwrap,.yith_woo_chart .thumbscount{display:none}.elementor-widget-wrap>.elementor-element.elementor-absolute{position:absolute}.elementor-widget-wrap{position:relative;width:100%;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-align-content:flex-start;-ms-flex-line-pack:start;align-content:flex-start}.elementor-widget:not(:last-child){margin-bottom:20px}.elementor-widget-heading .elementor-heading-title, .elementor-button {line-height: 1;}.elementor-button {display: inline-block;}.dealScore {float: left;margin-right: 10px;}.dealScore .label{float:left;height:32px;text-align:center;font-size:14px;background:#96ca4e;padding:0 13px;line-height:32px;color:#fff;font-weight:700;border-radius:4px 0 0 4px}.dealScore .thumbscount{margin:0;float:left;height:32px;width:auto;min-width:50px;text-align:center;font-size:18px;background:#daecc2;padding:0 5px;color:#333!important;line-height:32px;border-radius:0 4px 4px 0}.dl-menuwrapper button { border: none; width: 48px; height: 53px; overflow: hidden; position: relative; outline: none; background:transparent }.dl-menuwrapper button svg line{stroke:#111;stroke-width: 2;stroke-dasharray: 26;animation: svglineltr 1s linear;}.main-nav.dark_style .dl-menuwrapper button svg line{stroke:#fff}.prehidden{opacity:0;visibility:hidden}.flexslider.loading{background: #fff; position: relative; min-height: 100px}.flexslider .slides > li {display: none; backface-visibility: hidden;} .flexslider .slides img {width: 100%; display: block; height: 100%}.flexslider.loading .fa-pulse {position: absolute;top: 50%;left: 50%;margin: -13px 0 0 -13px;font-size: 26px;}@keyframes svglineltr {0%{stroke-dashoffset: 26;}100%{stroke-dashoffset: 0;}}.rh-sslide-panel{visibility:hidden}.side-twocol .columns { height: 220px; position: relative; overflow: hidden; }.side-twocol .columns .col-item{height: 100%}.side-twocol figure img, .side-twocol figure{height: 100%; width: 100% }.col-feat-grid{z-index:2; background-position: center center;background-size: cover; position: relative;}.col-feat-grid.item-1, .col-feat-50{ width: 50%; float: left; height: 450px}.col-feat-50 .col-feat-grid{ width: calc(50% - 5px); float: left; height: 220px}.item-small-news h3 {font-size: 16px;line-height: 22px;margin: 0 0 10px;font-weight: 400;}.re_filter_panel ul.re_filter_ul li span {cursor: pointer;padding: 12px 16px;display: inline-block;transition: all .3s ease;font-size: 15px;line-height: 16px;}.calcposright {position: absolute;top: 30px;right: calc((100% - 1200px)/2);z-index: 9;}.width-22 {width: 22px;min-width: 22px;}.height-22 {height: 22px;line-height: 22px;}.re_filter_panel ul.re_filter_ul li {display: inline-block;margin: 0;}.re_filter_panel .re_tax_dropdown {position: absolute;top: 0;right: 0;margin: 0;overflow: hidden;transition: all .5s ease;}.reveal_enabled:not(.expired_coupon) .btn_offer_block:not(.coupon_btn), .woocommerce .products .reveal_enabled .woo_loop_btn:not(.coupon_btn){display: none !important;}.re_filter_panel {position: relative;margin: 0 0 32px;}.re_filter_panel .re_tax_dropdown li.rh_drop_item {display: block;margin: 0;height: 0;}.re_filter_panel .re_tax_dropdown li.label {display: block;padding: 12px 20px;margin: 0;font-size: 15px;line-height: 16px;cursor: pointer;color: #111;}.elementor-section .elementor-container{display:flex}a.logo_image_insticky img, a.logo_image_mobile img{max-height: 50px; max-width: 160px; vertical-align: middle; height:auto; width:auto;}.re-ribbon-badge, .favour_in_image {position: absolute;}.small_post .wprc-container{position:absolute;}.small_post h2{font-size:20px}.rh-flex-align-stretch {align-content: stretch;align-items: stretch;}.rh-fit-cover img {object-fit: cover; width:100%; height:100%}.text_in_thumb h2 {font-size: 18px;line-height: 21px;margin: 15px 0 12px 0;}.col-feat-grid .feat-grid-overlay{position:absolute;bottom:0; white-space:normal}.rh-icon-notice {position: absolute;min-width: 18px;height: 18px;background: #f50000;text-align: center;padding: 0 2px;color: #fff;font: bold 12px/18px Arial;border-radius: 50%;}.title h1 {margin: 0 0 28px 0;}a.rh-cat-label-title, .rh-cat-label-title a, .rh-label-string{font-style: normal;background-color: #111;padding: 3px 6px;color: #fff;font-size: 11px; white-space: nowrap;display: inline-block;margin: 0 5px 5px 0;line-height: 12px;}.tabs-menu:not(.rh-tab-shortcode) li{text-align: center; font-weight: 700;font-size: 15px;line-height: 16px;    text-transform: uppercase;}.rh_big_btn_inline .priced_block .btn_offer_block{display: inline-block; float: none;font-size: 21px; line-height: 21px; padding: 13px 70px;text-transform: none;}.rh-float-panel{position:fixed; visibility:hidden}
-
-.priced_block .btn_offer_block, .wpsm-button.rehub_main_btn, .priced_block .button {font-weight: 700;font-size: 16px;line-height: 17px;padding: .65em 1.1em;text-transform: uppercase;position: relative;text-align: center;display: inline-block;}
-.wpsm_score_box .rehub_offer_coupon {font-size: 16px;width: 200px;margin-bottom: 10px;}
-.wpsm_score_box .priced_block .btn_offer_block, .wpsm_score_box .priced_block .single_add_to_cart_button {font-size: 20px;line-height: 20px;text-align: center;display: block;padding: 14px 20px;width: 100%;border-bottom: 4px solid rgba(0,0,0,.2) !important;margin-bottom: 12px;}
-
-
-.offer_grid figure img, figure.eq_figure img {height: 150px;}
-.grid_onsale {padding: 3px 7px;font: bold 12px/15px Arial;position: absolute;text-align: center;top: 3px;right: 3px;z-index: 1;margin: 0;background: #77b21d;color: #fff;}
-.carousel-style-3 .re_carousel{max-height:168px;opacity:0}.re_carousel.owl-loaded{opacity:1; max-height:1000px}
-
-@media (min-width: 768px){.desktablsdisplaynone{display: none !important;}}
-@media (min-width: 1024px){
-	.desktabldisplaynone{display: none !important;}
-	.floatactive .hideonfloattablet {display: none;}
-}
-@media (min-width: 1140px){
-	.desktopdisplaynone{display: none !important;}
-	.floatactive .hideonfloatdesktop {display: none;}
-}
-
-@media screen and (max-width: 1224px) and (min-width: 1024px) {.col-feat-grid.item-1, .col-feat-50{ height: 380px}.col-feat-50 .col-feat-grid{height: 185px}.side-twocol .columns {height: 200px}
-}
-@media screen and (max-width:1024px){
-	body .disabletabletpadding {padding: 0 !important;}
-}
-@media screen and (max-width: 1023px) {.col-feat-grid.item-1, .col-feat-50 { float: none; width: 100%; margin-bottom: 10px; overflow: hidden;  }.col-feat-50{margin: 0}.side-twocol .columns{  width: 48.5%; float: left;}.side-twocol .col-1 {margin: 0 3% 0 0;}.side-twocol .columns a.comment{ display:none}.side-twocol .columns{height: auto;}.tabletsblockdisplay{display: block !important;width: 100% !important;float: none !important; margin: 0 0 10px 0; clear: both !important}
-	.responsive_nav_wrap{display:block}.centered-container .vc_col-sm-12>*>.wpb_wrapper,.content,.main-side,.rh-300-content-area,.rh-300-sidebar,.rh-336-content-area,.rh-336-sidebar,.rh-360-sidebar,.rh-360-content-area,.rh-mini-sidebar,.rh-mini-sidebar-content-area,.sidebar,.vc_row.vc_rehub_container>.vc_col-sm-4,.vc_row.vc_rehub_container>.vc_col-sm-8,.vc_row.vc_rehub_container>.vc_col-sm-8.floatright,.vc_section>.vc_row,body .elementor-section.elementor-section-boxed>.elementor-container{width:100%;float:none;display:block}.rh-container, .full_post_area.content, .full_post_area.rh-container{width:100%;padding-left:15px;padding-right:15px}
-}
-@media(max-width:767px){nav.top_menu, .header_top_wrap, .float-panel-woo-title, #float-panel-woo-area del, .rh-float-panel .float-panel-woo-info {display: none;}.main-nav .rh-container{padding:0}.carousel-style-3 .controls.prev{left:10px}.carousel-style-3 .controls.next{right:10px}body .mobilepadding{padding:0 15px}.hideonmobile{display:none}.showonmobile{display:inline-block}body .disablemobilepadding{padding:0}body .disablemobilemargin{margin:0}body .disablemobileborder{border:none}body .disablemobilealign{text-align:inherit}.disable-bg-on-mobile,.vc_row.disable-bg-on-mobile,.vc_row.disablebgmobile{background:none transparent}.mobilecenterdisplay{text-align:center}.mobilerelative{position:relative}.vc_row .vc_col-sm-4 .sidebar{padding:0}.mobileblockdisplay,.mobileblockdisplay .celldisplay,.mobileblockdisplay .rowdisplay,.tabledisplay.mobileblockdisplay{display:block;width:100%;float:none}.disablefloatmobile.floatleft,.disablefloatmobile.floatright{float:none;margin-right:0;margin-left:0;clear:both}body .mobfont110{font-size:110%}body .mobfont100{font-size:100%}body .mobfont90{font-size:90%}body .mobfont80{font-size:80%}body .mobfont70{font-size:70%}body .moblineheight15{line-height:15px}body .moblineheight20{line-height:20px}body .mobfontnormal{font-size:inherit}.mobmb10{margin-bottom:10px}.newscom_btn_block, .newscom_detail, .featured_newscom_left {display: block;padding-left: 0;padding-right: 0;}.mobflexbasisclear{flex-basis:100%;width:100%}.col_wrap_fifth,.col_wrap_fourth,.col_wrap_six,.col_wrap_three,.col_wrap_two{margin:0 0 20px 0}.col_wrap_fifth .col_item,.col_wrap_fourth .col_item,.col_wrap_six .col_item,.col_wrap_three .col_item{width:47%;margin:0 1.5% 15px 1.5%}.no_padding_wrap .col_wrap_fifth .col_item,.no_padding_wrap .col_wrap_fourth .col_item,.no_padding_wrap .col_wrap_six .col_item,.no_padding_wrap .col_wrap_three .col_item{width:50%;margin:0}.col_wrap_fifth .col_item:nth-child(5n+1),.col_wrap_three .col_item:nth-child(3n+1){clear:none}.col_wrap_fifth .col_item:nth-child(2n+1),.col_wrap_fourth .col_item:nth-child(2n+1),.col_wrap_six .col_item:nth-child(2n+1),.col_wrap_three .col_item:nth-child(2n+1){clear:both}.featured_newscom_left, .newscom_detail {padding: 0;margin: 0 auto 30px auto;}.col-feat-50 .col-feat-grid{ height: 200px}.col-feat-50 {height: auto;} .col-feat-grid.item-1 .text_in_thumb h2{font-size: 21px;line-height: 24px}.re_filter_panel ul.re_filter_ul li span {display: none;}.re_filter_panel ul.re_filter_ul li, .re_filter_panel ul.re_filter_ul li span.active, .re_filter_panel ul.re_filter_ul li span.showfiltermobile{display:block;}.re_filter_panel.tax_enabled_drop {margin: 0 0 65px;}.re_filter_panel .re_tax_dropdown {top: 100%;width: 100%;}
-}
-@media (max-width:600px){.wpsm-five-sixth,.wpsm-four-fifth,.wpsm-one-fifth,.wpsm-one-fourth,.wpsm-one-half,.wpsm-one-sixth,.wpsm-one-third,.wpsm-three-fifth,.wpsm-three-fourth,.wpsm-two-fifth,.wpsm-two-third{width:100%;float:none;margin-right:0;margin-bottom:20px}.wpsm-one-half-mobile{width:48%;margin-right:4%}.wpsm-one-third-mobile{width:30.66%;margin-right:4%}
-}
-@media(max-width:479px){body .scroll-on-mobile{display:block}.scroll-on-mobile .col-feat-grid,.scroll-on-mobile .col-item,.scroll-on-mobile .columns{width:80%;display:inline-block;margin:0;float:none;white-space:normal}
-}
-@media (max-width:479px){.main-side{border:none;box-shadow:none;padding:0}body:not(.dark_body):not(.page-template-template-systempages){background:#fff}body:not(.dark_body) .rh-post-wrapper{background:0 0;padding:0;border:none;box-shadow:none}.showonsmobile{display:block}.hideonsmobile{display:none}.mobilesblockdisplay{display:block;width:100%;float:none;margin-left:0;margin-right:0}.col_wrap_fifth .col_item, .col_wrap_fourth .col_item, .col_wrap_six .col_item, .col_wrap_three .col_item{width:100%;margin:0 0 14px 0}.col_item.two_column_mobile{width:48%;margin:0 1% 25px 1%}.no_padding_wrap.col_item.two_column_mobile{width:50%;margin:0}.owl-item .col_item.two_column_mobile{width:100%;margin:0 auto 12px auto}.col-feat-grid.item-1{height: 260px}.carousel-style-3 .re_carousel{max-height:285px;}	
-	.offer_grid figure img, figure.eq_figure img{height:120px;}.img-mobs-maxh-250 img{max-height:250px;}.img-mobs-maxh-250{height:250px;}
-}
-</style>
-
-<title>Blog Archive - Bebes y Mamas</title>
-<meta name="description" content="Blog Archive - Bebes y Mamas">
-<meta name="robots" content="index, follow">
+<title>Blog - Bebes y Mamas</title>
+<meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
 <link rel="canonical" href="https://bebesymamas.es/blog/">
 <meta property="og:locale" content="es_ES">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Blog Archive - Bebes y Mamas">
-<meta property="og:description" content="Blog Archive - Bebes y Mamas">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Blog - Bebes y Mamas">
+<meta property="og:description" content="Welcome to WordPress. This is your first post. Edit or delete it, then start writing!">
 <meta property="og:url" content="https://bebesymamas.es/blog/">
 <meta property="og:site_name" content="Bebes y Mamas">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Blog Archive - Bebes y Mamas">
-<meta name="twitter:description" content="Blog Archive - Bebes y Mamas">
-<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://bebesymamas.es/#person","name":"Bebes y Mamas","url":"https://bebesymamas.es"},{"@type":"WebSite","@id":"https://bebesymamas.es/#website","url":"https://bebesymamas.es","name":"Bebes y Mamas","publisher":{"@id":"https://bebesymamas.es/#person"},"inLanguage":"es"},{"@type":"ImageObject","@id":"https://bebesymamas.es/blog/#primaryImage","url":"https://bebesymamas.es/wp-content/uploads/2020/10/fold.jpg","width":"1000","height":"658"},{"@type":"CollectionPage","@id":"https://bebesymamas.es/blog/#webpage","url":"https://bebesymamas.es/blog/","name":"Blog Archive - Bebes y Mamas","isPartOf":{"@id":"https://bebesymamas.es/#website"},"primaryImageOfPage":{"@id":"https://bebesymamas.es/blog/#primaryImage"},"inLanguage":"es"}]}</script>
+<meta name="twitter:title" content="Blog - Bebes y Mamas">
+<meta name="twitter:description" content="Welcome to WordPress. This is your first post. Edit or delete it, then start writing!">
+<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://bebesymamas.es/#person","name":"Bebes y Mamas","url":"https://bebesymamas.es"},{"@type":"WebSite","@id":"https://bebesymamas.es/#website","url":"https://bebesymamas.es","name":"Bebes y Mamas","publisher":{"@id":"https://bebesymamas.es/#person"},"inLanguage":"es"},{"@type":"CollectionPage","@id":"https://bebesymamas.es/blog/#webpage","url":"https://bebesymamas.es/blog/","name":"Blog - Bebes y Mamas","about":{"@id":"https://bebesymamas.es/#person"},"isPartOf":{"@id":"https://bebesymamas.es/#website"},"inLanguage":"es"}]}</script>
+
+
 
 
 
 <link rel="alternate" type="application/rss+xml" title="Bebes y Mamas &raquo; Feed" href="https://bebesymamas.es/feed/">
-<link rel="alternate" type="application/rss+xml" title="Bebes y Mamas &raquo; Blog Feed" href="https://bebesymamas.es/blog/feed/">
-<link rel="stylesheet" id="rhstyle-css" href="https://bebesymamas.es/wp-content/themes/rehub-blankchild/style.css?ver=15.0" type="text/css" media="all">
-<link rel="stylesheet" id="rhslidingpanel-css" href="https://bebesymamas.es/wp-content/themes/rehub-theme/css/slidingpanel.css?ver=1.0" type="text/css" media="all">
-<link rel="stylesheet" id="rhcompare-css" href="https://bebesymamas.es/wp-content/themes/rehub-theme/css/dynamiccomparison.css?ver=1.3" type="text/css" media="all">
-<link rel="stylesheet" id="wp-block-library-css" href="https://bebesymamas.es/wp-includes/css/dist/block-library/style.min.css?ver=5.7" type="text/css" media="all">
-<link rel="stylesheet" id="rate-my-post-css" href="https://bebesymamas.es/wp-content/plugins/rate-my-post/public/css/rate-my-post.css?ver=3.3.2" type="text/css" media="all">
-<link rel="stylesheet" id="toc-screen-css" href="https://bebesymamas.es/wp-content/plugins/table-of-contents-plus/screen.min.css?ver=2002" type="text/css" media="all">
-<link rel="stylesheet" id="parent-style-css" href="https://bebesymamas.es/wp-content/themes/rehub-theme/style.css?ver=5.7" type="text/css" media="all">
-<link rel="stylesheet" id="rehubicons-css" href="https://bebesymamas.es/wp-content/themes/rehub-theme/iconstyle.css?ver=15.0" type="text/css" media="all">
-<script type="text/javascript" src="https://bebesymamas.es/wp-includes/js/jquery/jquery.min.js?ver=3.5.1" id="jquery-core-js"></script>
-<script type="text/javascript" src="https://bebesymamas.es/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+
+<link rel="stylesheet" id="wp-block-library-css" href="https://bebesymamas.es/wp-includes/css/dist/block-library/style.min.css?ver=5.7" media="all">
+<link rel="stylesheet" id="rate-my-post-css" href="https://bebesymamas.es/wp-content/plugins/rate-my-post/public/css/rate-my-post.css?ver=3.3.2" media="all">
+<link rel="stylesheet" id="toc-screen-css" href="https://bebesymamas.es/wp-content/plugins/table-of-contents-plus/screen.min.css?ver=2002" media="all">
+<link rel="stylesheet" id="wp-show-posts-css" href="https://bebesymamas.es/wp-content/plugins/wp-show-posts/css/wp-show-posts-min.css?ver=1.1.3" media="all">
+<link rel="stylesheet" id="parente2-style-css" href="https://bebesymamas.es/wp-content/themes/generatepress/style.css?ver=5.7" media="all">
+<link rel="stylesheet" id="childe2-style-css" href="https://bebesymamas.es/wp-content/themes/BebesyMamas/style.css?ver=5.7" media="all">
+<link rel="stylesheet" id="generate-widget-areas-css" href="https://bebesymamas.es/wp-content/themes/generatepress/assets/css/components/widget-areas.min.css?ver=3.0.3" media="all">
+<link rel="stylesheet" id="generate-style-css" href="https://bebesymamas.es/wp-content/themes/generatepress/assets/css/main.min.css?ver=3.0.3" media="all">
+<style id="generate-style-inline-css">
+.generate-columns {margin-bottom: 20px;padding-left: 20px;}.generate-columns-container {margin-left: -20px;}.page-header {margin-bottom: 20px;margin-left: 20px}.generate-columns-container > .paging-navigation {margin-left: 20px;}
+body{color:#222222;}a{color:#222222;}a:hover, a:focus, a:active{color:#000000;}.grid-container{max-width:1240px;}.wp-block-group__inner-container{max-width:1240px;margin-left:auto;margin-right:auto;}.site-header .header-image{width:140px;}body, button, input, select, textarea{font-family:"Roboto", sans-serif;font-size:18px;}body{line-height:1.6;}.entry-content > [class*="wp-block-"]:not(:last-child){margin-bottom:1.5em;}.main-navigation a, .menu-toggle{font-weight:700;font-size:18px;}.main-navigation .menu-bar-items{font-size:18px;}.main-navigation .main-nav ul ul li a{font-size:15px;}.widget-title{font-weight:700;font-size:17px;margin-bottom:20px;}.sidebar .widget, .footer-widgets .widget{font-size:16px;}button:not(.menu-toggle),html input[type="button"],input[type="reset"],input[type="submit"],.button,.wp-block-button .wp-block-button__link{font-weight:700;font-size:18px;}h1{font-weight:700;font-size:40px;line-height:1.1em;}h2{font-weight:700;font-size:30px;line-height:1.3em;margin-bottom:30px;}h3{font-weight:700;font-size:26px;line-height:1.4em;margin-bottom:30px;}h4{font-weight:700;font-size:22px;line-height:1.4em;}.site-info{font-weight:bold;font-size:14px;}@media (max-width:768px){.main-title{font-size:20px;}h1{font-size:36px;}h2{font-size:26px;}h3{font-size:24px;}h4{font-size:22px;}h5{font-size:20px;}}.top-bar{background-color:#636363;color:#ffffff;}.top-bar a{color:#ffffff;}.top-bar a:hover{color:#303030;}.site-header{background-color:#ffffff;}.main-title a,.main-title a:hover{color:#222222;}.site-description{color:#757575;}.main-navigation .main-nav ul li a,.menu-toggle, .main-navigation .menu-bar-items{color:#ffffff;}.main-navigation .main-nav ul li:hover > a,.main-navigation .main-nav ul li:focus > a, .main-navigation .main-nav ul li.sfHover > a, .main-navigation .menu-bar-item:hover > a, .main-navigation .menu-bar-item.sfHover > a{color:#ffffff;}button.menu-toggle:hover,button.menu-toggle:focus{color:#ffffff;}.main-navigation .main-nav ul li[class*="current-menu-"] > a{color:#ffffff;}.main-navigation .main-nav ul li[class*="current-menu-"] > a:hover,.main-navigation .main-nav ul li[class*="current-menu-"].sfHover > a{color:#ffffff;}.navigation-search input[type="search"],.navigation-search input[type="search"]:active, .navigation-search input[type="search"]:focus, .main-navigation .main-nav ul li.search-item.active > a, .main-navigation .menu-bar-items .search-item.active > a{color:#ffffff;}.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .one-container .container, .separate-containers .paging-navigation, .inside-page-header{color:#222222;}.inside-article a,.paging-navigation a,.comments-area a,.page-header a{color:#222222;}.inside-article a:hover,.paging-navigation a:hover,.comments-area a:hover,.page-header a:hover{color:#3d5467;}.entry-header h1,.page-header h1{color:#222222;}.entry-title a{color:#222222;}.entry-title a:hover{color:#444444;}.entry-meta{color:#222222;}.entry-meta a{color:#222222;}.entry-meta a:hover{color:#444444;}h1{color:#222222;}h2{color:#222222;}h3{color:#222222;}h4{color:#222222;}h5{color:#222222;}.sidebar .widget{color:#222222;background-color:#f9f9f9;}.sidebar .widget a{color:#222222;}.sidebar .widget a:hover{color:#db5461;}.sidebar .widget .widget-title{color:#3d5467;}.footer-widgets .widget-title{color:#000000;}.site-info{color:#3d5467;background-color:#fafafa;}.site-info a{color:#ffffff;}.site-info a:hover{color:#fefefe;}.footer-bar .widget_nav_menu .current-menu-item a{color:#fefefe;}input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="tel"],input[type="number"],textarea,select{color:#666666;background-color:#ffffff;border-color:#db5461;}input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="search"]:focus,input[type="tel"]:focus,input[type="number"]:focus,textarea:focus,select:focus{color:#666666;background-color:#ffffff;border-color:#666666;}button,html input[type="button"],input[type="reset"],input[type="submit"],a.button,a.wp-block-button__link:not(.has-background){color:#ffffff;background-color:#db5461;}button:hover,html input[type="button"]:hover,input[type="reset"]:hover,input[type="submit"]:hover,a.button:hover,button:focus,html input[type="button"]:focus,input[type="reset"]:focus,input[type="submit"]:focus,a.button:focus,a.wp-block-button__link:not(.has-background):active,a.wp-block-button__link:not(.has-background):focus,a.wp-block-button__link:not(.has-background):hover{color:#ffffff;background-color:#3d5467;}a.generate-back-to-top{background-color:rgba( 0,0,0,0.4 );color:#ffffff;}a.generate-back-to-top:hover,a.generate-back-to-top:focus{background-color:rgba( 0,0,0,0.6 );color:#ffffff;}@media (max-width: 992px){.main-navigation .menu-bar-item:hover > a, .main-navigation .menu-bar-item.sfHover > a{background:none;color:#ffffff;}}.inside-header{padding:40px 20px 40px 20px;}.nav-below-header .main-navigation .inside-navigation.grid-container, .nav-above-header .main-navigation .inside-navigation.grid-container{padding:0px;}.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .separate-containers .paging-navigation, .one-container .site-content, .inside-page-header, .wp-block-group__inner-container{padding:80px 20px 20px 20px;}.separate-containers .paging-navigation{padding-top:20px;padding-bottom:20px;}.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull{margin-left:-20px;width:calc(100% + 40px);max-width:calc(100% + 40px);}.one-container.right-sidebar .site-main,.one-container.both-right .site-main{margin-right:20px;}.one-container.left-sidebar .site-main,.one-container.both-left .site-main{margin-left:20px;}.one-container.both-sidebars .site-main{margin:0px 20px 0px 20px;}.one-container.archive .post:not(:last-child), .one-container.blog .post:not(:last-child){padding-bottom:20px;}.main-navigation .main-nav ul li a,.menu-toggle,.main-navigation .menu-bar-item > a{line-height:40px;}.navigation-search input[type="search"]{height:40px;}.rtl .menu-item-has-children .dropdown-menu-toggle{padding-left:20px;}.rtl .main-navigation .main-nav ul li.menu-item-has-children > a{padding-right:20px;}.widget-area .widget{padding:20px;}.inside-site-info{padding:40px;}@media (max-width:768px){.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .separate-containers .paging-navigation, .one-container .site-content, .inside-page-header, .wp-block-group__inner-container{padding:80px 20px 20px 20px;}.inside-top-bar{padding-right:30px;padding-left:30px;}.inside-header{padding-right:0px;padding-left:0px;}.widget-area .widget{padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px;}.footer-widgets-container{padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;}.inside-site-info{padding-right:30px;padding-left:30px;}.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull{margin-left:-20px;width:calc(100% + 40px);max-width:calc(100% + 40px);}.one-container .site-main .paging-navigation{margin-bottom:20px;}}.is-right-sidebar{width:30%;}.is-left-sidebar{width:30%;}.site-content .content-area{width:70%;}@media (max-width: 992px){.main-navigation .menu-toggle,.sidebar-nav-mobile:not(#sticky-placeholder){display:block;}.main-navigation ul,.gen-sidebar-nav,.main-navigation:not(.slideout-navigation):not(.toggled) .main-nav > ul,.has-inline-mobile-toggle #site-navigation .inside-navigation > *:not(.navigation-search):not(.main-nav){display:none;}.nav-align-right .inside-navigation,.nav-align-center .inside-navigation{justify-content:space-between;}.has-inline-mobile-toggle .mobile-menu-control-wrapper{display:flex;flex-wrap:wrap;}.has-inline-mobile-toggle .inside-header{flex-direction:row;text-align:left;flex-wrap:wrap;}.has-inline-mobile-toggle .header-widget,.has-inline-mobile-toggle #site-navigation{flex-basis:100%;}.nav-float-left .has-inline-mobile-toggle #site-navigation{order:10;}}
+.elementor-template-full-width .site-content{display:block;}
+.dynamic-author-image-rounded{border-radius:100%;}.dynamic-featured-image, .dynamic-author-image{vertical-align:middle;}.one-container.blog .dynamic-content-template:not(:last-child), .one-container.archive .dynamic-content-template:not(:last-child){padding-bottom:0px;}.dynamic-entry-excerpt > p:last-child{margin-bottom:0px;}
+.navigation-branding .main-title{font-weight:bold;text-transform:none;font-size:25px;}@media (min-width: 769px) and (max-width: 1024px){.main-navigation:not(.slideout-navigation) a, .main-navigation .menu-toggle, .main-navigation .menu-bar-items{font-size:22px;}.main-navigation:not(.slideout-navigation) .main-nav ul ul li a{font-size:19px;}}@media (max-width: 992px){.main-navigation:not(.slideout-navigation) a, .main-navigation .menu-toggle, .main-navigation .menu-bar-items{font-size:22px;}.main-navigation:not(.slideout-navigation) .main-nav ul ul li a{font-size:19px;}.navigation-branding .main-title{font-size:20px;}}
+.page-hero{background-color:rgba(61,84,103,0.8);background-image:url(https://cdn.statically.io/img/dev.bebesymamas.es/wp-content/uploads/2020/12/larm-rmah-AEaTUnvneik-unsplash.jpg);background-size:cover;background-image:linear-gradient(0deg, rgba(61,84,103,0.8),rgba(61,84,103,0.8)), url(https://bebesymamas.es/wp-content/uploads/2020/12/larm-rmah-AEaTUnvneik-unsplash.jpg?quality=80);background-position:center center;background-repeat:no-repeat;color:#ffffff;padding-top:240px;padding-right:20px;padding-bottom:140px;padding-left:20px;}.page-hero .inside-page-hero.grid-container{max-width:calc(1240px - 20px - 20px);}.page-hero h1, .page-hero h2, .page-hero h3, .page-hero h4, .page-hero h5, .page-hero h6{color:#ffffff;}.inside-page-hero > *:last-child{margin-bottom:0px;}.page-hero time.updated{display:none;}.header-wrap{position:absolute;left:0px;right:0px;z-index:10;}.header-wrap .site-header{background:transparent;}.elementor-editor-active .header-wrap{pointer-events:none;}@media (max-width:768px){.page-hero{padding-top:200px;padding-right:20px;padding-bottom:100px;padding-left:20px;}}
+@media (max-width: 992px){.main-navigation .menu-toggle,.main-navigation .mobile-bar-items a,.main-navigation .menu-bar-item > a{padding-left:0px;padding-right:0px;}.main-navigation .main-nav ul li a,.main-navigation .menu-toggle,.main-navigation .mobile-bar-items a,.main-navigation .menu-bar-item > a{line-height:50px;}.main-navigation .site-logo.navigation-logo img, .mobile-header-navigation .site-logo.mobile-header-logo img, .navigation-search input[type="search"]{height:50px;}}.post-image:not(:first-child), .page-content:not(:first-child), .entry-content:not(:first-child), .entry-summary:not(:first-child), footer.entry-meta{margin-top:1em;}.post-image-above-header .inside-article div.featured-image, .post-image-above-header .inside-article div.post-image{margin-bottom:1em;}.main-navigation.slideout-navigation .main-nav > ul > li > a{line-height:60px;}
+</style>
+<link rel="stylesheet" id="generate-child-css" href="https://bebesymamas.es/wp-content/themes/BebesyMamas/style.css?ver=1616346096" media="all">
+<link rel="stylesheet" id="generate-blog-css" href="https://bebesymamas.es/wp-content/plugins/gp-premium/blog/functions/css/style.min.css?ver=2.0.0-alpha.3" media="all">
+<link rel="stylesheet" id="generate-offside-css" href="https://bebesymamas.es/wp-content/plugins/gp-premium/menu-plus/functions/css/offside.min.css?ver=2.0.0-alpha.3" media="all">
+<style id="generate-offside-inline-css">
+.slideout-navigation.main-navigation{background-color:#3d5467;}.slideout-navigation.main-navigation .main-nav ul li a{color:#ffffff;font-weight:700;text-transform:none;font-size:22px;}.slideout-navigation.main-navigation ul ul{background-color:rgba(0,0,0,0);}.slideout-navigation.main-navigation .main-nav ul ul li a{color:#ffffff;font-size:21px;}@media (max-width:768px){.slideout-navigation.main-navigation .main-nav ul li a{font-size:22px;}.slideout-navigation.main-navigation .main-nav ul ul li a{font-size:21px;}}.slideout-navigation.main-navigation .main-nav ul li:hover > a,.slideout-navigation.main-navigation .main-nav ul li:focus > a,.slideout-navigation.main-navigation .main-nav ul li.sfHover > a{background-color:rgba(0,0,0,0);}.slideout-navigation.main-navigation .main-nav ul ul li:hover > a,.slideout-navigation.main-navigation .main-nav ul ul li:focus > a,.slideout-navigation.main-navigation .main-nav ul ul li.sfHover > a{background-color:rgba(0,0,0,0);}.slideout-navigation.main-navigation .main-nav ul li[class*="current-menu-"] > a, .slideout-navigation.main-navigation .main-nav ul li[class*="current-menu-"] > a:hover,.slideout-navigation.main-navigation .main-nav ul li[class*="current-menu-"].sfHover > a{background-color:rgba(0,0,0,0);}.slideout-navigation.main-navigation .main-nav ul ul li[class*="current-menu-"] > a,.slideout-navigation.main-navigation .main-nav ul ul li[class*="current-menu-"] > a:hover,.slideout-navigation.main-navigation .main-nav ul ul li[class*="current-menu-"].sfHover > a{background-color:rgba(0,0,0,0);}.slideout-navigation, .slideout-navigation a{color:#ffffff;}.slideout-navigation button.slideout-exit{color:#ffffff;padding-left:20px;padding-right:20px;}.slide-opened nav.toggled .menu-toggle:before{display:none;}@media (max-width: 992px){.menu-bar-item.slideout-toggle{display:none;}}
+</style>
+<link rel="stylesheet" id="generate-navigation-branding-css" href="https://bebesymamas.es/wp-content/plugins/gp-premium/menu-plus/functions/css/navigation-branding-flex.min.css?ver=2.0.0-alpha.3" media="all">
+<style id="generate-navigation-branding-inline-css">
+@media (max-width: 992px){.site-header, #site-navigation, #sticky-navigation{display:none !important;opacity:0.0;}#mobile-header{display:block !important;width:100% !important;}#mobile-header .main-nav > ul{display:none;}#mobile-header.toggled .main-nav > ul, #mobile-header .menu-toggle, #mobile-header .mobile-bar-items{display:block;}#mobile-header .main-nav{-ms-flex:0 0 100%;flex:0 0 100%;-webkit-box-ordinal-group:5;-ms-flex-order:4;order:4;}}.main-navigation.has-branding .inside-navigation.grid-container, .main-navigation.has-branding.grid-container .inside-navigation:not(.grid-container){padding:0px 20px 0px 20px;}.main-navigation.has-branding:not(.grid-container) .inside-navigation:not(.grid-container) .navigation-branding{margin-left:10px;}.navigation-branding img, .site-logo.mobile-header-logo img{height:40px;width:auto;}.navigation-branding .main-title{line-height:40px;}@media (max-width: 992px){.main-navigation.has-branding.nav-align-center .menu-bar-items, .main-navigation.has-sticky-branding.navigation-stick.nav-align-center .menu-bar-items{margin-left:auto;}.navigation-branding{margin-right:auto;margin-left:10px;}.navigation-branding .main-title, .mobile-header-navigation .site-logo{margin-left:10px;}.main-navigation.has-branding .inside-navigation.grid-container{padding:0px;}.navigation-branding img, .site-logo.mobile-header-logo{height:50px;}.navigation-branding .main-title{line-height:50px;}}
+</style>
+<script src="https://bebesymamas.es/wp-includes/js/jquery/jquery.min.js?ver=3.5.1" id="jquery-core-js"></script>
+<script src="https://bebesymamas.es/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
 
 
 <link rel="dns-prefetch" href="https://cdn.statically.io/">
 <link rel="preconnect" href="https://cdn.statically.io/" crossorigin>
-        <link rel="preload" href="https://bebesymamas.es/wp-content/themes/rehub-theme/fonts/rhicons.woff2?3oibrk" as="font" type="font/woff2" crossorigin="crossorigin"><style type="text/css"> .logo_section_wrap{box-shadow:0 15px 30px 0 rgba(119,123,146,0.1)}.footer-bottom{background-color:#f7f8ff !important}.footer-bottom .footer_widget{border:none !important} .widget .title:after{border-bottom:2px solid #ea0020;}.rehub-main-color-border,nav.top_menu > ul > li.vertical-menu.border-main-color .sub-menu,.rh-main-bg-hover:hover,.wp-block-quote,ul.def_btn_link_tabs li.active a,.wp-block-pullquote{border-color:#ea0020;}.wpsm_promobox.rehub_promobox{border-left-color:#ea0020!important;}.color_link{color:#ea0020 !important;}.search-header-contents{border-top-color:#ea0020;}.featured_slider:hover .score,.top_chart_controls .controls:hover,article.post .wpsm_toplist_heading:before{border-color:#ea0020;}.btn_more:hover,.tw-pagination .current{border:1px solid #ea0020;color:#fff}.rehub_woo_review .rehub_woo_tabs_menu li.current{border-top:3px solid #ea0020;}.gallery-pics .gp-overlay{box-shadow:0 0 0 4px #ea0020 inset;}.post .rehub_woo_tabs_menu li.current,.woocommerce div.product .woocommerce-tabs ul.tabs li.active{border-top:2px solid #ea0020;}.rething_item a.cat{border-bottom-color:#ea0020}nav.top_menu ul li ul.sub-menu{border-bottom:2px solid #ea0020;}.widget.deal_daywoo,.elementor-widget-wpsm_woofeatured .deal_daywoo{border:3px solid #ea0020;padding:20px;background:#fff;}.deal_daywoo .wpsm-bar-bar{background-color:#ea0020 !important} #buddypress div.item-list-tabs ul li.selected a span,#buddypress div.item-list-tabs ul li.current a span,#buddypress div.item-list-tabs ul li a span,.user-profile-div .user-menu-tab > li.active > a,.user-profile-div .user-menu-tab > li.active > a:focus,.user-profile-div .user-menu-tab > li.active > a:hover,.news_in_thumb:hover a.rh-label-string,.news_out_thumb:hover a.rh-label-string,.col-feat-grid:hover a.rh-label-string,.carousel-style-deal .re_carousel .controls,.re_carousel .controls:hover,.openedprevnext .postNavigation a,.postNavigation a:hover,.top_chart_pagination a.selected,.flex-control-paging li a.flex-active,.flex-control-paging li a:hover,.btn_more:hover,body .tabs-menu li:hover,body .tabs-menu li.current,.featured_slider:hover .score,#bbp_user_edit_submit,.bbp-topic-pagination a,.bbp-topic-pagination a,.custom-checkbox label.checked:after,.slider_post .caption,ul.postpagination li.active a,ul.postpagination li:hover a,ul.postpagination li a:focus,.top_theme h5 strong,.re_carousel .text:after,#topcontrol:hover,.main_slider .flex-overlay:hover a.read-more,.rehub_chimp #mc_embed_signup input#mc-embedded-subscribe,#rank_1.rank_count,#toplistmenu > ul li:before,.rehub_chimp:before,.wpsm-members > strong:first-child,.r_catbox_btn,.wpcf7 .wpcf7-submit,.wpsm_pretty_hover li:hover,.wpsm_pretty_hover li.current,.rehub-main-color-bg,.togglegreedybtn:after,.rh-bg-hover-color:hover a.rh-label-string,.rh-main-bg-hover:hover,.rh_wrapper_video_playlist .rh_video_currently_playing,.rh_wrapper_video_playlist .rh_video_currently_playing.rh_click_video:hover,.rtmedia-list-item .rtmedia-album-media-count,.tw-pagination .current,.dokan-dashboard .dokan-dash-sidebar ul.dokan-dashboard-menu li.active,.dokan-dashboard .dokan-dash-sidebar ul.dokan-dashboard-menu li:hover,.dokan-dashboard .dokan-dash-sidebar ul.dokan-dashboard-menu li.dokan-common-links a:hover,#ywqa-submit-question,.woocommerce .widget_price_filter .ui-slider .ui-slider-range,.rh-hov-bor-line > a:after,nav.top_menu > ul:not(.off-canvas) > li > a:after,.rh-border-line:after,.wpsm-table.wpsm-table-main-color table tr th,.rehub_chimp_flat #mc_embed_signup input#mc-embedded-subscribe,.rh-hov-bg-main-slide:before,.rh-hov-bg-main-slidecol .col_item:before{background:#ea0020;}@media (max-width:767px){.postNavigation a{background:#ea0020;}}.rh-main-bg-hover:hover,.rh-main-bg-hover:hover .whitehovered,.user-profile-div .user-menu-tab > li.active > a{color:#fff !important} a,.carousel-style-deal .deal-item .priced_block .price_count ins,nav.top_menu ul li.menu-item-has-children ul li.menu-item-has-children > a:before,.top_chart_controls .controls:hover,.flexslider .fa-pulse,.footer-bottom .widget .f_menu li a:hover,.comment_form h3 a,.bbp-body li.bbp-forum-info > a:hover,.bbp-body li.bbp-topic-title > a:hover,#subscription-toggle a:before,#favorite-toggle a:before,.aff_offer_links .aff_name a,.rh-deal-price,.commentlist .comment-content small a,.related_articles .title_cat_related a,article em.emph,.campare_table table.one td strong.red,.sidebar .tabs-item .detail p a,.footer-bottom .widget .title span,footer p a,.welcome-frase strong,article.post .wpsm_toplist_heading:before,.post a.color_link,.categoriesbox:hover h3 a:after,.bbp-body li.bbp-forum-info > a,.bbp-body li.bbp-topic-title > a,.widget .title i,.woocommerce-MyAccount-navigation ul li.is-active a,.category-vendormenu li.current a,.deal_daywoo .title,.rehub-main-color,.wpsm_pretty_colored ul li.current a,.wpsm_pretty_colored ul li.current,.rh-heading-hover-color:hover h2 a,.rh-heading-hover-color:hover h3 a,.rh-heading-hover-color:hover h4 a,.rh-heading-hover-color:hover h5 a,.rh-heading-hover-color:hover h3,.rh-heading-hover-color:hover h2,.rh-heading-hover-color:hover h4,.rh-heading-hover-color:hover h5,.rh-heading-hover-color:hover .rh-heading-hover-item a,.rh-heading-icon:before,.widget_layered_nav ul li.chosen a:before,.wp-block-quote.is-style-large p,ul.page-numbers li span.current,ul.page-numbers li a:hover,ul.page-numbers li.active a,.page-link > span:not(.page-link-title),blockquote:not(.wp-block-quote) p,span.re_filtersort_btn:hover,span.active.re_filtersort_btn,.deal_daywoo .price,div.sortingloading:after{color:#ea0020;} .page-link > span:not(.page-link-title),.widget.widget_affegg_widget .title,.widget.top_offers .title,.widget.cegg_widget_products .title,header .header_first_style .search form.search-form [type="submit"],header .header_eight_style .search form.search-form [type="submit"],.filter_home_pick span.active,.filter_home_pick span:hover,.filter_product_pick span.active,.filter_product_pick span:hover,.rh_tab_links a.active,.rh_tab_links a:hover,.wcv-navigation ul.menu li.active,.wcv-navigation ul.menu li:hover a,form.search-form [type="submit"],.rehub-sec-color-bg,input#ywqa-submit-question,input#ywqa-send-answer,.woocommerce button.button.alt,.tabsajax span.active.re_filtersort_btn,.wpsm-table.wpsm-table-sec-color table tr th,.rh-slider-arrow,.rh-hov-bg-sec-slide:before,.rh-hov-bg-sec-slidecol .col_item:before{background:#999999 !important;color:#fff !important;outline:0}.widget.widget_affegg_widget .title:after,.widget.top_offers .title:after,.widget.cegg_widget_products .title:after{border-top-color:#999999 !important;}.page-link > span:not(.page-link-title){border:1px solid #999999;}.page-link > span:not(.page-link-title),.header_first_style .search form.search-form [type="submit"] i{color:#fff !important;}.rh_tab_links a.active,.rh_tab_links a:hover,.rehub-sec-color-border,nav.top_menu > ul > li.vertical-menu.border-sec-color > .sub-menu,.rh-slider-thumbs-item--active{border-color:#999999}.rh_wrapper_video_playlist .rh_video_currently_playing,.rh_wrapper_video_playlist .rh_video_currently_playing.rh_click_video:hover{background-color:#999999;box-shadow:1200px 0 0 #999999 inset;}.rehub-sec-color{color:#999999} form.search-form input[type="text"]{border-radius:4px}.news .priced_block .price_count,.blog_string .priced_block .price_count,.main_slider .price_count{margin-right:5px}.right_aff .priced_block .btn_offer_block,.right_aff .priced_block .price_count{border-radius:0 !important}form.search-form.product-search-form input[type="text"]{border-radius:4px 0 0 4px;}form.search-form [type="submit"]{border-radius:0 4px 4px 0;}.rtl form.search-form.product-search-form input[type="text"]{border-radius:0 4px 4px 0;}.rtl form.search-form [type="submit"]{border-radius:4px 0 0 4px;}.price_count,.rehub_offer_coupon,#buddypress .dir-search input[type=text],.gmw-form-wrapper input[type=text],.gmw-form-wrapper select,#buddypress a.button,.btn_more,#main_header .wpsm-button,#rh-header-cover-image .wpsm-button,#wcvendor_image_bg .wpsm-button,input[type="text"],textarea,input[type="tel"],input[type="password"],input[type="email"],input[type="url"],input[type="number"],.def_btn,input[type="submit"],input[type="button"],input[type="reset"],.rh_offer_list .offer_thumb .deal_img_wrap,.grid_onsale,.rehub-main-smooth,.re_filter_instore span.re_filtersort_btn:hover,.re_filter_instore span.active.re_filtersort_btn,#buddypress .standard-form input[type=text],#buddypress .standard-form textarea,.blacklabelprice{border-radius:4px}.news-community,.woocommerce .products.grid_woo .product,.rehub_chimp #mc_embed_signup input.email,#mc_embed_signup input#mc-embedded-subscribe,.rh_offer_list,.woo-tax-logo,#buddypress div.item-list-tabs ul li a,#buddypress form#whats-new-form,#buddypress div#invite-list,#buddypress #send-reply div.message-box,.rehub-sec-smooth,.rate-bar-bar,.rate-bar,#wcfm-main-contentainer #wcfm-content,.wcfm_welcomebox_header{border-radius:5px} .woocommerce .woo-button-area .masked_coupon,.woocommerce a.woo_loop_btn,.woocommerce .button.checkout,.woocommerce input.button.alt,.woocommerce a.add_to_cart_button:not(.flat-woo-btn),.woocommerce-page a.add_to_cart_button:not(.flat-woo-btn),.woocommerce .single_add_to_cart_button,.woocommerce div.product form.cart .button,.woocommerce .checkout-button.button,.priced_block .btn_offer_block,.priced_block .button,.rh-deal-compact-btn,input.mdf_button,#buddypress input[type="submit"],#buddypress input[type="button"],#buddypress input[type="reset"],#buddypress button.submit,.wpsm-button.rehub_main_btn,.wcv-grid a.button,input.gmw-submit,#ws-plugin--s2member-profile-submit,#rtmedia_create_new_album,input[type="submit"].dokan-btn-theme,a.dokan-btn-theme,.dokan-btn-theme,#wcfm_membership_container a.wcfm_submit_button,.woocommerce button.button,.rehub-main-btn-bg{background:none #296bef !important;color:#ffffff !important;fill:#ffffff !important;border:none !important;text-decoration:none !important;outline:0;box-shadow:-1px 6px 19px rgba(41,107,239,0.2) !important;border-radius:4px !important;}.rehub-main-btn-bg > a{color:#ffffff !important;}.woocommerce a.woo_loop_btn:hover,.woocommerce .button.checkout:hover,.woocommerce input.button.alt:hover,.woocommerce a.add_to_cart_button:not(.flat-woo-btn):hover,.woocommerce-page a.add_to_cart_button:not(.flat-woo-btn):hover,.woocommerce a.single_add_to_cart_button:hover,.woocommerce-page a.single_add_to_cart_button:hover,.woocommerce div.product form.cart .button:hover,.woocommerce-page div.product form.cart .button:hover,.woocommerce .checkout-button.button:hover,.priced_block .btn_offer_block:hover,.wpsm-button.rehub_main_btn:hover,#buddypress input[type="submit"]:hover,#buddypress input[type="button"]:hover,#buddypress input[type="reset"]:hover,#buddypress button.submit:hover,.small_post .btn:hover,.ap-pro-form-field-wrapper input[type="submit"]:hover,.wcv-grid a.button:hover,#ws-plugin--s2member-profile-submit:hover,.rething_button .btn_more:hover,#wcfm_membership_container a.wcfm_submit_button:hover,.woocommerce button.button:hover,.rehub-main-btn-bg:hover,.rehub-main-btn-bg:hover > a{background:none #296bef !important;color:#ffffff !important;box-shadow:-1px 6px 13px rgba(41,107,239,0.4) !important;border-color:transparent;}.rehub_offer_coupon:hover{border:1px dashed #296bef;}.rehub_offer_coupon:hover i.far,.rehub_offer_coupon:hover i.fal,.rehub_offer_coupon:hover i.fas{color:#296bef}.re_thing_btn .rehub_offer_coupon.not_masked_coupon:hover{color:#296bef !important}.woocommerce a.woo_loop_btn:active,.woocommerce .button.checkout:active,.woocommerce .button.alt:active,.woocommerce a.add_to_cart_button:not(.flat-woo-btn):active,.woocommerce-page a.add_to_cart_button:not(.flat-woo-btn):active,.woocommerce a.single_add_to_cart_button:active,.woocommerce-page a.single_add_to_cart_button:active,.woocommerce div.product form.cart .button:active,.woocommerce-page div.product form.cart .button:active,.woocommerce .checkout-button.button:active,.wpsm-button.rehub_main_btn:active,#buddypress input[type="submit"]:active,#buddypress input[type="button"]:active,#buddypress input[type="reset"]:active,#buddypress button.submit:active,.ap-pro-form-field-wrapper input[type="submit"]:active,.wcv-grid a.button:active,#ws-plugin--s2member-profile-submit:active,input[type="submit"].dokan-btn-theme:active,a.dokan-btn-theme:active,.dokan-btn-theme:active,.woocommerce button.button:active,.rehub-main-btn-bg:active{background:none #296bef !important;box-shadow:0 1px 0 #999 !important;top:2px;color:#ffffff !important;}.rehub_btn_color{background-color:#296bef;border:1px solid #296bef;color:#ffffff;text-shadow:none}.rehub_btn_color:hover{color:#ffffff;background-color:#296bef;border:1px solid #296bef;}.rething_button .btn_more{border:1px solid #296bef;color:#296bef;}.rething_button .priced_block.block_btnblock .price_count{color:#296bef;font-weight:normal;}.widget_merchant_list .buttons_col{background-color:#296bef !important;}.widget_merchant_list .buttons_col a{color:#ffffff !important;}.rehub-svg-btn-fill svg{fill:#296bef;}.rehub-svg-btn-stroke svg{stroke:#296bef;}@media (max-width:767px){#float-panel-woo-area{border-top:1px solid #296bef}}.re-line-badge.badge_1,.re-ribbon-badge.badge_1 span{background:#ff0000;}.re-line-badge.re-line-table-badge.badge_1:before{border-top-color:#ff0000}.re-line-badge.re-line-table-badge.badge_1:after{border-bottom-color:#ff0000}.re-line-badge.badge_2,.re-ribbon-badge.badge_2 span{background:#00ceff;}.re-line-badge.re-line-table-badge.badge_2:before{border-top-color:#00ceff}.re-line-badge.re-line-table-badge.badge_2:after{border-bottom-color:#00ceff}.re-line-badge.badge_3,.re-ribbon-badge.badge_3 span{background:#ffa500;}.re-line-badge.re-line-table-badge.badge_3:before{border-top-color:#ffa500}.re-line-badge.re-line-table-badge.badge_3:after{border-bottom-color:#ffa500}</style><style>body{font-family:-apple-system,system-ui,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Fira Sans','Droid Sans','Helvetica Neue',sans-serif}code{font-family:Menlo,Consolas,Monaco,Liberation Mono,Lucida Console,monospace}</style></head>
-<body class="archive post-type-archive post-type-archive-blog elementor-default elementor-kit-12">
-	               
+        		
+		<script type="text/javascript">HappyForms = {};</script>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1"><style id="generateblocks-css">.gb-container .wp-block-image img{vertical-align:middle;}.gb-container .gb-shape{position:absolute;overflow:hidden;pointer-events:none;line-height:0;}.gb-container .gb-shape svg{fill:currentColor;}.gb-container-91a456e7 > .gb-inside-container{padding:0;max-width:1240px;margin-left:auto;margin-right:auto;}.gb-container-91a456e7{position:relative;}.gb-container-91a456e7 > .gb-shapes .gb-shape-1{color:#ffffff;left:0;right:0;bottom:-1px;}.gb-container-91a456e7 > .gb-shapes .gb-shape-1 svg{height:40px;width:calc(100% + 1.3px);position:relative;left:50%;transform:translateX(-50%);min-width:100%;}.gb-container-74047310{margin:80px 0 0;background-color:#fafafa;position:relative;}.gb-container-74047310 > .gb-inside-container{padding:140px 20px 20px;max-width:1240px;margin-left:auto;margin-right:auto;}.gb-container-74047310 > .gb-shapes .gb-shape-1{color:#ffffff;left:0;right:0;top:-1px;transform:scaleY(-1) scaleX(-1);}.gb-container-74047310 > .gb-shapes .gb-shape-1 svg{height:30px;width:calc(100% + 1.3px);position:relative;left:50%;transform:translateX(-50%);min-width:100%;}.gb-container-784053b0{text-align:left;}.gb-container-784053b0 > .gb-inside-container{padding:0;}.gb-grid-wrapper > .gb-grid-column-784053b0{width:25%;}.gb-container-61d52a91{border-color:rgba(255, 255, 255, 0.5);}.gb-container-61d52a91 > .gb-inside-container{padding:0;}.gb-grid-wrapper > .gb-grid-column-61d52a91{width:20%;}.gb-container-3f7c9367{border-color:rgba(255, 255, 255, 0.5);}.gb-container-3f7c9367 > .gb-inside-container{padding:0;}.gb-grid-wrapper > .gb-grid-column-3f7c9367{width:20%;}.gb-container-a05ed6a5 > .gb-inside-container{padding:0;}.gb-grid-wrapper > .gb-grid-column-a05ed6a5{width:35%;}.gb-grid-wrapper{display:flex;flex-wrap:wrap;}.gb-grid-wrapper > .gb-grid-column > .gb-container{display:flex;flex-direction:column;height:100%;}.gb-grid-column{box-sizing:border-box;}.gb-grid-wrapper .wp-block-image{margin-bottom:0;}.gb-grid-wrapper-19b37893 > .gb-grid-column{padding-left:0px;padding-bottom:40px;}.gb-icon{display:inline-flex;line-height:0;}.gb-icon svg{height:1em;width:1em;fill:currentColor;}.gb-highlight{background:none;color:unset;}p.gb-headline-1bed63c2{color:#3d5467;font-size:17px;font-weight:bold;}p.gb-headline-99387e7b{color:#3d5467;font-size:17px;font-weight:bold;margin-bottom:6px;}p.gb-headline-99387e7b a{color:#3d5467;}p.gb-headline-99387e7b a:hover{color:#db5461;}p.gb-headline-a1e0cd5e{color:#3d5467;font-size:17px;font-weight:bold;margin-bottom:6px;}p.gb-headline-a1e0cd5e a{color:#3d5467;}p.gb-headline-a1e0cd5e a:hover{color:#db5461;}p.gb-headline-2cebad2b{color:#3d5467;font-size:17px;font-weight:bold;margin-bottom:6px;}p.gb-headline-2cebad2b a{color:#3d5467;}p.gb-headline-2cebad2b a:hover{color:#db5461;}.gb-button-wrapper{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:flex-start;clear:both;}.gb-button-wrapper-4f071868{justify-content:flex-start;}.gb-button-wrapper-5845e9f2{justify-content:flex-end;}.gb-button-wrapper-bd52cda7{margin:0 0 0 20px;justify-content:center;}.gb-button-wrapper .gb-button{display:inline-flex;align-items:center;justify-content:center;text-align:center;text-decoration:none;transition:.2s background-color ease-in-out, .2s color ease-in-out, .2s border-color ease-in-out, .2s opacity ease-in-out, .2s box-shadow ease-in-out;}.gb-button-wrapper .gb-button .gb-icon{align-items:center;}.gb-button-wrapper a.gb-button-c12cdde6,.gb-button-wrapper a.gb-button-c12cdde6:visited{color:#3d5467;margin:0 22px 0 0;display:inline-flex;align-items:center;}.gb-button-wrapper a.gb-button-c12cdde6:hover,.gb-button-wrapper a.gb-button-c12cdde6:active,.gb-button-wrapper a.gb-button-c12cdde6:focus{color:#db5461;}a.gb-button-c12cdde6 .gb-icon{font-size:0.9em;}.gb-button-wrapper a.gb-button-54f3935b,.gb-button-wrapper a.gb-button-54f3935b:visited{color:#3d5467;margin:0 22px 0 0;display:inline-flex;align-items:center;}.gb-button-wrapper a.gb-button-54f3935b:hover,.gb-button-wrapper a.gb-button-54f3935b:active,.gb-button-wrapper a.gb-button-54f3935b:focus{color:#db5461;}a.gb-button-54f3935b .gb-icon{font-size:0.9em;}.gb-button-wrapper a.gb-button-8a5d61f5,.gb-button-wrapper a.gb-button-8a5d61f5:visited{color:#3d5467;display:inline-flex;align-items:center;}.gb-button-wrapper a.gb-button-8a5d61f5:hover,.gb-button-wrapper a.gb-button-8a5d61f5:active,.gb-button-wrapper a.gb-button-8a5d61f5:focus{color:#db5461;}a.gb-button-8a5d61f5 .gb-icon{font-size:1em;}.gb-button-wrapper a.gb-button-c772818b,.gb-button-wrapper a.gb-button-c772818b:visited{background-color:#db5461;color:#ffffff;font-weight:bold;padding:12px 20px;display:inline-flex;align-items:center;}.gb-button-wrapper a.gb-button-c772818b:hover,.gb-button-wrapper a.gb-button-c772818b:active,.gb-button-wrapper a.gb-button-c772818b:focus{background-color:#3d5467;color:#ffffff;}a.gb-button-c772818b .gb-icon{font-size:1em;padding:0 0 0 0.5em;}.gb-button-wrapper a.gb-button-7dde68c8,.gb-button-wrapper a.gb-button-7dde68c8:visited{background-color:#ffffff;color:#db5461;font-weight:bold;padding:6px 16px;}.gb-button-wrapper a.gb-button-7dde68c8:hover,.gb-button-wrapper a.gb-button-7dde68c8:active,.gb-button-wrapper a.gb-button-7dde68c8:focus{background-color:#3d5467;color:#ffffff;}@media (max-width: 1024px) {.gb-container-91a456e7 > .gb-shapes .gb-shape-1 svg{width:150%;}.gb-container-74047310 > .gb-shapes .gb-shape-1 svg{width:150%;}.gb-container-784053b0{text-align:center;}.gb-grid-wrapper > .gb-grid-column-784053b0{width:100%;}.gb-grid-wrapper > .gb-grid-column-61d52a91{width:33.33%;}.gb-grid-wrapper > .gb-grid-column-3f7c9367{width:33.33%;}.gb-grid-wrapper > .gb-grid-column-a05ed6a5{width:33.33%;}.gb-grid-wrapper-19b37893 > .gb-grid-column{padding-bottom:60px;}p.gb-headline-1bed63c2{text-align:left;}p.gb-headline-99387e7b{text-align:left;}p.gb-headline-a1e0cd5e{text-align:left;}p.gb-headline-2cebad2b{text-align:left;}.gb-button-wrapper-4f071868{justify-content:flex-start;}}@media (max-width: 767px) {.gb-grid-wrapper > .gb-grid-column{width: 100%;}.gb-container-91a456e7 > .gb-shapes .gb-shape-1 svg{width:200%;}.gb-container-74047310 > .gb-shapes .gb-shape-1 svg{width:200%;}.gb-container-784053b0{text-align:center;}.gb-container-61d52a91{border-width:0;}.gb-container-3f7c9367{border-width:0;}p.gb-headline-1bed63c2{text-align:center;}p.gb-headline-99387e7b{text-align:center;}p.gb-headline-a1e0cd5e{text-align:center;}p.gb-headline-2cebad2b{text-align:center;}.gb-button-wrapper-4f071868{justify-content:center;}.gb-button-wrapper-5845e9f2{justify-content:center;}.gb-button-wrapper-bd52cda7{justify-content:center;}}</style>		<style id="wp-custom-css">
+			/* GeneratePress Site CSS */ /* navigation hover lift */
 
-<div class="rh-outer-wrap">
-    <div id="top_ankor"></div>
-    
-            <header id="main_header" class="white_style">
-            <div class="header_wrap">
-                                                                
-<div class="header_five_style logo_section_wrap header_one_row">
-    <div class="rh-container tabletblockdisplay mb0 disabletabletpadding">
-        <div class="logo-section rh-flex-center-align tabletblockdisplay disabletabletpadding mb0">
-            <div class="logo hideontablet">
-                                    <a href="https://bebesymamas.es" class="logo_image"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Bebes y Mamas" height="" width="" data-loading="lazy" data-src="https://cdn.statically.io/img/reviewit.wpsoul.net/wp-content/uploads/2020/10/reviewlogo.png?quality=80&amp;f=auto"></a>
-                       
-            </div> 
-            
-            <div class="main-nav mob-logo-enabled rh-flex-grow1 rh-flex-center-align rh-flex-justify-center  white_style">      
-                <nav class="top_menu"><ul id="menu-main-menu" class="menu"><li id="menu-item-775" class="rh-subitem-menus menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="#">Special layouts</a>
+.main-navigation .main-nav ul li > a {
+	-webkit-transition: all 500ms ease-in-out;
+	transition: all 500ms ease-in-out;
+		-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.main-navigation .main-nav ul li:hover > a {
+	-webkit-transform: translate3d(0, -4px, 0);
+	transform: translate3d(0, -4px, 0);
+}
+
+/* mobile header spacing */
+
+.mobile-header-navigation {
+padding: 10px;
+box-sizing: border-box;
+}
+
+/* image rounded corners */
+
+.image-style img {
+	border-radius: 12px;
+	margin: 10px 0px;
+} 
+
+/* post images rounded corners */
+
+.featured-image img, .post-image img {
+	border-radius: 12px;
+}
+
+/* wpsp read more underline */
+
+.wpsp-read-more {
+	text-decoration: underline;
+}
+
+/* wpsp image rounded corners */
+
+.wp-show-posts-image img {
+	border-radius: 12px;
+} /* End GeneratePress Site CSS */		</style>
+		<style>body{font-family:-apple-system,system-ui,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Fira Sans','Droid Sans','Helvetica Neue',sans-serif}code{font-family:Menlo,Consolas,Monaco,Liberation Mono,Lucida Console,monospace}</style></head>
+
+<body class="blog wp-custom-logo wp-embed-responsive post-image-above-header post-image-aligned-center generate-columns-activated slideout-enabled slideout-mobile sticky-menu-fade mobile-header mobile-header-logo right-sidebar nav-float-right one-container header-aligned-left dropdown-hover elementor-default elementor-kit-12" itemtype="https://schema.org/Blog" itemscope>
+	<div class="header-wrap"><a class="screen-reader-text skip-link" href="#content" title="Saltar al contenido">Saltar al contenido</a>		<header id="masthead" class="site-header has-inline-mobile-toggle" itemtype="https://schema.org/WPHeader" itemscope>
+			<div class="inside-header grid-container">
+				<div class="site-logo">
+					<a href="https://bebesymamas.es/" title="Bebes y Mamas" rel="home">
+						<img class="header-image is-logo-image" alt="Bebes y Mamas" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" title="Bebes y Mamas" width="100" height="19" data-loading="lazy" data-src="https://cdn.statically.io/img/dev.bebesymamas.es/wp-content/uploads/2021/03/donate-logo.svg?quality=80&amp;f=auto">
+					</a>
+				</div>	<nav id="mobile-menu-control-wrapper" class="main-navigation mobile-menu-control-wrapper">
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" data-nav="site-navigation">
+			<span class="gp-icon icon-menu-bars"><svg viewbox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+						<path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z"></path>
+					</svg><svg viewbox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+						<path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z"></path>
+					</svg></span><span class="screen-reader-text">Men&uacute;</span>		</button>
+	</nav>
+			<nav id="site-navigation" class="main-navigation sub-menu-right" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+			<div class="inside-navigation grid-container">
+								<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+					<span class="gp-icon icon-menu-bars"><svg viewbox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+						<path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z"></path>
+					</svg><svg viewbox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+						<path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z"></path>
+					</svg></span><span class="screen-reader-text">Men&uacute;</span>				</button>
+				<div id="primary-menu" class="main-nav"><ul id="menu-main-menu" class="menu sf-menu"><li id="menu-item-3590" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-3590"><a href="https://bebesymamas.es/">Home</a></li>
+<li id="menu-item-775" class="rh-subitem-menus menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-775"><a href="#">Special layouts<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg viewbox="0 0 330 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+						<path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z" fill-rule="nonzero"></path>
+					</svg></span></span></a>
 <ul class="sub-menu">
-	<li id="menu-item-1130" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="#">Post Layouts</a>
+	<li id="menu-item-1130" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1130"><a href="#">Post Layouts</a></li>
+	<li id="menu-item-1131" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1131"><a href="#">Top Listing layouts<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow-right"><svg viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+						<path d="M178.425 256.001c0 2.266-1.133 4.815-2.832 6.515L43.599 394.509c-1.7 1.7-4.248 2.833-6.514 2.833s-4.816-1.133-6.515-2.833l-14.163-14.162c-1.699-1.7-2.832-3.966-2.832-6.515 0-2.266 1.133-4.815 2.832-6.515l111.317-111.316L16.407 144.685c-1.699-1.7-2.832-4.249-2.832-6.515s1.133-4.815 2.832-6.515l14.163-14.162c1.7-1.7 4.249-2.833 6.515-2.833s4.815 1.133 6.514 2.833l131.994 131.993c1.7 1.7 2.832 4.249 2.832 6.515z" fill-rule="nonzero"></path>
+					</svg></span></span></a>
 	<ul class="sub-menu">
-		<li id="menu-item-1132" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="https://bebesymamas.es/technologies/10-biggest-technology-companies/">Gutencon Review with Autocontents</a></li>
-		<li id="menu-item-1301" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="https://bebesymamas.es/cameras/review-accilantis/">Video Block Post layout</a></li>
-		<li id="menu-item-1133" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="https://bebesymamas.es/cameras/top-offer-block/">Big offer block in top</a></li>
-		<li id="menu-item-1134" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="https://bebesymamas.es/cameras/review-with-blocks/">Review with blocks post layout</a></li>
-		<li id="menu-item-1135" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="https://bebesymamas.es/cameras/simple-post-layout/">Corner Button Post Layout</a></li>
-		<li id="menu-item-1142" class="menu-item menu-item-type-post_type menu-item-object-blog"><a href="https://bebesymamas.es/blog/optimized-for-reading-layout/">Optimized for reading Layout</a></li>
-		<li id="menu-item-1141" class="menu-item menu-item-type-post_type menu-item-object-blog"><a href="https://bebesymamas.es/blog/simple-blog-post/">Simple Blog post or guide</a></li>
-		<li id="menu-item-1140" class="menu-item menu-item-type-post_type menu-item-object-blog"><a href="https://bebesymamas.es/blog/full-width-image-post-layout/">Full width image Post layout</a></li>
-	</ul>
-</li>
-	<li id="menu-item-1131" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="#">Top Listing layouts</a>
-	<ul class="sub-menu">
-		<li id="menu-item-1137" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://bebesymamas.es/offer-listing-page/">Offer Listing page</a></li>
-		<li id="menu-item-1138" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="https://bebesymamas.es/toplisting/top-block-and-sticky-side/">Side sticky table of contents</a></li>
-		<li id="menu-item-1139" class="menu-item menu-item-type-post_type menu-item-object-post"><a href="https://bebesymamas.es/toplisting/top-blocks/">Top list shortcode</a></li>
-		<li id="menu-item-1145" class="menu-item menu-item-type-custom menu-item-object-custom"><a target="_blank" href="https://recart.wpsoul.com/top-review-list/">Wocommerce listing page</a></li>
-		<li id="menu-item-1146" class="menu-item menu-item-type-custom menu-item-object-custom"><a target="_blank" href="http://recompare.wpsoul.net/versus-page/">Versus page</a></li>
-		<li id="menu-item-1186" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="https://bebesymamas.es/cameras/">Category description</a></li>
+		<li id="menu-item-1145" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1145"><a target="_blank" rel="noopener" href="https://recart.wpsoul.com/top-review-list/">Wocommerce listing page</a></li>
+		<li id="menu-item-1146" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1146"><a target="_blank" rel="noopener" href="http://recompare.wpsoul.net/versus-page/">Versus page</a></li>
 	</ul>
 </li>
 </ul>
 </li>
-<li id="menu-item-1129" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://bebesymamas.es/tutorials/">Tutorials</a></li>
-</ul></nav>                <div class="responsive_nav_wrap rh_mobile_menu">
-                    <div id="dl-menu" class="dl-menuwrapper rh-flex-center-align">
-                        <button id="dl-trigger" class="dl-trigger" aria-label="Menu">
-                            <svg viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                    <line stroke-linecap="round" id="rhlinemenu_1" y2="7" x2="29" y1="7" x1="3"></line>
-                                    <line stroke-linecap="round" id="rhlinemenu_2" y2="16" x2="18" y1="16" x1="3"></line>
-                                    <line stroke-linecap="round" id="rhlinemenu_3" y2="25" x2="26" y1="25" x1="3"></line>
-                                </g>
-                            </svg>
-                        </button>
-                        <div id="mobile-menu-icons" class="rh-flex-center-align rh-flex-right-align">
-                            <button class="icon-search-onclick" aria-label="Search"><i class="rhicon rhi-search"></i></button>
-                            <div id="slide-menu-mobile"></div>
-                        </div>
-                    </div>
-                                    </div>
-                <div class="search-header-contents"><form role="search" method="get" class="search-form" action="https://bebesymamas.es/">
-  	<input type="text" name="s" placeholder="BUSCAR..." data-posttype="post">
-  	<input type="hidden" name="post_type" value="post">  	<button type="submit" class="btnsearch" aria-label="BUSCAR..."><i class="rhicon rhi-search"></i></button>
-</form>
-</div>
-            </div>  
-             
-                    
-            <div class="header-actions-logo">
-                <div class="rh-flex-center-align">
-                                                             
-                                            <div class="celldisplay rh-search-icon rh-header-icon text-center">
-                            <span class="icon-search-onclick cursorpointer" aria-label="Search"></span>
-                        </div>
-                      
-                                                                    <div class="celldisplay text-center">
-                            <a href="https://bebesymamas.es/wishlist/" class="rh-header-icon mobileinmenu rh-wishlistmenu-link">
-                                                                <span class="rhicon rhi-hearttip position-relative">
-                                    <span class="rh-icon-notice rhhidden rehub-main-color-bg"></span>                                </span>
-                            </a>                           
-                        </div>
-                                                                               
-                                         
-                </div> 
-            </div>                        
-                                                                    
-        </div>
-    </div>
-</div>
-  
+<li id="menu-item-3591" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3591"><a href="https://bebesymamas.es/ways-to-help/">Ways to Help</a></li>
+<li id="menu-item-3586" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3586"><a href="https://bebesymamas.es/about/">About</a></li>
+<li id="menu-item-3587" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3579 current_page_item current_page_parent menu-item-3587"><a href="https://bebesymamas.es/blog/" aria-current="page">Blog</a></li>
+<li id="menu-item-3588" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3588"><a href="https://bebesymamas.es/contact/">Contact</a></li>
+<li id="menu-item-3620" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3620"><a href="https://bebesymamas.es/styles/">Styles</a></li>
+</ul></div>			</div>
+		</nav>
+		<div class="gb-button-wrapper gb-button-wrapper-bd52cda7">
 
-            </div>  
-        </header>
-            
-<div class="rh-container"> 
-    <div class="rh-content-wrap clearfix">
-        
-        <div class="main-side clearfix">
-                                    
-                                                            	<div class="news-community clearfix">
-			 
-		<div class="rh_grid_image_wrapper">		
-		    <div class="newsimage rh_gr_img">
-		        <figure>
-		            		            	<div class="favorrightside wishonimage"></div>
-		                   
-			        <a href="https://bebesymamas.es/blog/full-width-image-post-layout/">
-				        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="160" height="160" alt="Full width image Post layout" data-loading="lazy" data-src="https://cdn.statically.io/img/dev.bebesymamas.es/wp-content/uploads/thumbs_dir/fold-1xsnhm3o27cg5fitshtykec34memq927r594cg7hgxho.jpg?quality=80&amp;f=auto">			        </a>
-		        </figure>
-		    </div>
-		    		    <div class="newsdetail newstitleblock rh_gr_right_sec">
-			    <h2 class="font130 mt0 mb10 mobfont120 lineheight25"><a href="https://bebesymamas.es/blog/full-width-image-post-layout/">Full width image Post layout</a></h2>
-			      		          
-				    						
-		 
-				    	
-	 
-			         			    
-					<span class="more-from-store-a mt0 floatleft ml0 mr10 mb5 lineheight20"></span>			     
-			                                     
-				<div class="clearfix"></div>	 		    
-		    </div>	
-		    <div class="newsdetail rh_gr_right_desc">
-		    	<p class="font90 mobfont80 lineheight20 moblineheight15 mb15">
-The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn&rsquo;t ...</p>
-									  	
-		    </div>	            
-		    <div class="newsdetail newsbtn rh_gr_right_btn">
-		    	<div class="rh-flex-center-align mobileblockdisplay">
-			        <div class="meta post-meta">
-			                                   
-			        </div>	
-			        <div class="rh-flex-right-align">    	
-					           
-						    						
-		 
-				    	    									  		<a href="https://bebesymamas.es/blog/full-width-image-post-layout/" class="btn_more">LEER M&Aacute;S</a>
-			  			  	    	
-	      
-					    				    </div> 
-				</div>
-		    </div>
-	    </div> 
-	    <div class="newscom_head_ajax"></div>
-	    <div class="newscom_content_ajax"></div>
-	         
-	</div>
-                                                                	<div class="news-community clearfix">
-			 
-		<div class="rh_grid_image_wrapper">		
-		    <div class="newsimage rh_gr_img">
-		        <figure>
-		            		            	<div class="favorrightside wishonimage"></div>
-		                   
-			        <a href="https://bebesymamas.es/blog/simple-blog-post/">
-				        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="160" height="160" alt="Simple Blog post or guide" data-loading="lazy" data-src="https://cdn.statically.io/img/dev.bebesymamas.es/wp-content/uploads/thumbs_dir/fullim5png-1xsnhldk3li4ep0rpuao9h2obodbf78w3kbvywas6xwk.png?quality=80&amp;f=auto">			        </a>
-		        </figure>
-		    </div>
-		    		    <div class="newsdetail newstitleblock rh_gr_right_sec">
-			    <h2 class="font130 mt0 mb10 mobfont120 lineheight25"><a href="https://bebesymamas.es/blog/simple-blog-post/">Simple Blog post or guide</a></h2>
-			      		          
-				    						
-		 
-				    	
-	 
-			         			    
-					<span class="more-from-store-a mt0 floatleft ml0 mr10 mb5 lineheight20"></span>			     
-			                                     
-				<div class="clearfix"></div>	 		    
-		    </div>	
-		    <div class="newsdetail rh_gr_right_desc">
-		    	<p class="font90 mobfont80 lineheight20 moblineheight15 mb15">
-The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn&rsquo;t ...</p>
-									  	
-		    </div>	            
-		    <div class="newsdetail newsbtn rh_gr_right_btn">
-		    	<div class="rh-flex-center-align mobileblockdisplay">
-			        <div class="meta post-meta">
-			                                   
-			        </div>	
-			        <div class="rh-flex-right-align">    	
-					           
-						    						
-		 
-				    	    									  		<a href="https://bebesymamas.es/blog/simple-blog-post/" class="btn_more">LEER M&Aacute;S</a>
-			  			  	    	
-	      
-					    				    </div> 
-				</div>
-		    </div>
-	    </div> 
-	    <div class="newscom_head_ajax"></div>
-	    <div class="newscom_content_ajax"></div>
-	         
-	</div>
-                                                                	<div class="news-community clearfix">
-			 
-		<div class="rh_grid_image_wrapper">		
-		    <div class="newsimage rh_gr_img">
-		        <figure>
-		            		            	<div class="favorrightside wishonimage"></div>
-		                   
-			        <a href="https://bebesymamas.es/blog/optimized-for-reading-layout/">
-				        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="160" height="160" alt="Optimized for reading Layout" data-loading="lazy" data-src="https://cdn.statically.io/img/dev.bebesymamas.es/wp-content/uploads/thumbs_dir/fold-1xsnhm3o27cg5fitshtykec34memq927r594cg7hgxho.jpg?quality=80&amp;f=auto">			        </a>
-		        </figure>
-		    </div>
-		    		    <div class="newsdetail newstitleblock rh_gr_right_sec">
-			    <h2 class="font130 mt0 mb10 mobfont120 lineheight25"><a href="https://bebesymamas.es/blog/optimized-for-reading-layout/">Optimized for reading Layout</a></h2>
-			      		          
-				    						
-		 
-				    	
-	 
-			         			    
-					<span class="more-from-store-a mt0 floatleft ml0 mr10 mb5 lineheight20"></span>			     
-			                                     
-				<div class="clearfix"></div>	 		    
-		    </div>	
-		    <div class="newsdetail rh_gr_right_desc">
-		    	<p class="font90 mobfont80 lineheight20 moblineheight15 mb15">
-Tincidunt nunc pulvinar sapien et. Eu consequat ac felis donec et odio pellentesque. Vulputate odio ut enim blandit. Nulla pellentesque dignissim enim sit. ...</p>
-									  	
-		    </div>	            
-		    <div class="newsdetail newsbtn rh_gr_right_btn">
-		    	<div class="rh-flex-center-align mobileblockdisplay">
-			        <div class="meta post-meta">
-			                                   
-			        </div>	
-			        <div class="rh-flex-right-align">    	
-					           
-						    						
-		 
-				    	    									  		<a href="https://bebesymamas.es/blog/optimized-for-reading-layout/" class="btn_more">LEER M&Aacute;S</a>
-			  			  	    	
-	      
-					    				    </div> 
-				</div>
-		    </div>
-	    </div> 
-	    <div class="newscom_head_ajax"></div>
-	    <div class="newscom_content_ajax"></div>
-	         
-	</div>
-                                        	
-                        <div class="clearfix"></div>
-                    </div>	
-        
-                    
-            <aside class="sidebar">            
-    
- 			<div id="rehub_sticky_on_scroll-2" class="widget stickyscroll_widget pb0">				<div class="border-lightgrey-double pb15 pl5 pr15 pt15 rehub-main-color-border whitebg"></div>		
+<a class="gb-button gb-button-7dde68c8 gb-button-text button" href="https://gpsites.co/donate/donate/">Donate Today</a>
 
-			
-		</div>   
-	        
-</aside>             
-            </div>
-</div>
-     
-
-				
-	 				<div class="footer-bottom white_style">
-							<style scoped>
-              .footer-bottom.white_style{border-top: 1px solid #eee;}
-              .footer-bottom.white_style .footer_widget {color: #111;}
-              .footer-bottom.white_style .footer_widget .title, .footer-bottom.white_style .footer_widget h2, .footer-bottom.white_style .footer_widget a, .footer-bottom .footer_widget.white_style ul li a{color: #000;}
-
-            </style>						<div class="rh-container clearfix">
-									<div class="rh-flex-eq-height col_wrap_three mb0">
-						<div class="footer_widget mobileblockdisplay pt25 col_item mb0">
-															<div id="text-1" class="widget widget_text"><div class="title">About Rehub</div>			<div class="textwidget"><p>This demo site is only for demonstration purposes. All images are copyrighted to their respective owners. All content cited is derived from their respective sources. <a href="https://reviewit.wpsoul.net/credits/">Credits</a></p>
-<p><a href="https://www.youtube.com/watch?v=14qe-ePG0Bk" target="_blank" rel="noopener">How to Make Custom Footer Area Via Page Builder</a></p>
-<p><i class="rhicon rhi-envelope rehub-main-color mr5"></i> <a href="https://bebesymamas.es/cdn-cgi/l/email-protection#c8bcadbbbc88bcadbbbce6aba7a5"><span class="__cf_email__" data-cfemail="146071676054607167603a777b79">[email&nbsp;protected]</span></a><br>
-<i class="rhicon rhi-mobile-android rehub-main-color mr5"></i> <a href="tell:3800003030">3800003030</a></p>
-</div>
-		</div>							 
-						</div>
-						<div class="footer_widget mobileblockdisplay disablemobilepadding pt25 col_item mb0">
-															<div id="text-2" class="widget widget_text">			<div class="textwidget"><div class="wpsm-one-half wpsm-column-first">
-<div class="widget_recent_entries">
-<div class="title">For customers</div>
-<ul>
-<li><a href="#">First link</a></li>
-<li><a href="#">Second Link</a></li>
-<li><a href="#">Third link</a></li>
-<li><a href="#">Fourth link</a></li>
+</div>			</div>
+		</header>
+				<nav id="mobile-header" class="main-navigation mobile-header-navigation has-branding" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+			<div class="inside-navigation grid-container grid-parent">
+				<div class="site-logo mobile-header-logo">
+						<a href="https://bebesymamas.es/" title="Bebes y Mamas" rel="home">
+							<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Bebes y Mamas" class="is-logo-image" width="0" height="0" data-loading="lazy" data-src="https://cdn.statically.io/img/gpsites.co/donate/wp-content/uploads/sites/83/donate-logo.svg?quality=80&amp;f=auto">
+						</a>
+					</div>					<button class="menu-toggle" aria-controls="mobile-menu" aria-expanded="false">
+						<span class="gp-icon icon-menu-bars"><svg viewbox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+						<path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z"></path>
+					</svg><svg viewbox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+						<path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z"></path>
+					</svg></span><span class="screen-reader-text">Men&uacute;</span>					</button>
+					<div id="mobile-menu" class="main-nav"><ul id="menu-main-menu-1" class="menu sf-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-3590"><a href="https://bebesymamas.es/">Home</a></li>
+<li class="rh-subitem-menus menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-775"><a href="#">Special layouts<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg viewbox="0 0 330 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+						<path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z" fill-rule="nonzero"></path>
+					</svg></span></span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1130"><a href="#">Post Layouts</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1131"><a href="#">Top Listing layouts<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow-right"><svg viewbox="0 0 192 512" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+						<path d="M178.425 256.001c0 2.266-1.133 4.815-2.832 6.515L43.599 394.509c-1.7 1.7-4.248 2.833-6.514 2.833s-4.816-1.133-6.515-2.833l-14.163-14.162c-1.699-1.7-2.832-3.966-2.832-6.515 0-2.266 1.133-4.815 2.832-6.515l111.317-111.316L16.407 144.685c-1.699-1.7-2.832-4.249-2.832-6.515s1.133-4.815 2.832-6.515l14.163-14.162c1.7-1.7 4.249-2.833 6.515-2.833s4.815 1.133 6.514 2.833l131.994 131.993c1.7 1.7 2.832 4.249 2.832 6.515z" fill-rule="nonzero"></path>
+					</svg></span></span></a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1145"><a target="_blank" rel="noopener" href="https://recart.wpsoul.com/top-review-list/">Wocommerce listing page</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1146"><a target="_blank" rel="noopener" href="http://recompare.wpsoul.net/versus-page/">Versus page</a></li>
+	</ul>
+</li>
 </ul>
-</div>
-<p></p></div><div class="wpsm-one-half wpsm-column-last">
-<div class="widget_recent_entries">
-<div class="title">For vendors</div>
-<ul>
-<li><a href="#">First link</a></li>
-<li><a href="#">Second Link</a></li>
-<li><a href="#">Third link</a></li>
-<li><a href="#">Fourth link</a></li>
-</ul>
-</div>
-<p></p></div><div class="clearfix"></div>
-</div>
-		</div>							 
-						</div>
-						<div class="footer_widget mobileblockdisplay pt25 col_item last mb0">
-															<div id="text-3" class="widget last widget_text"><div class="title">Sign Up for Weekly Newsletter</div>			<div class="textwidget"><p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</p>
-
-				<div class="centered_form  rehub_chimp_flat">
-				
-				
-				<div id="mc_embed_signup">
-				<form action="//fleek.us10.list-manage.com/subscribe/post?u=4b4bbda55bb6deb367e6f52d9&amp;amp;id=7b32851a5b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-					<div id="mc_embed_signup_scroll">
-					<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email address" required>
-					<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4b4bbda55bb6deb367e6f52d9_6b32851a5b" tabindex="-1" value=""></div>
-					<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3591"><a href="https://bebesymamas.es/ways-to-help/">Ways to Help</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3586"><a href="https://bebesymamas.es/about/">About</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3579 current_page_item current_page_parent menu-item-3587"><a href="https://bebesymamas.es/blog/" aria-current="page">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3588"><a href="https://bebesymamas.es/contact/">Contact</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3620"><a href="https://bebesymamas.es/styles/">Styles</a></li>
+</ul></div>			</div>
+		</nav>
+		</div><div class="page-hero">
+					<div class="inside-page-hero grid-container grid-parent">
+						<h1>
+	Blog
+</h1>
 					</div>
-				</form>
-				</div>
-				
-				
-				</div>
-</div>
-		</div><div id="rehub_social_link-1" class="widget last social_link">	
-			<div class="social_icon big_i">
-		
-
+				</div><div class="gb-container gb-container-91a456e7"><div class="gb-inside-container"></div><div class="gb-shapes"><div class="gb-shape gb-shape-1"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1200 234" preserveaspectratio="none"><path d="M0 0l40 40c40 40 120 120 200 115.6 80-4.8 160-93.1 240-111.2C560 26.7 640 80 720 88.9c80 8.6 160-26.4 240-13.3 80 13.6 160 75.2 200 106.7l40 31.1V234H0V0z"></path></svg></div></div></div>
+	<div id="page" class="site grid-container container hfeed">
+				<div id="content" class="site-content">
 			
-
-		
-		
-		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main">
+			<div class="generate-columns-container"><article id="post-1" class="post-1 post type-post status-publish format-standard category-uncategorized generate-columns tablet-grid-50 mobile-grid-100 grid-parent grid-100 featured-column" itemtype="https://schema.org/CreativeWork" itemscope>
+	<div class="inside-article">
+					<header class="entry-header">
+				<h2 class="entry-title" itemprop="headline"><a href="https://bebesymamas.es/uncategorized/hello-world/" rel="bookmark">Hello world!</a></h2>		<div class="entry-meta">
+			<span class="posted-on"><time class="entry-date published" datetime="2021-03-21T16:47:40+01:00" itemprop="datePublished">marzo 21, 2021</time></span> <span class="byline">por <span class="author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope><a class="url fn n" href="https://bebesymamas.es/author/5bctt/" title="Ver todas las entradas de 5bctt" rel="author" itemprop="url"><span class="author-name" itemprop="name">5bctt</span></a></span></span> 		</div>
+					</header>
 			
-
-		
-					
-		
-		
-		
-		
-		
-			
-							
-																				
-	</div>
-
-	
-	</div>							 
-						</div>
-					</div>
-									
-			</div>	
-		</div>
-				
-</div>
-<span class="rehub_scroll" id="topcontrol" data-scrollto="#top_ankor"><i class="rhicon rhi-chevron-up"></i></span>
-    <div id="logo_mobile_wrapper"><a href="https://bebesymamas.es" class="logo_image_mobile"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Bebes y Mamas" width="160" height="50" data-loading="lazy" data-src="https://cdn.statically.io/img/reviewit.wpsoul.net/wp-content/uploads/2020/11/revsmall.png?quality=80&amp;f=auto"></a></div>   
-
-     
-
-    <div id="rhmobpnlcustom" class="rhhidden"><div id="rhmobtoppnl" style="" class="pr15 pl15 pb15 pt15"><div class="text-center"><a href="https://bebesymamas.es"><img id="mobpanelimg" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Logo" width="150" height="45" data-loading="lazy" data-src="https://cdn.statically.io/img/reviewit.wpsoul.net/wp-content/uploads/2020/10/reviewlogo.png?quality=80&amp;f=auto"></a></div></div></div>    
-              
-
-			<div id="re-compare-bar" class="from-right rh-sslide-panel">
-			<div id="re-compare-bar-wrap" class="rh-sslide-panel-wrap">
-				<div id="re-compare-bar-heading" class="rh-sslide-panel-heading">
-					<h5 class="rehub-main-color pt15 pb15 pr15 pl20 mt0 mb0 font120">Comparar art&iacute;culos<i class="blackcolor closecomparepanel rh-sslide-close-btn cursorpointer floatright font130 rhi-times-circle rhicon" aria-hidden="true"></i></h5>
-				</div>
-				<div id="re-compare-bar-tabs" class="rh-sslide-panel-tabs abdfullwidth mt30 pb30 pt30 width-100p">
-											<ul class="rhhidden"><li class="re-compare-tab-11 no-multicats" data-page="11" data-url="https://bebesymamas.es/comparison/">Total (<span>0</span>)</li></ul>
-						<div><div class="rh-sslide-panel-inner mt10 re-compare-wrap pr20 pl20 re-compare-wrap-11"></div></div>
-										<span class="re-compare-destin wpsm-button rehub_main_btn" data-compareurl="">Comparar<i class="rhi-arrow-circle-right rhicon" aria-hidden="true"></i></span>
-				</div>
+			<div class="entry-summary" itemprop="text">
+				<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
 			</div>
-		</div>
+
+				<footer class="entry-meta">
+			<span class="cat-links"><span class="gp-icon icon-categories"><svg viewbox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+						<path d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0 1 43.592 27.907l12.349 26.791A16 16 0 0 0 228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z" fill-rule="nonzero"></path>
+					</svg></span><span class="screen-reader-text">Categor&iacute;as </span><a href="https://bebesymamas.es/uncategorized/" rel="category tag">Uncategorized</a></span> <span class="comments-link"><span class="gp-icon icon-comments"><svg viewbox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+						<path d="M132.838 329.973a435.298 435.298 0 0 0 16.769-9.004c13.363-7.574 26.587-16.142 37.419-25.507 7.544.597 15.27.925 23.098.925 54.905 0 105.634-15.311 143.285-41.28 23.728-16.365 43.115-37.692 54.155-62.645 54.739 22.205 91.498 63.272 91.498 110.286 0 42.186-29.558 79.498-75.09 102.828 23.46 49.216 75.09 101.709 75.09 101.709s-115.837-38.35-154.424-78.46c-9.956 1.12-20.297 1.758-30.793 1.758-88.727 0-162.927-43.071-181.007-100.61z" fill-rule="nonzero"></path>
+						<path d="M383.371 132.502c0 70.603-82.961 127.787-185.216 127.787-10.496 0-20.837-.639-30.793-1.757-38.587 40.093-154.424 78.429-154.424 78.429s51.63-52.472 75.09-101.67c-45.532-23.321-75.09-60.619-75.09-102.79C12.938 61.9 95.9 4.716 198.155 4.716 300.41 4.715 383.37 61.9 383.37 132.502z" fill-rule="nonzero"></path>
+					</svg></span><a href="https://bebesymamas.es/uncategorized/hello-world/#comments">1 comentario</a></span> 		</footer>
+			</div>
+</article>
+<article id="post-3862" class="post-3862 post type-post status-publish format-standard has-post-thumbnail category-campaigns category-project-updates generate-columns tablet-grid-50 mobile-grid-100 grid-parent grid-50" itemtype="https://schema.org/CreativeWork" itemscope>
+	<div class="inside-article">
+		<div class="post-image">
 						
-	<link rel="stylesheet" id="rhcolumnmenu-css" href="https://bebesymamas.es/wp-content/themes/rehub-theme/css/columnmenu.css?ver=1.0" type="text/css" media="all">
-<link rel="stylesheet" id="rhgutslider-css" href="https://bebesymamas.es/wp-content/plugins/rehub-framework/gutenberg/assets/css/slider.css?ver=1.0" type="text/css" media="all">
-<link rel="stylesheet" id="rhgutreviewheading-css" href="https://bebesymamas.es/wp-content/plugins/rehub-framework/gutenberg/assets/css/review-heading.css?ver=1.0" type="text/css" media="all">
-<link rel="stylesheet" id="rhmailchimp-css" href="https://bebesymamas.es/wp-content/themes/rehub-theme/css/shortcodes/mailchimp.css?ver=1.1" type="text/css" media="all">
-<script data-cfasync="false" src="https://bebesymamas.es/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="https://bebesymamas.es/wp-content/themes/rehub-theme/js/tablechart.js?ver=1.7" id="rehubtablechart-js"></script>
-<script type="text/javascript" id="rehubcompare-js-extra">
-/* <![CDATA[ */
-var comparechart = {"item_error_add":"Por favor, agregue elementos a este grupo de comparaci\u00f3n o elija un grupo no vac\u00edo","item_error_comp":"Por favor, a\u00f1adir m\u00e1s elementos para comparar","comparenonce":"c05b6cfc5a"};
-/* ]]> */
+						<a href="https://bebesymamas.es/campaigns/post-example-3/">
+							<img width="1600" height="1067" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="attachment-full size-full wp-post-image" alt="" itemprop="image" sizes="(max-width: 1600px) 100vw, 1600px" data-loading="lazy" data-src="https://cdn.statically.io/img/dev.bebesymamas.es/wp-content/uploads/2020/12/pexels-chaucharanje-1446504.jpg?quality=80&amp;f=auto" data-srcset="https://cdn.statically.io/img/dev.bebesymamas.es/wp-content/uploads/2020/12/pexels-chaucharanje-1446504.jpg?quality=80&amp;f=auto 1600w,
+https://cdn.statically.io/img/dev.bebesymamas.es/wp-content/uploads/2020/12/pexels-chaucharanje-1446504-300x200.jpg?quality=80&amp;f=auto 300w,
+https://cdn.statically.io/img/dev.bebesymamas.es/wp-content/uploads/2020/12/pexels-chaucharanje-1446504-1024x683.jpg?quality=80&amp;f=auto 1024w,
+https://cdn.statically.io/img/dev.bebesymamas.es/wp-content/uploads/2020/12/pexels-chaucharanje-1446504-768x512.jpg?quality=80&amp;f=auto 768w,
+https://cdn.statically.io/img/dev.bebesymamas.es/wp-content/uploads/2020/12/pexels-chaucharanje-1446504-1536x1024.jpg?quality=80&amp;f=auto 1536w,
+">
+						</a>
+					</div>			<header class="entry-header">
+				<h2 class="entry-title" itemprop="headline"><a href="https://bebesymamas.es/campaigns/post-example-3/" rel="bookmark">Five ways you can help without donating</a></h2>		<div class="entry-meta">
+			<span class="posted-on"><time class="updated" datetime="2021-03-22T09:18:06+01:00" itemprop="dateModified">marzo 22, 2021</time><time class="entry-date published" datetime="2020-12-09T18:00:55+01:00" itemprop="datePublished">diciembre 9, 2020</time></span> <span class="byline">por <span class="author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope><a class="url fn n" href="https://bebesymamas.es/author/5bctt/" title="Ver todas las entradas de 5bctt" rel="author" itemprop="url"><span class="author-name" itemprop="name">5bctt</span></a></span></span> 		</div>
+					</header>
+			
+			<div class="entry-summary" itemprop="text">
+				<p>Pretium lorem primis senectus habitasse lectus. Suscipit taciti primis tempor sagittis euismod libero facilisi aptent elementum felis blandit cursus gravida sociis eleifend lectus nullam dapibus netus feugiat curae curabitur. Curae fringilla porttitor quam sollicitudin iaculis aptent leo ligula euismod dictumst penatibus mauris eros etiam praesent volutpat posuere. Metus fringilla ullamcorper odio aliquam lacinia conubia mauris &hellip; <a title="Five ways you can help without donating" class="read-more" href="https://bebesymamas.es/campaigns/post-example-3/" aria-label="M&aacute;s en Five ways you can help without donating">Leer m&aacute;s</a></p>
+			</div>
+
+				<footer class="entry-meta">
+			<span class="cat-links"><span class="gp-icon icon-categories"><svg viewbox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+						<path d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0 1 43.592 27.907l12.349 26.791A16 16 0 0 0 228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z" fill-rule="nonzero"></path>
+					</svg></span><span class="screen-reader-text">Categor&iacute;as </span><a href="https://bebesymamas.es/campaigns/" rel="category tag">Campaigns</a>, <a href="https://bebesymamas.es/project-updates/" rel="category tag">Project Updates</a></span> 		</footer>
+			</div>
+</article>
+<article id="post-3860" class="post-3860 post type-post status-publish format-standard has-post-thumbnail category-campaigns category-project-updates generate-columns tablet-grid-50 mobile-grid-100 grid-parent grid-50" itemtype="https://schema.org/CreativeWork" itemscope>
+	<div class="inside-article">
+		<div class="post-image">
+						
+						<a href="https://bebesymamas.es/campaigns/post-example-2/">
+							<img width="1600" height="1067" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="attachment-full size-full wp-post-image" alt="" itemprop="image" sizes="(max-width: 1600px) 100vw, 1600px" data-loading="lazy" data-src="https://cdn.statically.io/img/dev.bebesymamas.es/wp-content/uploads/2020/12/larm-rmah-AEaTUnvneik-unsplash.jpg?quality=80&amp;f=auto" data-srcset="https://cdn.statically.io/img/dev.bebesymamas.es/wp-content/uploads/2020/12/larm-rmah-AEaTUnvneik-unsplash.jpg?quality=80&amp;f=auto 1600w,
+https://cdn.statically.io/img/dev.bebesymamas.es/wp-content/uploads/2020/12/larm-rmah-AEaTUnvneik-unsplash-300x200.jpg?quality=80&amp;f=auto 300w,
+https://cdn.statically.io/img/dev.bebesymamas.es/wp-content/uploads/2020/12/larm-rmah-AEaTUnvneik-unsplash-1024x683.jpg?quality=80&amp;f=auto 1024w,
+https://cdn.statically.io/img/dev.bebesymamas.es/wp-content/uploads/2020/12/larm-rmah-AEaTUnvneik-unsplash-768x512.jpg?quality=80&amp;f=auto 768w,
+https://cdn.statically.io/img/dev.bebesymamas.es/wp-content/uploads/2020/12/larm-rmah-AEaTUnvneik-unsplash-1536x1024.jpg?quality=80&amp;f=auto 1536w,
+">
+						</a>
+					</div>			<header class="entry-header">
+				<h2 class="entry-title" itemprop="headline"><a href="https://bebesymamas.es/campaigns/post-example-2/" rel="bookmark">The latest news on our project in Nambia</a></h2>		<div class="entry-meta">
+			<span class="posted-on"><time class="updated" datetime="2021-03-22T09:18:06+01:00" itemprop="dateModified">marzo 22, 2021</time><time class="entry-date published" datetime="2020-12-09T17:00:22+01:00" itemprop="datePublished">diciembre 9, 2020</time></span> <span class="byline">por <span class="author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope><a class="url fn n" href="https://bebesymamas.es/author/5bctt/" title="Ver todas las entradas de 5bctt" rel="author" itemprop="url"><span class="author-name" itemprop="name">5bctt</span></a></span></span> 		</div>
+					</header>
+			
+			<div class="entry-summary" itemprop="text">
+				<p>Pretium lorem primis senectus habitasse lectus. Suscipit taciti primis tempor sagittis euismod libero facilisi aptent elementum felis blandit cursus gravida sociis eleifend lectus nullam dapibus netus feugiat curae curabitur. Curae fringilla porttitor quam sollicitudin iaculis aptent leo ligula euismod dictumst penatibus mauris eros etiam praesent volutpat posuere. Metus fringilla ullamcorper odio aliquam lacinia conubia mauris &hellip; <a title="The latest news on our project in Nambia" class="read-more" href="https://bebesymamas.es/campaigns/post-example-2/" aria-label="M&aacute;s en The latest news on our project in Nambia">Leer m&aacute;s</a></p>
+			</div>
+
+				<footer class="entry-meta">
+			<span class="cat-links"><span class="gp-icon icon-categories"><svg viewbox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+						<path d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0 1 43.592 27.907l12.349 26.791A16 16 0 0 0 228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z" fill-rule="nonzero"></path>
+					</svg></span><span class="screen-reader-text">Categor&iacute;as </span><a href="https://bebesymamas.es/campaigns/" rel="category tag">Campaigns</a>, <a href="https://bebesymamas.es/project-updates/" rel="category tag">Project Updates</a></span> 		</footer>
+			</div>
+</article>
+<article id="post-3820" class="post-3820 post type-post status-publish format-standard has-post-thumbnail category-campaigns category-project-updates generate-columns tablet-grid-50 mobile-grid-100 grid-parent grid-50" itemtype="https://schema.org/CreativeWork" itemscope>
+	<div class="inside-article">
+		<div class="post-image">
+						
+						<a href="https://bebesymamas.es/campaigns/post-example-1/">
+							<img width="1600" height="1067" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="attachment-full size-full wp-post-image" alt="" itemprop="image" sizes="(max-width: 1600px) 100vw, 1600px" data-loading="lazy" data-src="https://cdn.statically.io/img/dev.bebesymamas.es/wp-content/uploads/2020/12/iris-uijttewaal-j95OucLg850-unsplash.jpg?quality=80&amp;f=auto" data-srcset="https://cdn.statically.io/img/dev.bebesymamas.es/wp-content/uploads/2020/12/iris-uijttewaal-j95OucLg850-unsplash.jpg?quality=80&amp;f=auto 1600w,
+https://cdn.statically.io/img/dev.bebesymamas.es/wp-content/uploads/2020/12/iris-uijttewaal-j95OucLg850-unsplash-300x200.jpg?quality=80&amp;f=auto 300w,
+https://cdn.statically.io/img/dev.bebesymamas.es/wp-content/uploads/2020/12/iris-uijttewaal-j95OucLg850-unsplash-1024x683.jpg?quality=80&amp;f=auto 1024w,
+https://cdn.statically.io/img/dev.bebesymamas.es/wp-content/uploads/2020/12/iris-uijttewaal-j95OucLg850-unsplash-768x512.jpg?quality=80&amp;f=auto 768w,
+https://cdn.statically.io/img/dev.bebesymamas.es/wp-content/uploads/2020/12/iris-uijttewaal-j95OucLg850-unsplash-1536x1024.jpg?quality=80&amp;f=auto 1536w,
+">
+						</a>
+					</div>			<header class="entry-header">
+				<h2 class="entry-title" itemprop="headline"><a href="https://bebesymamas.es/campaigns/post-example-1/" rel="bookmark">How to organize a fundraising project</a></h2>		<div class="entry-meta">
+			<span class="posted-on"><time class="updated" datetime="2021-03-22T09:18:06+01:00" itemprop="dateModified">marzo 22, 2021</time><time class="entry-date published" datetime="2020-12-09T16:00:44+01:00" itemprop="datePublished">diciembre 9, 2020</time></span> <span class="byline">por <span class="author vcard" itemprop="author" itemtype="https://schema.org/Person" itemscope><a class="url fn n" href="https://bebesymamas.es/author/5bctt/" title="Ver todas las entradas de 5bctt" rel="author" itemprop="url"><span class="author-name" itemprop="name">5bctt</span></a></span></span> 		</div>
+					</header>
+			
+			<div class="entry-summary" itemprop="text">
+				<p>Pretium lorem primis senectus habitasse lectus. Suscipit taciti primis tempor sagittis euismod libero facilisi aptent elementum felis blandit cursus gravida sociis eleifend lectus nullam dapibus netus feugiat curae curabitur. Curae fringilla porttitor quam sollicitudin iaculis aptent leo ligula euismod dictumst penatibus mauris eros etiam praesent volutpat posuere. Metus fringilla ullamcorper odio aliquam lacinia conubia mauris &hellip; <a title="How to organize a fundraising project" class="read-more" href="https://bebesymamas.es/campaigns/post-example-1/" aria-label="M&aacute;s en How to organize a fundraising project">Leer m&aacute;s</a></p>
+			</div>
+
+				<footer class="entry-meta">
+			<span class="cat-links"><span class="gp-icon icon-categories"><svg viewbox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+						<path d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0 1 43.592 27.907l12.349 26.791A16 16 0 0 0 228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z" fill-rule="nonzero"></path>
+					</svg></span><span class="screen-reader-text">Categor&iacute;as </span><a href="https://bebesymamas.es/campaigns/" rel="category tag">Campaigns</a>, <a href="https://bebesymamas.es/project-updates/" rel="category tag">Project Updates</a></span> 		</footer>
+			</div>
+</article>
+</div>		</main>
+	</div>
+
+	<div id="right-sidebar" class="widget-area sidebar is-right-sidebar" itemtype="https://schema.org/WPSideBar" itemscope>
+	<div class="inside-right-sidebar">
+		<aside id="archives-3" class="widget inner-padding widget_archive"><h2 class="widget-title">Archivos</h2>
+			<ul>
+					<li><a href="https://bebesymamas.es/2021/03/">marzo 2021</a></li>
+	<li><a href="https://bebesymamas.es/2020/12/">diciembre 2020</a></li>
+			</ul>
+
+			</aside><aside id="categories-3" class="widget inner-padding widget_categories"><h2 class="widget-title">Categor&iacute;as</h2>
+			<ul>
+					<li class="cat-item cat-item-16"><a href="https://bebesymamas.es/campaigns/">Campaigns</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="https://bebesymamas.es/project-updates/">Project Updates</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="https://bebesymamas.es/uncategorized/">Uncategorized</a>
+</li>
+			</ul>
+
+			</aside><aside id="meta-3" class="widget inner-padding widget_meta"><h2 class="widget-title">Meta</h2>
+		<ul>
+						<li><a rel="nofollow" href="https://bebesymamas.es/wp-login.php">Acceder</a></li>
+			<li><a href="https://bebesymamas.es/feed/">Feed de entradas</a></li>
+			<li><a href="https://bebesymamas.es/comments/feed/">Feed de comentarios</a></li>
+
+			<li><a href="https://es.wordpress.org/">WordPress.org</a></li>
+		</ul>
+
+		</aside>	</div>
+</div>
+
+	</div>
+</div>
+
+<div class="gb-container gb-container-74047310"><div class="gb-inside-container">
+<div class="gb-grid-wrapper gb-grid-wrapper-19b37893">
+<div class="gb-grid-column gb-grid-column-784053b0"><div class="gb-container gb-container-784053b0"><div class="gb-inside-container">
+
+<figure class="wp-block-image size-large is-resized"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="" class="wp-image-4113" width="140" data-loading="lazy" data-src="https://cdn.statically.io/img/dev.bebesymamas.es/wp-content/uploads/2020/12/donate-logo-blue.svg?quality=80&amp;f=auto"></figure>
+
+</div></div></div>
+
+<div class="gb-grid-column gb-grid-column-61d52a91"><div class="gb-container gb-container-61d52a91"><div class="gb-inside-container">
+
+<p class="gb-headline gb-headline-1bed63c2 gb-headline-text">Donate<br>Address<br>Address</p>
+
+
+<div class="gb-button-wrapper gb-button-wrapper-4f071868">
+
+<a class="gb-button gb-button-c12cdde6" href="#"><span class="gb-icon"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" width="1em" height="1em" aria-hidden="true"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" fill="currentColor"></path></svg></span></a>
+
+
+
+<a class="gb-button gb-button-54f3935b" href="#"><span class="gb-icon"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" width="1em" height="1em" aria-hidden="true"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" fill="currentColor"></path></svg></span></a>
+
+
+
+<a class="gb-button gb-button-8a5d61f5" href="#"><span class="gb-icon"><svg aria-hidden="true" height="1em" width="1em" viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg></span></a>
+
+</div>
+</div></div></div>
+
+<div class="gb-grid-column gb-grid-column-3f7c9367"><div class="gb-container gb-container-3f7c9367"><div class="gb-inside-container">
+
+<p class="gb-headline gb-headline-99387e7b gb-headline-text"><a href="https://gpsites.co/donate/contact/" data-type="page" data-id="3583">Contact </a></p>
+
+
+
+<p class="gb-headline gb-headline-a1e0cd5e gb-headline-text"><a href="https://gpsites.co/donate/about/" data-type="page" data-id="3575">About Us</a></p>
+
+
+
+<p class="gb-headline gb-headline-2cebad2b gb-headline-text"><a href="https://gpsites.co/donate/about/" data-type="page" data-id="3575">Blog</a></p>
+
+</div></div></div>
+
+<div class="gb-grid-column gb-grid-column-a05ed6a5"><div class="gb-container gb-container-a05ed6a5"><div class="gb-inside-container">
+<div class="gb-button-wrapper gb-button-wrapper-5845e9f2">
+
+<a class="gb-button gb-button-c772818b button" href="https://gpsites.co/donate/donate/"><span class="gb-button-text">Donate Today</span><span class="gb-icon"><svg viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="15" height="15"><path d="M13.5 7.5l-4-4m4 4l-4 4m4-4H1" stroke="currentColor"></path></svg></span></a>
+
+</div>
+</div></div></div>
+</div>
+</div><div class="gb-shapes"><div class="gb-shape gb-shape-1"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1200 96.2" preserveaspectratio="none"><path d="M0 96.2h1200V72.9l-50-8.9c-50-8.6-150-26.9-250-22.2C800 46.2 700 72.9 600 64 500 55.4 400 10.4 300 1.8 200-7.1 100 19.5 50 32.9L0 46.2v50z"></path></svg></div></div></div>
+<div class="site-footer">
+			<footer class="site-info" itemtype="https://schema.org/WPFooter" itemscope>
+			<div class="inside-site-info grid-container">
+								<div class="copyright-bar">
+					&copy; 2021 Donate LLC.				</div>
+			</div>
+		</footer>
+		</div>
+
+		<nav id="generate-slideout-menu" class="main-navigation slideout-navigation do-overlay" itemtype="https://schema.org/SiteNavigationElement" itemscope style="display: none;">
+			<div class="inside-navigation grid-container grid-parent">
+				<button class="slideout-exit has-svg-icon"><span class="gp-icon pro-close">
+				<svg viewbox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+					<path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z"></path>
+				</svg>
+			</span> <span class="screen-reader-text">Cerrar</span></button><div class="main-nav"><ul id="menu-mobile-menu" class="slideout-menu"><li id="menu-item-4143" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-4143"><a href="https://bebesymamas.es/">Home</a></li>
+<li id="menu-item-4149" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4149"><a href="https://bebesymamas.es/ways-to-help/">Ways to Help</a></li>
+<li id="menu-item-4145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4145"><a href="https://bebesymamas.es/about/">About</a></li>
+<li id="menu-item-4144" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3579 current_page_item current_page_parent menu-item-4144"><a href="https://bebesymamas.es/blog/" aria-current="page">Blog</a></li>
+<li id="menu-item-4146" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4146"><a href="https://bebesymamas.es/contact/">Contact</a></li>
+<li id="menu-item-4148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4148"><a href="https://bebesymamas.es/styles/">Styles</a></li>
+<li id="menu-item-4147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4147"><a href="https://bebesymamas.es/donate/">Donate</a></li>
+</ul></div>			</div>
+		</nav>
+
+		<script id="generate-offside-js-extra">
+var offSide = {"side":"left"};
 </script>
-<script type="text/javascript" src="https://bebesymamas.es/wp-content/themes/rehub-theme/js/comparechart.js?ver=1.8" id="rehubcompare-js"></script>
-<script type="text/javascript" id="flying-pages-js-before">
+<script src="https://bebesymamas.es/wp-content/plugins/gp-premium/menu-plus/functions/js/offside.min.js?ver=2.0.0-alpha.3" id="generate-offside-js"></script>
+<script id="flying-pages-js-before">
 window.FPConfig= {
 	delay: 0,
 	ignoreKeywords: ["\/wp-admin","\/wp-login.php","\/cart","\/checkout","add-to-cart","logout","#","?",".png",".jpeg",".jpg",".gif",".svg",".webp"],
 	maxRPS: 3,
     hoverDelay: 50
 };
-window.FPConfig= {
-	delay: 0,
-	ignoreKeywords: ["\/wp-admin","\/wp-login.php","\/cart","\/checkout","add-to-cart","logout","#","?",".png",".jpeg",".jpg",".gif",".svg",".webp"],
-	maxRPS: 3,
-    hoverDelay: 50
-};
 </script>
-<script type="text/javascript" src="https://bebesymamas.es/wp-content/plugins/flying-pages/flying-pages.min.js?ver=2.4.2" id="flying-pages-js" defer></script>
-<script type="text/javascript" id="rate-my-post-js-extra">
-/* <![CDATA[ */
-var rmp_frontend = {"admin_ajax":"https:\/\/bebesymamas.es\/wp-admin\/admin-ajax.php","postID":"1127","noVotes":"Hasta ahora, \u00a1no hay votos!. S\u00e9 el primero en puntuar este contenido.","cookie":"\u00a1Ya has votado! \u00a1No se contar\u00e1 este voto!","afterVote":"\u00a1Gracias por puntuar este contenido!","notShowRating":"1","social":"1","feedback":"1","cookieDisable":"1","emptyFeedback":"\u00a1Por favor, escribe tu sugerencia en el campo de texto anterior!","hoverTexts":"1","preventAccidental":"1","grecaptcha":"1","siteKey":"","votingPriv":"1","loggedIn":"","positiveThreshold":"2","ajaxLoad":"1","nonce":"917dce6de2"};
-var rmp_frontend = {"admin_ajax":"https:\/\/bebesymamas.es\/wp-admin\/admin-ajax.php","postID":"1047","noVotes":"Hasta ahora, \u00a1no hay votos!. S\u00e9 el primero en puntuar este contenido.","cookie":"\u00a1Ya has votado! \u00a1No se contar\u00e1 este voto!","afterVote":"\u00a1Gracias por puntuar este contenido!","notShowRating":"1","social":"1","feedback":"1","cookieDisable":"1","emptyFeedback":"\u00a1Por favor, escribe tu sugerencia en el campo de texto anterior!","hoverTexts":"1","preventAccidental":"1","grecaptcha":"1","siteKey":"","votingPriv":"1","loggedIn":"","positiveThreshold":"2","ajaxLoad":"1","nonce":"917dce6de2"};
-/* ]]> */
+<script src="https://bebesymamas.es/wp-content/plugins/flying-pages/flying-pages.min.js?ver=2.4.2" id="flying-pages-js" defer></script>
+<script id="rate-my-post-js-extra">
+var rmp_frontend = {"admin_ajax":"https:\/\/bebesymamas.es\/wp-admin\/admin-ajax.php","postID":"1","noVotes":"Hasta ahora, \u00a1no hay votos!. S\u00e9 el primero en puntuar este contenido.","cookie":"\u00a1Ya has votado! \u00a1No se contar\u00e1 este voto!","afterVote":"\u00a1Gracias por puntuar este contenido!","notShowRating":"1","social":"1","feedback":"1","cookieDisable":"1","emptyFeedback":"\u00a1Por favor, escribe tu sugerencia en el campo de texto anterior!","hoverTexts":"1","preventAccidental":"1","grecaptcha":"1","siteKey":"","votingPriv":"1","loggedIn":"","positiveThreshold":"2","ajaxLoad":"1","nonce":"d7396d3347"};
 </script>
-<script type="text/javascript" src="https://bebesymamas.es/wp-content/plugins/rate-my-post/public/js/rate-my-post.js?ver=3.3.2" id="rate-my-post-js"></script>
-<script type="text/javascript" id="toc-front-js-extra">
-/* <![CDATA[ */
+<script src="https://bebesymamas.es/wp-content/plugins/rate-my-post/public/js/rate-my-post.js?ver=3.3.2" id="rate-my-post-js"></script>
+<script id="toc-front-js-extra">
 var tocplus = {"visibility_show":"show","visibility_hide":"hide","width":"Auto"};
-var tocplus = {"visibility_show":"show","visibility_hide":"hide","width":"Auto"};
-/* ]]> */
 </script>
-<script type="text/javascript" src="https://bebesymamas.es/wp-content/plugins/table-of-contents-plus/front.min.js?ver=2002" id="toc-front-js"></script>
-<script type="text/javascript" src="https://bebesymamas.es/wp-content/themes/rehub-theme/js/inview.js?ver=1.1" id="rhinview-js"></script>
-<script type="text/javascript" src="https://bebesymamas.es/wp-content/themes/rehub-theme/js/pgwmodal.js?ver=2.0" id="rhpgwmodal-js"></script>
-<script type="text/javascript" src="https://bebesymamas.es/wp-content/themes/rehub-theme/js/unveil.js?ver=5.2.1" id="rhunveil-js"></script>
-<script type="text/javascript" src="https://bebesymamas.es/wp-content/themes/rehub-theme/js/hoverintent.js?ver=1.9" id="rhhoverintent-js"></script>
-<script type="text/javascript" src="https://bebesymamas.es/wp-content/themes/rehub-theme/js/countdown.js?ver=1.1" id="rhcountdown-js"></script>
-<script type="text/javascript" id="rehub-js-extra">
-/* <![CDATA[ */
-var rhscriptvars = {"back":"atr\u00e1s","ajax_url":"\/wp-admin\/admin-ajax.php","fin":"Eso es todo","noresults":"No results found","your_rating":"Tu valoraci\u00f3n:","nonce":"6827e934b5","hotnonce":"80f06a7cc8","wishnonce":"bfca08eec6","searchnonce":"dcc5772b34","filternonce":"0a994e0076","rating_tabs_id":"41cffc287e","max_temp":"10","min_temp":"-10","helpnotnonce":"679399bba1"};
-var rhscriptvars = {"back":"atr\u00e1s","ajax_url":"\/wp-admin\/admin-ajax.php","fin":"Eso es todo","noresults":"No results found","your_rating":"Tu valoraci\u00f3n:","nonce":"6827e934b5","hotnonce":"80f06a7cc8","wishnonce":"bfca08eec6","searchnonce":"dcc5772b34","filternonce":"0a994e0076","rating_tabs_id":"41cffc287e","max_temp":"10","min_temp":"-10","helpnotnonce":"679399bba1"};
-/* ]]> */
+<script src="https://bebesymamas.es/wp-content/plugins/table-of-contents-plus/front.min.js?ver=2002" id="toc-front-js"></script>
+
+<script id="generate-main-js-extra">
+var generatepressMenu = {"toggleOpenedSubMenus":"1","openSubMenuLabel":"Abrir el submen\u00fa","closeSubMenuLabel":"Cerrar el submen\u00fa"};
 </script>
-<script type="text/javascript" src="https://bebesymamas.es/wp-content/themes/rehub-theme/js/custom.js?ver=15.0" id="rehub-js"></script>
-<script type="text/javascript" src="https://bebesymamas.es/wp-content/plugins/rehub-framework/gutenberg/assets/js/slider.js?ver=1.0" id="rhgutslider-js"></script>
-<script type="text/javascript" src="https://bebesymamas.es/wp-content/themes/rehub-theme/js/custom_scroll.js?ver=1.2" id="custom_scroll-js"></script>
+<script src="https://bebesymamas.es/wp-content/themes/generatepress/assets/js/main.min.js?ver=3.0.3" id="generate-main-js"></script>
 <script>window.GA_ID='G-D2T9V5GSZV'</script><script src="https://bebesymamas.es/wp-content/plugins/flying-analytics/js/gtagv4.js" defer></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-D2T9V5GSZV');</script><script type="text/javascript" id="flying-images">"use strict";window.FIConfig={lazyMethod:"nativejavascript",lazyMargin:500};var flyingImages=function(){var a=document.querySelectorAll("[data-loading=\"lazy\"]");if(window.FIConfig.lazyMethod.includes("native")&&"loading"in HTMLImageElement.prototype)a.forEach(function(a){a.removeAttribute("data-loading"),a.setAttribute("loading","lazy"),a.dataset.srcset&&(a.srcset=a.dataset.srcset),a.src=a.dataset.src});else if(window.IntersectionObserver){var b=new IntersectionObserver(function(a){a.forEach(function(a){a.isIntersecting&&(b.unobserve(a.target),a.target.dataset.srcset&&(a.target.srcset=a.target.dataset.srcset),a.target.src=a.target.dataset.src,a.target.classList.add("lazyloaded"),a.target.removeAttribute("data-loading"))})},{rootMargin:window.FIConfig.lazyMargin+"px"});a.forEach(function(a){b.observe(a)})}else for(var c=0;c<a.length;c++)a[c].dataset.srcset&&(a[c].srcset=a[c].dataset.srcset),a[c].src=a[c].dataset.src};flyingImages();function throttle(a,b){var c=!1;return function(){c||(a.apply(null,arguments),c=!0,setTimeout(function(){c=!1},b))}}var dynamicContentObserver=new MutationObserver(throttle(flyingImages,125));dynamicContentObserver.observe(document.body,{attributes:!0,childList:!0,subtree:!0}),function(){var a=document.querySelectorAll("[data-loading=\"lazy-background\"]");if(window.IntersectionObserver){var d=new IntersectionObserver(function(a){a.forEach(function(a){if(a.isIntersecting){d.unobserve(a.target);var b=a.target.getAttribute("style"),c=b.replace("background:none;","");a.target.setAttribute("style",c),a.target.removeAttribute("data-loading")}})},{rootMargin:window.FIConfig.lazyMargin+"px"});a.forEach(function(a){d.observe(a)})}else for(var e=0;e<a.length;e++){var b=a[e].target.getAttribute("style"),c=b.replace("background:none;","");a[e].target.setAttribute("style",c),a[e].target.removeAttribute("data-loading")}}();</script>
-    </body>
+    
+</body>
 </html>
