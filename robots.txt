@@ -1,4 +1,2 @@
-User-agent: *
-Disallow: /
-
-Sitemap: https://bebesymamas.es/sitemap.xml
+User-agent: * 
+Crawl-Delay: 20
